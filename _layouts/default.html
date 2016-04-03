@@ -4,6 +4,8 @@
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			
+			{% include analytics.html %}
 		</head>
 		<body>
 			<nav>
@@ -24,6 +26,7 @@
 	        		<li><a href="mailto:eshghi@cornell.edu">email</a></li>
 	        		<li><a href="https://github.com/soheileshghi">github.com/soheileshghi</a></li>
 				</ul>
+				{% include twitter.html %}
 			</footer>
 		</body>
 	</html>
