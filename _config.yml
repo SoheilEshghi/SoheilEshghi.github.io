@@ -1,3 +1,9 @@
 name: Soheil Eshghi
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+
+# Setup
+title:            Soheil Eshghi
+tagline:          'Optimal Control for Epidemics, Hypergraphs, and the Electrical Grid'
+url:              http://www.soheileshghi.com
+shorturl:         soheileshghi.com
