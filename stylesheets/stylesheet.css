@@ -64,14 +64,14 @@ a:hover {
 }
 
 header {
-  padding-top: 35px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 header h1 {
   font-family: 'Playfair Display', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 48px; font-weight: 900;
-  line-height: 1.2;
+  line-height: 1;
   color: #303030;
   letter-spacing: -1px;
 }
@@ -99,7 +99,7 @@ header p {
   background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
 }
 
-.left {
+.lefty {
     position:absolute;
     left:0; top:92px; bottom: 0;
     width: 178px;
