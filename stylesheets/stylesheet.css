@@ -105,13 +105,18 @@ header p {
     width: 178px;
 }
 
+.main {
+    position: absolute;
+    left:178px; top:92px; right:0; bottom:0;
+}
+
 .inner {
   width: 620px;
   margin: 0 auto;
 }
 
 #container .inner img {
-  max-width: 85%;
+  max-width: 100%;
 }
 
 #downloads {
