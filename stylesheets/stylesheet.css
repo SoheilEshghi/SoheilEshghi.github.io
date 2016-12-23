@@ -78,7 +78,7 @@ header h1 {
 
 header h2 {
   font-family: 'Playfair Display', 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: normal;
   line-height: 1;
   color: #aaa;
@@ -87,7 +87,7 @@ header h2 {
 
 header p {
   font-family: 'Playfair Display', 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: normal;
   line-height: 1;
   color: #aaa;
@@ -318,7 +318,7 @@ blockquote {
 ul li {
   list-style-position: inside;
   list-style: disc;
-  padding-left: 20px;
+  padding-left: 5px;
 }
 
 ol li {
