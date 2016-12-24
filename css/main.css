@@ -20,10 +20,17 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Playfair Display', 'Arial', serif;
     color: #978d85;
 }
+h2 {
+    font-size: 1.5em;
+    font-family: 'Playfair Display', 'Arial', serif;
+    color: #978d85;
+}
+
+
 p {
     font-family: 'Playfair Display', 'Arial', serif;
     font-size: 1.5em;
@@ -46,13 +53,13 @@ ul.posts li {
 
 .left {
     position:absolute;
-    left:0; top:92px; bottom: 0;
+    left:0;
     width: 178px;
 		background: #00356b;
 }
 
 .main {
     position: absolute;
-    left:178px; top:92px; right:0; bottom:0;
+    left:178px; right:0;
     background: #f9f9f9;
 }
