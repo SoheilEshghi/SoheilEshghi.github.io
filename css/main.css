@@ -53,14 +53,12 @@ ul.posts li {
 }
 
 .left {
-    position:absolute;
-    left:0;
-    width: 160px;
+    float:left;
+    width: 155px;
     background: #f9f9f9;
 }
 
 .main {
-    position: absolute;
-    left:160px; right:0;
+    margin-left:155px; 
     background: #f9f9f9;
 }
