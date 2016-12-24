@@ -99,7 +99,7 @@ header p {
   background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
 }
 
-.lefty {
+.left {
     position:absolute;
     left:0; top:92px; bottom: 0;
     width: 178px;

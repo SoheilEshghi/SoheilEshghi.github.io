@@ -24,6 +24,7 @@ h1 {
     font-family: 'Playfair Display', 'Arial', serif;
 }
 p {
+    font-family: 'Playfair Display', 'Arial', serif;
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
@@ -40,4 +41,16 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+.left {
+    position:absolute;
+    left:0; top:92px; bottom: 0;
+    width: 178px;
+		background: #00356b;
+}
+
+.main {
+    position: absolute;
+    left:178px; top:92px; right:0; bottom:0;
 }
