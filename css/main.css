@@ -4,7 +4,7 @@ body {
 }
 nav ul, footer ul {
     font-family:'Playfair Display', 'Arial', serif;
-    padding: 0px;
+    padding: 10px;
     list-style: none;
     font-weight: bold;
 }
@@ -22,12 +22,13 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family: 'Playfair Display', 'Arial', serif;
+    color: #978d85;
 }
 p {
     font-family: 'Playfair Display', 'Arial', serif;
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: #4a4a4a;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -53,4 +54,5 @@ ul.posts li {
 .main {
     position: absolute;
     left:178px; top:92px; right:0; bottom:0;
+    background: #f9f9f9;
 }
