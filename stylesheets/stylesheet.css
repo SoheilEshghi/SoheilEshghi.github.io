@@ -99,7 +99,7 @@ header p {
   background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
 }
 
-.lefty {
+.left {
     position:absolute;
     left:0; top:92px; bottom: 0;
     width: 178px;
@@ -268,7 +268,7 @@ h1 {
 
 h2 {
 
-  font-size: 22px;
+  font-size: 15px;
   font-weight: bold;
   color: #303030;
 }

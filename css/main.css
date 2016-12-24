@@ -41,3 +41,15 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+.left {
+    position:absolute;
+    left:0; top:92px; bottom: 0;
+    width: 178px;
+		background: #00356b;
+}
+
+.main {
+    position: absolute;
+    left:178px; top:92px; right:0; bottom:0;
+}
