@@ -25,8 +25,8 @@ h1 {
     color:  #00356b;
 }
 h2 {
-    font-size: 1.5em;
-    line-height: 1em;
+    font-size: 1.2em;
+    line-height: 0.5em;
     font-family: 'Playfair Display', 'Arial', serif;
     color:  #00356b;
 }
@@ -53,12 +53,14 @@ ul.posts li {
 }
 
 .left {
+    padding-left: 10px;
     float:left;
-    width: 155px;
+    width: 170px;
     background: #f9f9f9;
 }
 
 .main {
-    margin-left:155px; 
+    padding-left: 10px;
+    margin-left:170px;
     background: #f9f9f9;
 }
