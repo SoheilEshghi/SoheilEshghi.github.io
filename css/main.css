@@ -4,10 +4,10 @@ body {
 }
 nav ul, footer ul {
     font-family:'Playfair Display', 'Arial', serif;
-    padding: 10px;
+    padding: 8px;
     list-style: none;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.7em;
 }
 td{
   font-size: 0.5em;
@@ -27,12 +27,12 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: 'Playfair Display', 'Arial', serif;
     color:  #00356b;
 }
 h2 {
-    font-size: 1em;
+    font-size: 0.7em;
     line-height: 0.2em;
     font-family: 'Playfair Display', 'Arial', serif;
     color:  #00356b;
