@@ -34,17 +34,10 @@ h2 {
 
 p {
     font-family: 'Playfair Display', 'Arial', serif;
-    font-size: 0.8em;
-    line-height: 1.2em;
+    font-size: 0.5em;
+    line-height: 0.5em;
     color: #4a4a4a;
 }
-
-td {
-  font-family: 'Playfair Display', 'Arial', serif;
-  font-size: 0.8em;
-  line-height: 1em;
-}
-
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
