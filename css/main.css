@@ -98,6 +98,14 @@ ul.posts li {
     background: #f9f9f9;
 }
 
+.right {
+    padding-right: 10px;
+    float:right;
+    width: 170px;
+    background: #f9f9f9;
+}
+
+
 .main {
     padding-left: 10px;
     margin-left:170px;
