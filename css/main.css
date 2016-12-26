@@ -21,7 +21,6 @@ nav ul li {
 }
 footer ul li{
     display: inline;
-    margin-left: 180px;
     font-size: 0.5em;
 }
 
@@ -52,17 +51,18 @@ p {
 }
 footer {
     border-top: 1px solid #d5d5d5;
-    font-size: .5em;
+    font-size: 1em;
+    margin-left: 160px;
 }
 
 ul.posts {
     margin: 20px auto 40px;
-    font-size: 0.5em;
+    font-size: 1em;
 }
 
 ul.posts li {
     list-style: none;
-    font-size: 0.5em;
+    font-size: 1em;
 }
 
 .left {
