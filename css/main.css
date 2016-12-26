@@ -45,6 +45,7 @@ h1 {
     font-size: 1.5em;
     font-family: 'Playfair Display', 'Arial', serif;
     color:  #00356b;
+    text-align: center;
 }
 h2 {
     font-size: 1em;
@@ -59,6 +60,9 @@ p {
     color: #4a4a4a;
     font-size: 1em;
 }
+
+.email{font-size: 0.5em;}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: 1em;
