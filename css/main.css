@@ -100,7 +100,7 @@ ul.posts li {
 
 .right {
     padding-right: 10px;
-    float:right;
+    float:left;
     width: 170px;
     background: #f9f9f9;
 }
