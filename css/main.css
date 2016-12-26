@@ -4,14 +4,14 @@ body {
 }
 nav ul{
     font-family:'Playfair Display', 'Arial', serif;
-    padding: 8px;
+    padding: 4px;
     list-style: none;
     font-weight: bold;
     font-size: 0.5em;
 }
 footer ul{
     font-family:'Playfair Display', 'Arial', serif;
-    padding: 2px;
+    padding: 1px;
     list-style: none;
     font-weight: bold;
     font-size: 0.5em;
