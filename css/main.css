@@ -19,7 +19,7 @@ footer ul{
 
 
 td{
-  font-size: 1em;
+  font-size: 0.8em;
   font-family: 'Playfair Display', 'Arial', serif;
   color:  #00356b;
 }
@@ -61,7 +61,7 @@ p {
     font-size: 1em;
 }
 
-.email{font-size: 0.5em;}
+.email{font-size: 0.7em;}
 
 footer {
     border-top: 1px solid #d5d5d5;
