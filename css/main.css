@@ -15,10 +15,16 @@ td{
   color:  #00356b;
 }
 
-nav ul li, footer ul li {
+nav ul li {
     display: inline;
     margin-right: 20px;
 }
+footer ul li{
+    display: inline;
+    margin-left: 180px;
+    font-size: 0.5em;
+}
+
 a {
     text-decoration: none;
     color: #999;
