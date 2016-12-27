@@ -11,4 +11,24 @@ shorturl:         soheileshghi.com
 paginate: 5
 paginate_path: "/blog/page:num/"
 
+scholar:
+  style: publications/ieee.csl
+  locale: en
 
+  sort_by: year
+  order: descending
+
+  source: assets/bibliography
+  bibliography: references
+  bibliography_template: bibtemplate
+
+  replace_strings: true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
+
+# Gems
+gems: [jekyll-paginate]
