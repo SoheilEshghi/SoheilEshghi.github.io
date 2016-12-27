@@ -91,6 +91,16 @@ ul.posts li {
     font-size: 1em;
 }
 
+ol.posts {
+    margin: 20px auto 40px;
+    font-size: 1em;
+}
+
+ol.posts li {
+    list-style: none;
+    font-size: 1em;
+}
+
 .left {
     padding-left: 10px;
     float:left;
