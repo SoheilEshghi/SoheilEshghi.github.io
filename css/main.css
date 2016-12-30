@@ -81,6 +81,17 @@ ol {
     font-size: 0.7em;
 }
 
+ol.level1 {
+    font-family: 'Playfair Display', 'Arial', serif;
+    color: #4a4a4a;
+    font-size: 1em;
+}
+ol.level2 {
+    font-family: 'Playfair Display', 'Arial', serif;
+    color: #4a4a4a;
+    font-size: 0.75em;
+}
+
 ul.posts {
     margin: 20px auto 40px;
     font-size: 1em;
@@ -150,8 +161,8 @@ ol.posts li {
   outline: none;
 }
 .share-btn.twitter { background: #55acee; }
-.share-btn.linkedin    { background: #4875B4; }
-.share-btn.github { background: #444444; }
+.share-btn.linkedin    { background: #0077B5; }
+.share-btn.github { background: #767676; }
 .share-btn.scholar { background: #2196F3; }
 
 /* Dropdown Button */
@@ -206,4 +217,8 @@ ol.posts li {
 
 nav a.current {
   color:#00356b;
+}
+
+.bordered {
+  border:1px solid black;
 }

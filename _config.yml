@@ -19,15 +19,18 @@ scholar:
   locale: en
 
   sort_by: year
+  order: descending
 
   source: ./_publications
   bibliography: references.bib
-  bibliography_template: ./_layouts/bibtemplate
+  bibliography_template: bibtemplate.html
 
 
   details_dir:    publications
-  #details_layout: bibtex.html
-  #details_link:   Details
+  details_layout: details.html
+  details_link:   Details
+
+  query: "@*"
 
 
 # Gems
