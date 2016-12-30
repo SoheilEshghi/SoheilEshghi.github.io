@@ -133,8 +133,7 @@ ol.posts li {
     display: inline-block;
     color: #ffffff;
     border: none;
-    padding: 0.5em;
-    width: 1em;
+    padding: 0.35em;
     opacity: 0.9;
     box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
     outline: none;
@@ -153,7 +152,7 @@ ol.posts li {
 .share-btn.twitter { background: #55acee; }
 .share-btn.linkedin    { background: #4875B4; }
 .share-btn.github { background: #444444; }
-
+.share-btn.scholar { background: #2196F3; }
 
 /* Dropdown Button */
 .dropbtn {
@@ -203,4 +202,8 @@ ol.posts li {
 .topmenu ul li.active a, .topmenu ul li a:hover {
     text-decoration:none;
     color:#00356b;
+}
+
+nav a.current {
+  color:#00356b;
 }
