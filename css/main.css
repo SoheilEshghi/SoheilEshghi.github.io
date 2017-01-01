@@ -219,6 +219,11 @@ nav a.current {
   color:#00356b;
 }
 
-.bordered {
-  border:1px solid black;
+.FixedHeightContainer
+{
+  float:right;
+  height: 500px;
+  width:900px;
+  padding:3px;
+  overflow:auto;
 }

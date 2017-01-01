@@ -2,6 +2,32 @@
 layout: default
 title: Publications
 ---
+<div class="FixedHeightContainer">
+
+<h2>Journal Articles</h2>
+<h3>2016</h3>
+{% bibliography -q @article[year=2016] %}
+<h3>2015</h3>
+{% bibliography -q @article[year=2015] %}
+
+<!--## Book Chapters
+
+{% bibliography -q @inbook %}-->
+
+<h2>Conferences and Workshops</h2>
+<h3>2015</h3>
+{% bibliography -q @inproceedings[year=2015] %}
+<h3>2012</h3>
+{% bibliography -q @inproceedings[year=2012] %}
+
+<h2>Manuscripts</h2>
+<h3>2015</h3>
+{% bibliography -q @phdthesis %}
+
+<h2>Patents</h2>
+<h3>2016</h3>
+{% bibliography -q @misc %}
+
 <h2>Invited Talks</h2>
 <ol class="level1">
 <li>"Optimal Control of Epidemics (and Opinions) in the Presence of Heterogeneity”</li>
@@ -24,4 +50,4 @@ Disease Dynamics (CCDD), Harvard T.H. Chan School of Public Health, <b>Harvard U
 July 2016</li>
 </ol>
 </ol>
-	<h2>{{ page.title }}</h2>
+</div>
