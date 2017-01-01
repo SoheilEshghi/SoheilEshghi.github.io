@@ -1,8 +1,15 @@
 ---
 ---
 {{ reference }}
-
-
+<!--
+{% if entry.author %}
+<ul class="nav nav-pills">
+  <li><a data-toggle="collapse" href="#{{key}}-author">
+  </a></li>
+</ul>
+{% endif %}
+-->
+<!--
 <div id="{{key}}-materials">
   <ul class="nav nav-pills">
     {% if entry.abstract %}
@@ -23,7 +30,7 @@
   <pre id="{{key}}-bibtex" class="pre pre-scrollable collapse">{{entry.bibtex}}</pre>
 
 </div>
-
+-->
 <!--{% if entry.note %}
 <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">pre-print</button>
