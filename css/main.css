@@ -221,7 +221,7 @@ nav a.current {
 
 .FixedHeightContainer
 {
-  float:right;
+  float:left;
   height: 500px;
   width:900px;
   padding:3px;
