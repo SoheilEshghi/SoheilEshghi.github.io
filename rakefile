@@ -21,11 +21,15 @@ end
 desc "Generate and publish blog to gh-pages"
 task :publish => [:generate] do
   Dir.mktmpdir do |tmp|
+    puts "copying site to tmp"
     cp_r "_site/.", tmp
 
+
+    puts "chdir to tmp"
     pwd = Dir.pwd
     Dir.chdir tmp
 
+    puts "git init"
     system "git init"
     system "git add ."
     message = "Site updated at #{Time.now.utc}"
