@@ -1,10 +1,20 @@
 body {
     margin: 10px auto;
+    font-size: 16px;
     width: 90%;
 }
+
+.small {
+  font-size: 12px; /* 75% of the baseline */
+}
+
+.large {
+  font-size: 20px; /* 125% of the baseline */
+}
+
 nav ul{
     font-family:'Playfair Display', 'Arial', serif;
-    padding: 4px;
+    padding: 2px;
     list-style: none;
     font-weight: bold;
     font-size: 1em;
@@ -48,13 +58,13 @@ h1 {
 }
 h2 {
     font-size: 1em;
-    line-height: 0.2em;
+    line-height: 1.2em;
     font-family: 'Playfair Display', 'Arial', serif;
     color:  #00356b;
 }
 h3 {
     font-size: 0.9em;
-    line-height: 0.2em;
+    line-height: 1.2em;
     font-family: 'Playfair Display', 'Arial', serif;
     color:  #286dc0;
 }
@@ -137,6 +147,7 @@ ol.posts li {
 .main {
     padding-left: 10px;
     margin-left:170px;
+    width: 80%;
     background: #f9f9f9;
 }
 
@@ -214,6 +225,21 @@ ol.posts li {
     text-decoration:none;
     color:#00356b;
 }
+
+.secondmenu{
+  font-family:'Playfair Display', 'Arial', serif;
+  list-style: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  width: 80%;
+  background-color: #dddddd;
+}
+
+.secondmenu ul li.active a, .secondmenu ul li a:hover {
+    text-decoration:none;
+    color:#00356b;
+}
+
 
 nav a.current {
   color:#00356b;

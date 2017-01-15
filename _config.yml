@@ -39,4 +39,4 @@ scholar:
 
 
 # Gems
-gems: [jekyll-paginate, rake, reduce]
+gems: [jekyll-paginate,rake,reduce]
