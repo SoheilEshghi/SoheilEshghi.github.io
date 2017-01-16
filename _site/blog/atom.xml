@@ -84,7 +84,7 @@
         </a>
 				<!-- Google scholar -->
         <a href="https://scholar.google.com/citations?user=hptqnZ8AAAAJ&hl=en" target="_blank" class="share-btn scholar">
-            <img src="/images/gscholar.png" style="width:17px;">
+            <img src="/images/gscholar.png" style="height:15px;">
         </a>
 			</div>
 		</div><!-- /.container -->
@@ -107,7 +107,7 @@
 	<title>Soheil Eshghi's Blog</title>
 	<link href="http://soheileshghi.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://soheileshghi.github.io/blog"/>
-	<updated>2017-01-16T16:45:22-05:00</updated>
+	<updated>2017-01-16T16:48:53-05:00</updated>
 	<id>http://soheileshghi.github.io/blog</id>
 	<author>
 		<name>Soheil Eshghi</name>
