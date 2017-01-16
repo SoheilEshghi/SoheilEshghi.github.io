@@ -1,0 +1,261 @@
+body {
+    margin: 10px auto;
+    font-size: 16px;
+    width: 90%;
+}
+
+.small {
+  font-size: 12px; /* 75% of the baseline */
+}
+
+.large {
+  font-size: 20px; /* 125% of the baseline */
+}
+
+nav ul{
+    font-family:'Playfair Display', 'Arial', serif;
+    padding: 2px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+footer ul{
+    font-family:'Playfair Display', 'Arial', serif;
+    padding: 1px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 0.5em;
+}
+
+
+td{
+  font-size: 1em;
+  font-family: 'Playfair Display', 'Arial', serif;
+  color:  #00356b;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+footer ul li{
+    display: inline;
+    font-size: 1em;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #00356b;
+}
+
+.inline{
+  color:  #286dc0;
+  text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 1.5em;
+    font-family: 'Playfair Display', 'Arial', serif;
+    color:  #00356b;
+}
+h2 {
+    font-size: 1em;
+    line-height: 1.2em;
+    font-family: 'Playfair Display', 'Arial', serif;
+    color:  #00356b;
+}
+h3 {
+    font-size: 0.9em;
+    line-height: 1.2em;
+    font-family: 'Playfair Display', 'Arial', serif;
+    color:  #286dc0;
+}
+
+
+
+p {
+    font-family: 'Playfair Display', 'Arial', serif;
+    color: #4a4a4a;
+    font-size: 1em;
+}
+
+.email{font-size: 0.6em;}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: 1em;
+    margin-left: 160px;
+}
+
+ol {
+    font-family: 'Playfair Display', 'Arial', serif;
+    color: #4a4a4a;
+    font-size: 0.9em;
+}
+
+ol.level1 {
+    font-family: 'Playfair Display', 'Arial', serif;
+    color: #4a4a4a;
+    font-size: 1em;
+}
+ol.level2 {
+    font-family: 'Playfair Display', 'Arial', serif;
+    color: #4a4a4a;
+    font-size: 0.75em;
+}
+
+ul.posts {
+    margin: 20px auto 40px;
+    font-size: 1em;
+}
+
+ul.posts li {
+    list-style: none;
+    font-size: 1em;
+}
+
+ol.posts {
+    margin: 20px auto 40px;
+    font-size: 1em;
+}
+
+ol.posts li {
+    list-style: none;
+    font-size: 1em;
+}
+
+.left {
+    padding-left: 10px;
+    float:left;
+    width: 170px;
+    background: #f9f9f9;
+}
+
+.right {
+    padding-right: 10px;
+    float:left;
+    width: 170px;
+    background: #f9f9f9;
+}
+
+.middle {
+    padding-left: 10px;
+    margin-left:170px;
+    margin-right:170px;
+    background: #f9f9f9;
+}
+
+
+.main {
+    padding-left: 10px;
+    margin-left:170px;
+    width: 80%;
+    background: #f9f9f9;
+}
+
+.share-btn {
+    display: inline-block;
+    color: #ffffff;
+    border: none;
+    padding: 0.35em;
+    opacity: 0.9;
+    box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+    outline: none;
+    text-align: center;
+}
+.share-btn:hover {
+  color: #eeeeee;
+}
+.share-btn:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+  color: #e2e2e2;
+  outline: none;
+}
+.share-btn.twitter { background: #55acee; }
+.share-btn.linkedin    { background: #0077B5; }
+.share-btn.github { background: #767676; }
+.share-btn.scholar { background: #2196F3; }
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #00356b;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #286dc0;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+.topmenu ul li.active a, .topmenu ul li a:hover {
+    text-decoration:none;
+    color:  #286dc0;
+}
+
+.secondmenu{
+  font-family:'Playfair Display', 'Arial', serif;
+  list-style: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  width: 80%;
+  background-color: #dddddd;
+}
+
+.secondmenu ul li.active a, .secondmenu ul li a:hover {
+    text-decoration:none;
+    color:#00356b;
+}
+
+
+nav a.current {
+  color:#bd5319;
+}
+
+.FixedHeightContainer
+{
+  float:left;
+  height: 500px;
+  width:900px;
+  padding:3px;
+  overflow:auto;
+}
