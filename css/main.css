@@ -131,28 +131,28 @@ ol.posts li {
 .left {
     padding-left: 10px;
     float:left;
-    width: 170px;
+    width: 20%;
     background: #f9f9f9;
 }
 
 .right {
     padding-right: 10px;
     float:left;
-    width: 170px;
+    width: 20%;
     background: #f9f9f9;
 }
 
 .middle {
     padding-left: 10px;
-    margin-left:170px;
-    margin-right:170px;
+    margin-left:20%;
+    margin-right:20%;
     background: #f9f9f9;
 }
 
 
 .main {
     padding-left: 10px;
-    margin-left:170px;
+    margin-left:20%;
     width: 80%;
     background: #f9f9f9;
 }
