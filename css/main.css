@@ -29,7 +29,8 @@ footer ul{
 
 
 td{
-  font-size: 2vw;
+  font-size: 1.5vw;
+  line-height: 1.6vw;
   font-family: 'Playfair Display', 'Arial', serif;
   color:  #00356b;
 }
