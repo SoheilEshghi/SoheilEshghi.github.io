@@ -29,7 +29,7 @@ footer ul{
 
 
 td{
-  font-size: 0.8em;
+  font-size: 1em;
   font-family: 'Playfair Display', 'Arial', serif;
   color:  #00356b;
 }
@@ -46,8 +46,14 @@ footer ul li{
 
 a {
     text-decoration: none;
-    color: #999;
+    color: #00356b;
 }
+
+.inline{
+  color:  #286dc0;
+  text-decoration: underline;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -88,7 +94,7 @@ footer {
 ol {
     font-family: 'Playfair Display', 'Arial', serif;
     color: #4a4a4a;
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 
 ol.level1 {
@@ -223,7 +229,7 @@ ol.posts li {
 
 .topmenu ul li.active a, .topmenu ul li a:hover {
     text-decoration:none;
-    color:#00356b;
+    color:  #286dc0;
 }
 
 .secondmenu{
@@ -242,7 +248,7 @@ ol.posts li {
 
 
 nav a.current {
-  color:#00356b;
+  color:#bd5319;
 }
 
 .FixedHeightContainer

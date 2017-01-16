@@ -4,11 +4,11 @@ layout: default
 <h1>{{ page.title }}</h1>
 <p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
+<div class="post" style="width:80%">
   {{ content }}
 </div>
 
 <!-- Post comments -->
-<div class="notecomments">
+<div class="notecomments" style="width:80%">
 	{% include disqus.html %}
 </div>
