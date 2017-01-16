@@ -61,7 +61,7 @@
 
 			<div class="left">
 
-				<a href="/"><img src="/images/soheil.png" style="width:10%;" align="left"></a><br>
+				<a href="/"><img src="/images/soheil.png" style="width:80%;" align="left"></a><br>
 
 
 				<a href="/"><h1>Soheil Eshghi <br></a>(<a href="/cv">CV</a>)</h1><p class="small">Postdoctoral Associate<br><a href="http://yins.yale.edu/">Yale Institute for Network Science</a><br>17 Hillhouse Ave,<br> New Haven,<br> CT 06520</p><p class="email">soheil.eshghiATyaleDOTedu</p>
@@ -107,7 +107,7 @@
 	<title>Soheil Eshghi's Blog</title>
 	<link href="http://soheileshghi.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://soheileshghi.github.io/blog"/>
-	<updated>2017-01-16T15:00:18-05:00</updated>
+	<updated>2017-01-16T15:04:13-05:00</updated>
 	<id>http://soheileshghi.github.io/blog</id>
 	<author>
 		<name>Soheil Eshghi</name>
