@@ -29,15 +29,15 @@ footer ul{
 
 
 td{
-  font-size: 5vw;
+  font-size: 3vw;
   font-family: 'Playfair Display', 'Arial', serif;
   color:  #00356b;
 }
 
 nav ul li {
     display: inline;
-    font-size: 0.8em;
-    margin-right: 10px;
+    font-size: 0.9em;
+    margin-right: 5px;
 }
 footer ul li{
     display: inline;
