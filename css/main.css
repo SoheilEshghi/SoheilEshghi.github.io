@@ -57,6 +57,9 @@ td{
   line-height: 1.1em;
   font-family: 'Playfair Display', 'Arial', serif;
   color:  #00356b;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-right: .5em;
 }
 
 nav ul li {
@@ -175,6 +178,9 @@ ol.posts li {
     background: #f9f9f9;
 }
 
+.profile {
+    padding-bottom:10px;
+}
 
 .main {
     padding-left: 2%;
@@ -285,3 +291,7 @@ nav a.current {
   padding:3px;
   overflow:auto;
 }
+
+
+.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+.navbar {min-height:32px !important}
