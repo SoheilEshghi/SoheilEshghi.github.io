@@ -1,0 +1,42 @@
+name: Soheil Eshghi
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
+
+# Setup
+title:            Soheil Eshghi
+tagline:          'Optimal Control for Epidemics, Hypergraphs, and the Electrical Grid'
+url:              http://www.soheileshghi.com
+shorturl:         soheileshghi.com
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+
+scholar:
+  style: _publications/ieee.csl
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  group_by: none
+  group_order: ascending
+
+  source: ./_publications
+  bibliography: references.bib
+  bibliography_template: ""
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: false
+
+  details_dir:    publications
+  details_layout: details.html
+  details_link:   Details
+
+  query: "@*"
+
+
+# Gems
+gems: [jekyll-paginate,rake,reduce]
