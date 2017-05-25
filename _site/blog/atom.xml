@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+---
+layout: default
+---
+<?xml version="1.0" encoding="utf-8"?>
+=======
 <!DOCTYPE html>
 	<html>
 		<head>
@@ -105,18 +111,36 @@
 			<div class="container">
 
 			<?xml version="1.0" encoding="utf-8"?>
+>>>>>>> refs/remotes/origin/master
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 	<title>Soheil Eshghi's Blog</title>
 	<link href="http://soheileshghi.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://soheileshghi.github.io/blog"/>
+<<<<<<< HEAD
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+=======
 	<updated>2017-05-25T17:54:16-04:00</updated>
+>>>>>>> refs/remotes/origin/master
 	<id>http://soheileshghi.github.io/blog</id>
 	<author>
 		<name>Soheil Eshghi</name>
 		<email>soheileshghi@gmail.com</email>
 	</author>
 
+<<<<<<< HEAD
+	{% for post in site.posts %}
+		<entry>
+			<title>{{ post.title }}</title>
+			<link href="http://soheileshghi.com{{ post.url }}"/>
+			<updated>{{ post.date | date_to_xmlschema }}</updated>
+			<id>http://soheileshghi.com/{{ post.id }}</id>
+			<content type="html">{{ post.content | xml_escape }}</content>
+		</entry>
+	{% endfor %}
+
+</feed>
+=======
 	
 		<entry>
 			<title>My new website</title>
@@ -156,3 +180,4 @@ or
 		-->
 		</body>
 	</html>
+>>>>>>> refs/remotes/origin/master
