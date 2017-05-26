@@ -115,3 +115,4 @@ end
 
 
 #workflow: jekyll build -> rake commit_deploy
+# git checkout master  git push origin +HEAD
