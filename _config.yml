@@ -24,7 +24,12 @@ scholar:
 
   source: ./_publications
   bibliography: references.bib
-  bibliography_template: <abbr>[{{key}}]</abbr>{{reference}} #""
+  bibliography_template: <abbr>[{{key}}] </abbr>{{reference}}{% if entry.author %}
+  <ul class="nav nav-pills">
+    <li><a data-toggle="collapse" href="#{{key}}-author">
+    </a></li>
+  </ul>
+  {% endif %} #""
 
   replace_strings: true
   join_strings:    true
