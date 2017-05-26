@@ -13,7 +13,7 @@ paginate_path: "/blog/page:num/"
 
 
 scholar:
-  style: mla #_publications/ieee.csl
+  style: _publications/ieee.csl
   locale: en
 
   sort_by: year
@@ -24,7 +24,7 @@ scholar:
 
   source: ./_publications
   bibliography: references.bib
-  bibliography_template: ""
+  bibliography_template: details #""
 
   replace_strings: true
   join_strings:    true
