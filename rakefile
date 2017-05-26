@@ -112,3 +112,6 @@ end
 desc "Commit and deploy _site/"
 task :commit_deploy => [:commit, :deploy] do
 end
+
+
+#workflow: jekyll build -> rake commit_deploy
