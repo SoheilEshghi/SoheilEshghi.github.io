@@ -14,6 +14,9 @@
 			  <link href="/css/bootstrap.css" rel="stylesheet">
 
 			<!-- link to main stylesheet -->
+
+
+
 			<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -32,6 +35,19 @@
 			   });
 			 });
 			 </script>
+
+			 <link rel="stylesheet"  href="/css/tooltip-theme-arrows.css" />
+				<script src="/js/tether.min.js"></script>
+				<script src="/js/drop.min.js"></script>
+				<script src="/js/tooltip.min.js"></script>
+				<script>
+				$(function(){
+								$("[data-toggle=popover]").popover({
+									container: 'body'
+								});
+				});
+			 </script>
+
 
 
 			<link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
@@ -69,41 +85,129 @@
 
 		</head>
 		<body style="background-color:#f9f9f9">
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-					<div class="container">
-							<!-- Brand and toggle get grouped for better mobile display -->
-							<div class="navbar-header">
-									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-											<span class="sr-only">Toggle navigation</span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-									</button>
-									<a href="/" class="navbar-brand"><img src="/images/soheil.jpg" align="left" width="30" height="30" class="d-inline-block; padding-right:30px;" style="background-color:#00356b;">Soheil Eshghi</a>
-							</div>
-							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-									<ul class="nav navbar-nav">
-														<li><a href="/"><i class="fa fa-home"></i></a>
-														</li>
-														<li><a href="/publications/">Publications</a></li>
-														<li><a href="/research/">Research</a></li>
-														<li class="dropdown">
-																<a data-toggle="dropdown" class="dropdown-toggle" href="#">Service<span class="caret"></span></a>
-																<ul role="menu" class="dropdown-menu">
-																			<li><a href="/service/">Academic</a></li>
-																			<li><a href="/service/professional">Professional</a></li>
-																			<li><a href="/service/teaching">Teaching</a></li>
-																	</ul>
-														</li>
-														<li><a href="/blog/">Blog</a></li>
-									</ul>
-							</div>
-							<!-- /.navbar-collapse -->
-					</div>
-					<!-- /.container -->
-			</nav>
-			<div class="container">
+			<div class="visible-xs">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+						<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+										</button> <!--class="d-inline-block; padding-right:30px;"-->
+										<a href="/" class="navbar-brand mx-auto">
+											<!--<p class="navbar-text">-->
+												<img src="/images/soheil.jpg" align="left" width="30" height="auto" padding-bottom="0" padding-top="0" style="background-color:#00356b;">  &nbsp;  Soheil Eshghi
+											<!--</p>-->
+
+										</a>
+								</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+															<li class="nav-item"><a href="/"><i class="fa fa-home"></i></a>
+															</li>
+															<li class="nav-item"><a href="/publications/">Publications</a></li>
+															<li class="nav-item"><a href="/research/">Research</a></li>
+															<li class="nav-item dropdown">
+																	<a data-toggle="dropdown" class="dropdown-toggle" href="#">Service<span class="caret"></span></a>
+																	<ul role="menu" class="dropdown-menu">
+																				<li><a href="/service/">Academic</a></li>
+																				<li><a href="/service/professional">Professional</a></li>
+																				<li><a href="/service/teaching">Teaching</a></li>
+																		</ul>
+															</li>
+															<li class="nav-item"><a href="/blog/">Blog</a></li>
+															<li class="nav-item">
+																<a href="/cv">CV</a>
+															</li>
+															<li class="nav-item">
+																<a href="https://scholar.google.com/citations?user=hptqnZ8AAAAJ&hl=en" target="_blank" class="share-btn scholar">
+																		<img src="/images/gscholar.png" style="height:15px;">
+																</a>
+
+															</li>
+															<li class="nav-item">
+																<a href="https://www.linkedin.com/in/eshghi" target="_blank" class="share-btn linkedin">
+				                            <i class="fa fa-linkedin"></i>
+				                        </a>
+
+															</li>
+															<li class="nav-item">
+																	<a href="https://www.twitter.com/SoheilEshghi" target="_blank" class="share-btn twitter">
+																			<i class="fa fa-twitter"></i>
+																	</a>
+															</li>
+															<li class="nav-item"><a href="/">soheil.eshghiATyaleDOTedu</a>
+															</li>
+
+
+
+											<!--<li class="nav-item">
+												<p class="navbar-text">	soheil.eshghiATyaleDOTedu </p>
+
+											</li>-->
+										</ul>
+								</div>
+
+								<!-- /.navbar-collapse -->
+						</div>
+						<!-- /.container -->
+				</nav>
+			</div>
+			<div class="hidden-xs">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+						<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+										</button> <!--class="d-inline-block; padding-right:30px;"-->
+										<a href="/" class="navbar-brand mx-auto">
+											<!--<p class="navbar-text">-->
+												Soheil Eshghi
+											<!--</p>-->
+
+										</a>
+								</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+															<li class="nav-item"><a href="/"><i class="fa fa-home"></i></a>
+															</li>
+															<li class="nav-item"><a href="/publications/">Publications</a></li>
+															<li class="nav-item"><a href="/research/">Research</a></li>
+															<li class="nav-item dropdown">
+																	<a data-toggle="dropdown" class="dropdown-toggle" href="#">Service<span class="caret"></span></a>
+																	<ul role="menu" class="dropdown-menu">
+																				<li><a href="/service/">Academic</a></li>
+																				<li><a href="/service/professional">Professional</a></li>
+																				<li><a href="/service/teaching">Teaching</a></li>
+																		</ul>
+															</li>
+															<li class="nav-item"><a href="/blog/">Blog</a></li>
+										</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li class="nav-item">
+													<img src="/images/soheil.jpg" align="left" width="30" height="30" padding-bottom="0" padding-top="0" style="background-color:#00356b;" class="hidden-lg-up">
+
+											</li>
+										</ul>
+								</div>
+
+								<!-- /.navbar-collapse -->
+						</div>
+						<!-- /.container -->
+				</nav>
+			</div>
+
+
+
+			<div class="container-fluid">
 
 				<h2>Soheil Eshghi's Blog</h2>
 	<ul class="posts">

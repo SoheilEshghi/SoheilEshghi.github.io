@@ -4,11 +4,11 @@ layout: sidebar
 <h1>{{ page.title }}</h1>
 <p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post" style="width:80%">
+<div class="post">
   {{ content }}
 </div>
 
 <!-- Post comments -->
-<div class="notecomments" style="width:80%">
+<div class="notecomments">
 	{% include disqus.html %}
 </div>

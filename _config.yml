@@ -13,7 +13,7 @@ paginate_path: "/blog/page:num/"
 
 
 scholar:
-  style: _publications/ieee.csl
+  style: _publications/ieee_se_1.csl
   locale: en
 
   sort_by: year
@@ -24,16 +24,16 @@ scholar:
 
   source: ./_publications
   bibliography: references.bib
-  bibliography_template: <abbr>[{{key}}] </abbr>{{reference}} <a data-toggle="collapse" href="#{{key}}-author"> </a> #""{% if entry.author %} {% endif %}{% if entry.note %}<div class="dropdown"><button onclick="myFunction()" class="dropbtn">pre-print</button><div id="myDropdown" class="dropdown-content"><p>{{entry.note}}</p></div>    </div>{% end if %}
+  bibliography_template: bibtemplate #<abbr>[{{key}}] </abbr>{{reference}} <a data-toggle="collapse" href="#{{key}}-author"> </a> ""{% if entry.author %} {% endif %}{% if entry.note %}<div class="dropdown"><button onclick="myFunction()" class="dropbtn">pre-print</button><div id="myDropdown" class="dropdown-content"><p>{{entry.note}}</p></div>    </div>{% end if %}
 
   replace_strings: true
   join_strings:    true
 
   use_raw_bibtex_entry: false
 
-  details_dir:    publications
-  details_layout: details.html
-  details_link:   Details
+  #details_dir:    publications
+  #details_layout: details.html
+  #details_link:   Details
 
   query: "@*"
 
