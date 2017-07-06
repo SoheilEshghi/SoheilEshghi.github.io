@@ -14,6 +14,9 @@
 			  <link href="/css/bootstrap.css" rel="stylesheet">
 
 			<!-- link to main stylesheet -->
+
+
+
 			<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -32,6 +35,19 @@
 			   });
 			 });
 			 </script>
+
+			 <link rel="stylesheet"  href="/css/tooltip-theme-arrows.css" />
+				<script src="/js/tether.min.js"></script>
+				<script src="/js/drop.min.js"></script>
+				<script src="/js/tooltip.min.js"></script>
+				<script>
+				$(function(){
+								$("[data-toggle=popover]").popover({
+									container: 'body'
+								});
+				});
+			 </script>
+
 
 
 			<link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
@@ -69,51 +85,145 @@
 
 		</head>
 		<body style="background-color:#f9f9f9">
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-					<div class="container">
-							<!-- Brand and toggle get grouped for better mobile display -->
-							<div class="navbar-header">
-									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-											<span class="sr-only">Toggle navigation</span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-									</button>
-									<a href="/" class="navbar-brand"><img src="/images/soheil.jpg" align="left" width="30" height="30" class="d-inline-block; padding-right:30px;" style="background-color:#00356b;">Soheil Eshghi</a>
-							</div>
-							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-									<ul class="nav navbar-nav">
-														<li><a href="/"><i class="fa fa-home"></i></a>
-														</li>
-														<li><a href="/publications/">Publications</a></li>
-														<li><a href="/research/">Research</a></li>
-														<li class="dropdown">
-																<a data-toggle="dropdown" class="dropdown-toggle" href="#">Service<span class="caret"></span></a>
-																<ul role="menu" class="dropdown-menu">
-																			<li><a href="/service/">Academic</a></li>
-																			<li><a href="/service/professional">Professional</a></li>
-																			<li><a href="/service/teaching">Teaching</a></li>
-																	</ul>
-														</li>
-														<li><a href="/blog/">Blog</a></li>
-									</ul>
-							</div>
-							<!-- /.navbar-collapse -->
-					</div>
-					<!-- /.container -->
-			</nav>
-			<div class="container">
+			<div class="visible-xs">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+						<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+										</button> <!--class="d-inline-block; padding-right:30px;"-->
+										<a href="/" class="navbar-brand mx-auto">
+											<!--<p class="navbar-text">-->
+												<img src="/images/soheil.jpg" align="left" width="30" height="auto" padding-bottom="0" padding-top="0" style="background-color:#00356b;">  &nbsp;  Soheil Eshghi
+											<!--</p>-->
 
-						<div class="col-xs-12 col-md-2 nopadding center-block"> <!--SE nopadding-->
+										</a>
+								</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+															<li class="nav-item"><a href="/"><i class="fa fa-home"></i></a>
+															</li>
+															<li class="nav-item"><a href="/publications/">Publications</a></li>
+															<li class="nav-item"><a href="/research/">Research</a></li>
+															<li class="nav-item dropdown">
+																	<a data-toggle="dropdown" class="dropdown-toggle" href="#">Service<span class="caret"></span></a>
+																	<ul role="menu" class="dropdown-menu">
+																				<li><a href="/service/">Academic</a></li>
+																				<li><a href="/service/professional">Professional</a></li>
+																				<li><a href="/service/teaching">Teaching</a></li>
+																		</ul>
+															</li>
+															<li class="nav-item"><a href="/blog/">Blog</a></li>
+															<li class="nav-item">
+																<a href="/cv">CV</a>
+															</li>
+															<li class="nav-item">
+																<a href="https://scholar.google.com/citations?user=hptqnZ8AAAAJ&hl=en" target="_blank" class="share-btn scholar">
+																		<img src="/images/gscholar.png" style="height:15px;">
+																</a>
+
+															</li>
+															<li class="nav-item">
+																<a href="https://www.linkedin.com/in/eshghi" target="_blank" class="share-btn linkedin">
+				                            <i class="fa fa-linkedin"></i>
+				                        </a>
+
+															</li>
+															<li class="nav-item">
+																	<a href="https://www.twitter.com/SoheilEshghi" target="_blank" class="share-btn twitter">
+																			<i class="fa fa-twitter"></i>
+																	</a>
+															</li>
+															<li class="nav-item"><a href="/">soheil.eshghiATyaleDOTedu</a>
+															</li>
+
+
+
+											<!--<li class="nav-item">
+												<p class="navbar-text">	soheil.eshghiATyaleDOTedu </p>
+
+											</li>-->
+										</ul>
+								</div>
+
+								<!-- /.navbar-collapse -->
+						</div>
+						<!-- /.container -->
+				</nav>
+			</div>
+			<div class="hidden-xs">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+						<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+										</button> <!--class="d-inline-block; padding-right:30px;"-->
+										<a href="/" class="navbar-brand mx-auto">
+											<!--<p class="navbar-text">-->
+												Soheil Eshghi
+											<!--</p>-->
+
+										</a>
+								</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+															<li class="nav-item"><a href="/"><i class="fa fa-home"></i></a>
+															</li>
+															<li class="nav-item"><a href="/publications/">Publications</a></li>
+															<li class="nav-item"><a href="/research/">Research</a></li>
+															<li class="nav-item dropdown">
+																	<a data-toggle="dropdown" class="dropdown-toggle" href="#">Service<span class="caret"></span></a>
+																	<ul role="menu" class="dropdown-menu">
+																				<li><a href="/service/">Academic</a></li>
+																				<li><a href="/service/professional">Professional</a></li>
+																				<li><a href="/service/teaching">Teaching</a></li>
+																		</ul>
+															</li>
+															<li class="nav-item"><a href="/blog/">Blog</a></li>
+										</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li class="nav-item">
+													<img src="/images/soheil.jpg" align="left" width="30" height="30" padding-bottom="0" padding-top="0" style="background-color:#00356b;" class="hidden-lg-up">
+
+											</li>
+										</ul>
+								</div>
+
+								<!-- /.navbar-collapse -->
+						</div>
+						<!-- /.container -->
+				</nav>
+			</div>
+
+
+
+			<div class="container-fluid">
+
+			   <div class="row no-gutters">
+			<div class="hidden-xs col-sm-4 col-md-3 col-lg-2"> <!--SE nopadding-->
         <!--<div class="row center">-->
+        <div class="text-center">
 
-				  <a href="/"><img src="/images/soheil.png" align="center" class="img-responsive" style="padding-bottom: 10px;"></a>
+				  <a href="/"><img src="/images/soheil.png" alt="Soheil Eshghi" align="left" class="img-responsive" style="padding-bottom: 10px; display: inline-block"></a><br><br><br><br><br><br><br><br>
+        </div>
 
       <!--  </div>
         <div class="row center">-->
-           <span class="text-nowrap">
-        				<a href="/"><h1>Soheil Eshghi</a> (<a href="/cv" style="text-decoration: underline;">CV</a>)</h1><p class="small">Postdoctoral Associate<br><a style="text-decoration: underline;" href="http://yins.yale.edu/">Yale Institute for<br> Network Science (YINS)</a><br>17 Hillhouse Ave,<br> New Haven, CT 06520</p><p class="email">soheil.eshghiATyaleDOTedu</p>
+           <span class="text">
+        				<h2 class="display-4"><a href="/">Soheil Eshghi</a><br>
+                  (<a href="/cv" style="text-decoration: underline;">CV</a>)</h2>
+                <h4 style="color:  #00356b;">Postdoctoral Associate<br><br><a style="text-decoration: underline;" href="http://yins.yale.edu/">Yale Institute for<br> Network Science (YINS)</a><br><br>17 Hillhouse Ave,<br> New Haven, CT 06520</h3>
+                <h3 class="email">soheil.eshghiATyaleDOTedu </h4><br>
             </span>
           <!--</div>-->
           <div class="center-block" style="padding-bottom: 10px;">
@@ -139,26 +249,165 @@
 			        <!--</div>-->
           </div>
 		</div><!-- /.container -->
+	<!--</div>--><!-- /.container -->
 
 
-    <div class="col-xs-12 col-md-10">
+    <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
 
       <!-- Page Content -->
-      <div class="container-fluid"><!--SE added fluid-->
-				<div class="body">
 
 
 
 
-          <div class="col-sm-10">
-<div class="FixedHeightContainer" style="width:80%">
+          <div class ="alert alert-danger" role="alert">
+	<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">
+	</span>
+	<span class="sr-only"> Disclaimer:</span>
+	Disclaimer: Please heed the copyrights of the documents - preprints provided for timely dissemination.
+</div>
 
 	<h2>Journal Articles</h2>
 	<h3>2016</h3>
-	<ol class="bibliography"><li><abbr>[eshghi2016optimal] </abbr><span id="eshghi2016optimal">S. ESHGHI, M. H. R. Khouzani, S. Sarkar, and S. S. Venkatesh, “Optimal patching in clustered malware epidemics,” <i>IEEE/ACM Transactions on Networking (TON)</i>, vol. 24, no. 1, pp. 283–298, 2016. </span> <a data-toggle="collapse" href="#eshghi2016optimal-author"> </a><a class="details" href="/publications/eshghi2016optimal.html">Details</a></li>
-<li><abbr>[eshghi2016visibility] </abbr><span id="eshghi2016visibility">S. ESHGHI, S. Sarkar, and S. S. Venkatesh, “Visibility-aware optimal contagion of malware epidemics,” <i>IEEE Transactions on Automatic Control</i>, vol. PP, no. 99, pp. 1–1, 2016. </span> <a data-toggle="collapse" href="#eshghi2016visibility-author"> </a><a class="details" href="/publications/eshghi2016visibility.html">Details</a></li></ol>
+	<ol class="bibliography"><li><div class="publication-item">
+<div class="text-justify">
+
+  <h4> <span id="eshghi2016optimal">S. ESHGHI, M. H. R. Khouzani, S. Sarkar, and S. S. Venkatesh, <b>“Optimal patching in clustered malware epidemics,”</b> in <i>IEEE/ACM Transactions on Networking (TON)</i>, vol. 24, no. 1, pp. 283–298, 2016.</span> </h4>
+
+</div>
+
+  <div class="pull-left">
+    <div id="eshghi2016optimal-materials">
+      <ul class="nav nav-pills">
+        
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Abstract" data-content="Studies on the propagation of malware in mobile networks have revealed that the spread of malware can be highly inhomogeneous. Platform diversity, contact list utilization by the malware, clustering in the network structure, etc., can also lead to differing spreading rates. In this paper, a general formal framework is proposed for leveraging such heterogeneity to derive optimal patching policies that attain the minimum aggregate cost due to the spread of malware and the surcharge of patching. Using Pontryagin’s Maximum Principle for a stratified epidemic model, it is analytically proven that in the mean-field deterministic regime, optimal patch disseminations are simple single-threshold policies. These policies are amenable to implementation and can serve as benchmarks for policies that have less knowledge of the network. Through numerical simulations, the behavior of optimal patching policies is investigated in sample topologies, and their advantages are demonstrated."  data-placement="right" >Abstract</a></li>
+        
+
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="@article{eshghi2016optimal,
+  title = {Optimal patching in clustered malware epidemics},
+  author = {ESHGHI, Soheil and Khouzani, MHR and Sarkar, Saswati and Venkatesh, Santosh S},
+  journal = {IEEE/ACM Transactions on Networking (TON)},
+  note = {arXiv preprint arXiv:1403.1639},
+  volume = {24},
+  number = {1},
+  pages = {283--298},
+  year = {2016},
+  publisher = {IEEE Press},
+  link = {http://ieeexplore.ieee.org/abstract/document/6966800/}
+}
+"  data-placement="right" data-html="true">BibTeX</a></li>
+
+        
+        <li><a class="btn btn-primary" href=http://ieeexplore.ieee.org/abstract/document/6966800/>Outside Link</a></li>
+        
+
+        
+
+
+
+        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
+      </ul>-->
+
+
+
+    </div>
+  </div>
+</div>
+<br>
+</li>
+<li><div class="publication-item">
+<div class="text-justify">
+
+  <h4> <span id="eshghi2016visibility">S. ESHGHI, S. Sarkar, and S. S. Venkatesh, <b>“Visibility-aware optimal contagion of malware epidemics,”</b> in <i>IEEE Transactions on Automatic Control</i>, vol. PP, no. 99, pp. 1–1, 2016.</span> </h4>
+
+</div>
+
+  <div class="pull-left">
+    <div id="eshghi2016visibility-materials">
+      <ul class="nav nav-pills">
+        
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Abstract" data-content="Recent innovations in the design of computer viruses have led to new trade-offs for the attacker. Multiple variants of a malware may spread at different rates and have different levels of visibility to the network. In this work we examine the optimal strategies for the attacker so as to trade off the extent of spread of the malware against the need for stealth. We show that in the mean-field deterministic regime, this spread-stealth trade-off is optimized by computationally simple single-threshold policies. Specifically, we show that only one variant of the malware is spread by the attacker at each time, as there exists a time up to which the attacker prioritizes maximizing the spread of the malware, and after which she prioritizes stealth."  data-placement="right" >Abstract</a></li>
+        
+
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="@article{eshghi2016visibility,
+  author = {ESHGHI, S. and Sarkar, S. and Venkatesh, S. S.},
+  journal = {IEEE Transactions on Automatic Control},
+  title = {Visibility-aware optimal contagion of malware epidemics},
+  note = {arXiv preprint arXiv:1507.03528},
+  year = {2016},
+  volume = {PP},
+  number = {99},
+  pages = {1-1},
+  doi = {10.1109/TAC.2016.2632426},
+  issn = {0018-9286},
+  link = {http://ieeexplore.ieee.org/abstract/document/7755729/}
+}
+"  data-placement="right" data-html="true">BibTeX</a></li>
+
+        
+        <li><a class="btn btn-primary" href=http://ieeexplore.ieee.org/abstract/document/7755729/>Outside Link</a></li>
+        
+
+        
+
+
+
+        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
+      </ul>-->
+
+
+
+    </div>
+  </div>
+</div>
+<br>
+</li></ol>
 	<h3>2015</h3>
-	<ol class="bibliography"><li><abbr>[eshghi2015optimal] </abbr><span id="eshghi2015optimal">S. ESHGHI, M. H. R. Khouzani, S. Sarkar, N. B. Shroff, and S. S. Venkatesh, “Optimal energy-aware epidemic routing in dtns,” <i>IEEE Transactions on Automatic Control</i>, vol. 60, no. 6, pp. 1554–1569, 2015. </span> <a data-toggle="collapse" href="#eshghi2015optimal-author"> </a><a class="details" href="/publications/eshghi2015optimal.html">Details</a></li></ol>
+	<ol class="bibliography"><li><div class="publication-item">
+<div class="text-justify">
+
+  <h4> <span id="eshghi2015optimal">S. ESHGHI, M. H. R. Khouzani, S. Sarkar, N. B. Shroff, and S. S. Venkatesh, <b>“Optimal energy-aware epidemic routing in DTNs,”</b> in <i>IEEE Transactions on Automatic Control</i>, vol. 60, no. 6, pp. 1554–1569, 2015.</span> </h4>
+
+</div>
+
+  <div class="pull-left">
+    <div id="eshghi2015optimal-materials">
+      <ul class="nav nav-pills">
+        
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Abstract" data-content="In this work, we investigate the use of epidemic routing in energy constrained delay tolerant networks (DTNs). In epidemic routing, messages are relayed by intermediate nodes at contact opportunities, i.e., when pairs of nodes come within the transmission range of each other. Each node needs to decide whether to forward its message upon contact with a new node based on its own residual energy level and the age of that message. We mathematically characterize the fundamental trade-off between energy conservation and a measure of Quality of Service as a dynamic energy-dependent optimal control problem. We prove that in the mean-field regime, the optimal dynamic forwarding decisions follow simple threshold-based structures in which the forwarding threshold for each node depends on its current remaining energy. We then characterize the nature of this dependence. Our simulations reveal that the optimal dynamic policy significantly outperforms heuristics."  data-placement="right" >Abstract</a></li>
+        
+
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="@article{eshghi2015optimal,
+  title = {Optimal energy-aware epidemic routing in DTNs},
+  author = {ESHGHI, Soheil and Khouzani, MHR and Sarkar, Saswati and Shroff, Ness B and Venkatesh, Santosh S},
+  journal = {IEEE Transactions on Automatic Control},
+  volume = {60},
+  number = {6},
+  pages = {1554--1569},
+  note = {arXiv preprint arXiv:1403.1642},
+  year = {2015},
+  publisher = {IEEE},
+  link = {http://ieeexplore.ieee.org/abstract/document/7027154/}
+}
+"  data-placement="right" data-html="true">BibTeX</a></li>
+
+        
+        <li><a class="btn btn-primary" href=http://ieeexplore.ieee.org/abstract/document/7027154/>Outside Link</a></li>
+        
+
+        
+
+
+
+        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
+      </ul>-->
+
+
+
+    </div>
+  </div>
+</div>
+<br>
+</li></ol>
 
 	<!--## Book Chapters
 
@@ -166,56 +415,477 @@
 
 	<h2>Conferences and Workshops</h2>
 	<h3>2017</h3>
-	<ol class="bibliography"><li><abbr>[eshghi2017spread] </abbr><span id="eshghi2017spread">S. ESHGHI, V. M. Preciado, S. Sarkar, S. S. Venkatesh, Q. Zhao, R. D’Souza, and A. Swami, “Spread, then Target, and Advertise in Waves \colon Optimal Capital Allocation Across Advertising Channels,” in <i>Proceedings of the IEEE Information Theory and Applications Workshop (ITA)</i>, 2017. </span> <a data-toggle="collapse" href="#eshghi2017spread-author"> </a><a class="details" href="/publications/eshghi2017spread.html">Details</a></li>
-<li><abbr>[stein2017influence] </abbr><span id="stein2017influence">S. Stein, S. ESHGHI, S. Maghsudi, L. Tassiulas, R. E. Bellamy, and N. R. Jennings, “Influence Maximisation in Partially Observable Social Networks,” in <i>Workshop on Distributed Analytics InfraStructure and Algorithms for Multi-Organization Federations (DAIS)</i>, 2017. </span> <a data-toggle="collapse" href="#stein2017influence-author"> </a><a class="details" href="/publications/stein2017influence.html">Details</a></li>
-<li><abbr>[stein2017heuristic] </abbr><span id="stein2017heuristic">S. Stein, S. ESHGHI, S. Maghsudi, L. Tassiulas, R. E. Bellamy, and N. R. Jennings, “Heuristic Algorithms for Influence Maximization in Partially Observable Social Networks,” in <i>submitted to the International Workshop on Social Influence Analysis (SocInf)</i>, 2017. </span> <a data-toggle="collapse" href="#stein2017heuristic-author"> </a><a class="details" href="/publications/stein2017heuristic.html">Details</a></li>
-<li><abbr>[eshghi2017mathematical] </abbr><span id="eshghi2017mathematical">S. ESHGHI, G. R. Williams, G. B. Colombo, L. Turner, D. G. Rand, R. M. Whitaker, and L. Tassiulas, “Mathematical Models for Social Group Behavior,” in <i>Workshop on Distributed Analytics InfraStructure and Algorithms for Multi-Organization Federations (DAIS)</i>, 2017. </span> <a data-toggle="collapse" href="#eshghi2017mathematical-author"> </a><a class="details" href="/publications/eshghi2017mathematical.html">Details</a></li>
-<li><abbr>[mott2017framework] </abbr><span id="mott2017framework">D. Mott, T. Kelley, C. Giammanco, S. ESHGHI, and Y. Zhang, “A Framework for Modelling the Effect of Emotion on Uncritical Reasoning,” in <i>Workshop on Knowledge Systems for Coalition Operations (KSCO)</i>, 2017. </span> <a data-toggle="collapse" href="#mott2017framework-author"> </a><a class="details" href="/publications/mott2017framework.html">Details</a></li></ol>
+	<ol class="bibliography"><li><div class="publication-item">
+<div class="text-justify">
+
+  <h4> <span id="eshghi2017spread">S. ESHGHI <i>et al.</i>, “Spread, then Target, and Advertise in Waves : Optimal Capital Allocation Across Advertising Channels,” in <i>Proceedings of the IEEE Information Theory and Applications Workshop (ITA)</i>, 2017.</span> </h4>
+
+</div>
+
+  <div class="pull-left">
+    <div id="eshghi2017spread-materials">
+      <ul class="nav nav-pills">
+        
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Abstract" data-content="We obtain optimal strategies for the allocation of influence budget across multiple channels and across time for an external influencer, e.g., a political campaign, seeking to maximize its effect on an election given a network of agents with linear consensus-seeking opinion dynamics. We show that for a general set of objective functions, the optimal influence strategy at every time uses all channels at either their maximum rate or not at all. Furthermore, we prove that the number of switches between these extremes is bounded above both by a term that is typically much smaller than the number of agents. This means that the optimal influence strategy is to exert maximum effort in waves for every channel, and then cease effort and let the effects propagate. We also show that at the beginning, the total cost-adjusted reach of a channel determines its relative value, while targeting matters more closer to election time. We demonstrate that the optimal influence structures are easily computable in several practical cases. We explicitly characterize the optimal controls for the case of linear objective functions via a closed form. Finally, we see that in the canonical election example, identifying late-deciders approximately determines the optimal campaign resource allocation strategy."  data-placement="right" >Abstract</a></li>
+        
+
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="@inproceedings{eshghi2017spread,
+  title = {Spread, then Target, and Advertise in Waves : Optimal Capital Allocation Across Advertising Channels},
+  author = {ESHGHI, Soheil and Preciado, Victor M and Sarkar, Saswati and Venkatesh, Santosh S and Zhao, Qing and D'Souza, Raissa and Swami, Anantharam},
+  booktitle = {Proceedings of the IEEE Information Theory and Applications Workshop (ITA)},
+  year = {2017}
+}
+"  data-placement="right" data-html="true">BibTeX</a></li>
+
+        
+
+        
+
+
+
+        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
+      </ul>-->
+
+
+
+    </div>
+  </div>
+</div>
+<br>
+</li>
+<li><div class="publication-item">
+<div class="text-justify">
+
+  <h4> <span id="stein2017influence">S. Stein, S. ESHGHI, S. Maghsudi, L. Tassiulas, R. E. Bellamy, and N. R. Jennings, “Influence Maximisation in Partially Observable Social Networks,” in <i>Workshop on Distributed Analytics InfraStructure and Algorithms for Multi-Organization Federations (DAIS)</i>, 2017.</span> </h4>
+
+</div>
+
+  <div class="pull-left">
+    <div id="stein2017influence-materials">
+      <ul class="nav nav-pills">
+        
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Abstract" data-content="We consider the problem of choosing influential members within a social network, in order to disseminate a message as widely as possible. While this so-called problem of \emphinfluence maximisation has been widely studied, little work considers partially-observable networks, where only part of a network is visible to the decision maker. Yet, this is critical in many applications, where an organisation needs to distribute its message far beyond its boundaries and beyond its usual sphere of influence. In this paper, we show that existing algorithms are not sufficient to handle such scenarios. To address this, we propose a set of novel adaptive algorithms that perform well in partially observable settings, achieving an up to 18% improvement on the non-adaptive state of the art."  data-placement="right" >Abstract</a></li>
+        
+
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="@inproceedings{stein2017influence,
+  title = {Influence Maximisation in Partially Observable Social Networks},
+  author = {Stein, Sebastian and ESHGHI, Soheil and Maghsudi, Setareh and Tassiulas, Leandros and Bellamy, Rachel E and Jennings, Nicholas R},
+  booktitle = {Workshop on Distributed Analytics InfraStructure and Algorithms for Multi-Organization Federations (DAIS)},
+  year = {2017}
+}
+"  data-placement="right" data-html="true">BibTeX</a></li>
+
+        
+
+        
+
+
+
+        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
+      </ul>-->
+
+
+
+    </div>
+  </div>
+</div>
+<br>
+</li>
+<li><div class="publication-item">
+<div class="text-justify">
+
+  <h4> <span id="stein2017heuristic">S. Stein, S. ESHGHI, S. Maghsudi, L. Tassiulas, R. E. Bellamy, and N. R. Jennings, “Heuristic Algorithms for Influence Maximization in Partially Observable Social Networks,” in <i>International Workshop on Social Influence Analysis (SocInf)</i>, 2017.</span> </h4>
+
+</div>
+
+  <div class="pull-left">
+    <div id="stein2017heuristic-materials">
+      <ul class="nav nav-pills">
+        
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Abstract" data-content="We consider the problem of selecting the most influential members within a social network, in order to disseminate a message as widely as possible. This problem, also referred to as \textitseed selection for influence maximization, has been under intensive investigation since the emergence of social networks. Nonetheless, a large body of existing research is based on the assumption that the network is completely known, whereas little work considers partially observable networks. Yet, due to many issues including the extremely large size of current networks and privacy considerations, assuming full knowledge of the network is rather unrealistic. Despite this, an influencer often wishes to distribute its message far beyond the boundaries of the known network. In this paper, we propose a set of novel heuristic algorithms that specifically target nodes at this boundary, in order to maximize influence across the whole network. We show that these algorithms outperform the state of the art by up to 38% in networks with partial observability."  data-placement="right" >Abstract</a></li>
+        
+
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="@inproceedings{stein2017heuristic,
+  title = {Heuristic Algorithms for Influence Maximization in Partially Observable Social Networks},
+  author = {Stein, Sebastian and ESHGHI, Soheil and Maghsudi, Setareh and Tassiulas, Leandros and Bellamy, Rachel E and Jennings, Nicholas R},
+  booktitle = {International Workshop on Social Influence Analysis (SocInf)},
+  year = {2017}
+}
+"  data-placement="right" data-html="true">BibTeX</a></li>
+
+        
+
+        
+
+
+
+        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
+      </ul>-->
+
+
+
+    </div>
+  </div>
+</div>
+<br>
+</li>
+<li><div class="publication-item">
+<div class="text-justify">
+
+  <h4> <span id="eshghi2017mathematical">S. ESHGHI <i>et al.</i>, “Mathematical Models for Social Group Behavior,” in <i>Workshop on Distributed Analytics InfraStructure and Algorithms for Multi-Organization Federations (DAIS)</i>, 2017.</span> </h4>
+
+</div>
+
+  <div class="pull-left">
+    <div id="eshghi2017mathematical-materials">
+      <ul class="nav nav-pills">
+        
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Abstract" data-content="In this paper, we seek to identity how mathematical and economic analysis can be used to gain insights about the mutation of social groups. Group mutability has been studied in multiple domains, with insights generated on significant factors at differing scales. Mathematical modeling enables the simultaneous study of such phenomena, understanding interactions and generating hypotheses for experiments.
+  In particular, we focus on group fracture, where individuals leave groups of which they are members. For example, this can be due to perceived differences with other group members due to norm related conflict (such as extreme actions by some members). Our aim is to consider simple mathematical models incorporating a selection of social and psychological theory which  describes these phenomena as a way to understand their interplay, and describe the trade-offs and challenges. This will help a federation model the behavior of extremist groups, and determine not only when an intervention is necessary, but also the best course of action to take to induce the fracture of such groups.  This paper is an exploratory investigation into methods of achieving this goal and evaluating the usefulness of the outputs to federations."  data-placement="right" >Abstract</a></li>
+        
+
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="@inproceedings{eshghi2017mathematical,
+  title = {Mathematical Models for Social Group Behavior},
+  author = {ESHGHI, Soheil and Williams, Grace R and Colombo, Gualtiero B and Turner, Liam and Rand, David G and Whitaker, Roger M and Tassiulas, Leandros},
+  booktitle = {Workshop on Distributed Analytics InfraStructure and Algorithms for Multi-Organization Federations (DAIS)},
+  year = {2017}
+}
+"  data-placement="right" data-html="true">BibTeX</a></li>
+
+        
+
+        
+
+
+
+        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
+      </ul>-->
+
+
+
+    </div>
+  </div>
+</div>
+<br>
+</li>
+<li><div class="publication-item">
+<div class="text-justify">
+
+  <h4> <span id="mott2017framework">D. Mott, T. Kelley, C. Giammanco, S. ESHGHI, and Y. Zhang, “A Framework for Modelling the Effect of Emotion on Uncritical Reasoning,” in <i>Workshop on Knowledge Systems for Coalition Operations (KSCO)</i>, 2017.</span> </h4>
+
+</div>
+
+  <div class="pull-left">
+    <div id="mott2017framework-materials">
+      <ul class="nav nav-pills">
+        
+
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="@inproceedings{mott2017framework,
+  title = {A Framework for Modelling the Effect of Emotion on Uncritical Reasoning},
+  author = {Mott, David and Kelley, Troy and Giammanco, Cheryl and ESHGHI, Soheil and Zhang, Yunfeng},
+  booktitle = {Workshop on Knowledge Systems for Coalition Operations (KSCO)},
+  year = {2017}
+}
+"  data-placement="right" data-html="true">BibTeX</a></li>
+
+        
+
+        
+
+
+
+        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
+      </ul>-->
+
+
+
+    </div>
+  </div>
+</div>
+<br>
+</li></ol>
 	<h3>2015</h3>
-	<ol class="bibliography"><li><abbr>[eshghi2015optimal1] </abbr><span id="eshghi2015optimal1">S. ESHGHI, S. Sarkar, and S. S. Venkatesh, “Visibility-aware optimal contagion of malware epidemics,” in <i>Proceedings of the IEEE Information Theory and Applications Workshop (ITA)</i>, 2015. </span> <a data-toggle="collapse" href="#eshghi2015optimal1-author"> </a><a class="details" href="/publications/eshghi2015optimal1.html">Details</a></li>
-<li><abbr>[eshghi2015optimal2] </abbr><span id="eshghi2015optimal2">S. ESHGHI and R. M. Patil, “Optimal battery pricing and energy management for microgrids,” in <i>2015 American Control Conference (ACC)</i>, 2015, pp. 4994–5001. </span> <a data-toggle="collapse" href="#eshghi2015optimal2-author"> </a><a class="details" href="/publications/eshghi2015optimal2.html">Details</a></li></ol>
+	<ol class="bibliography"><li><div class="publication-item">
+<div class="text-justify">
+
+  <h4> <span id="eshghi2015optimal1">S. ESHGHI, S. Sarkar, and S. S. Venkatesh, “Visibility-aware optimal contagion of malware epidemics,” in <i>Proceedings of the IEEE Information Theory and Applications Workshop (ITA)</i>, 2015.</span> </h4>
+
+</div>
+
+  <div class="pull-left">
+    <div id="eshghi2015optimal1-materials">
+      <ul class="nav nav-pills">
+        
+
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="@inproceedings{eshghi2015optimal1,
+  title = {Visibility-aware optimal contagion of malware epidemics},
+  author = {ESHGHI, Soheil and Sarkar, Saswati and Venkatesh, Santosh S},
+  booktitle = {Proceedings of the IEEE Information Theory and Applications Workshop (ITA)},
+  year = {2015}
+}
+"  data-placement="right" data-html="true">BibTeX</a></li>
+
+        
+
+        
+
+
+
+        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
+      </ul>-->
+
+
+
+    </div>
+  </div>
+</div>
+<br>
+</li>
+<li><div class="publication-item">
+<div class="text-justify">
+
+  <h4> <span id="eshghi2015optimal2">S. ESHGHI and R. M. Patil, “Optimal battery pricing and energy management for microgrids,” in <i>2015 American Control Conference (ACC)</i>, 2015, pp. 4994–5001.</span> </h4>
+
+</div>
+
+  <div class="pull-left">
+    <div id="eshghi2015optimal2-materials">
+      <ul class="nav nav-pills">
+        
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Abstract" data-content="This paper develops an optimal dispatch strategy for a microgrid’s resources through battery pricing. A microgrid fulfills local demand using local generation (conventional and renewable) and storage, along with the electric grid (macrogrid). Demand and renewables such as Photovoltaic (PV) generation are uncertain throughout the day. Optimal management of the resources in a microgrid is necessary to integrate the uncertain renewable energy, serve the uncertain demand and provide the highest returns in terms of cost or emissions. The approach developed in this paper requires minimal modeling effort with regards to uncertainties and emphasizes battery pricing using realized profiles of demand and PV generation. We show that the optimal decision at each time instant is an economic dispatch that takes a rigorously-defined shadow-price for the battery power as input. Furthermore, we show that the calculation of this shadow-price can be simplified to avoid state-constraints in the computation of the optimal control solution. Finally, the results highlight the practical utility of this approach and the developed quasi-optimal solution is comparable to the deterministic optimum cost."  data-placement="right" >Abstract</a></li>
+        
+
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="@inproceedings{eshghi2015optimal2,
+  title = {Optimal battery pricing and energy management for microgrids},
+  author = {ESHGHI, Soheil and Patil, Rakesh M},
+  booktitle = {2015 American Control Conference (ACC)},
+  pages = {4994--5001},
+  year = {2015},
+  organization = {IEEE},
+  link = {http://ieeexplore.ieee.org/abstract/document/7172117/}
+}
+"  data-placement="right" data-html="true">BibTeX</a></li>
+
+        
+        <li><a class="btn btn-primary" href=http://ieeexplore.ieee.org/abstract/document/7172117/>Outside Link</a></li>
+        
+
+        
+
+
+
+        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
+      </ul>-->
+
+
+
+    </div>
+  </div>
+</div>
+<br>
+</li></ol>
 	<h3>2012</h3>
-	<ol class="bibliography"><li><abbr>[khouzani2012optimal] </abbr><span id="khouzani2012optimal">M. H. R. Khouzani, S. ESHGHI, S. Sarkar, N. B. Shroff, and S. S. Venkatesh, “Optimal energy-aware epidemic routing in DTNs,” in <i>Proceedings of the thirteenth ACM international symposium on Mobile Ad Hoc Networking and Computing</i>, 2012, pp. 175–182. </span> <a data-toggle="collapse" href="#khouzani2012optimal-author"> </a><a class="details" href="/publications/khouzani2012optimal.html">Details</a></li>
-<li><abbr>[eshghi2012optimal] </abbr><span id="eshghi2012optimal">M. H. R. Khouzani, S. ESHGHI, S. Sarkar, and S. S. Venkatesh, “Optimal patching in clustered epidemics of malware,” in <i>Proceedings of the IEEE Information Theory and Applications Workshop (ITA)</i>, 2012. </span> <a data-toggle="collapse" href="#eshghi2012optimal-author"> </a><a class="details" href="/publications/eshghi2012optimal.html">Details</a></li></ol>
+	<ol class="bibliography"><li><div class="publication-item">
+<div class="text-justify">
+
+  <h4> <span id="khouzani2012optimal">M. H. R. Khouzani, S. ESHGHI, S. Sarkar, N. B. Shroff, and S. S. Venkatesh, “Optimal energy-aware epidemic routing in DTNs,” in <i>Proceedings of the thirteenth ACM international symposium on Mobile Ad Hoc Networking and Computing</i>, 2012, pp. 175–182.</span> </h4>
+
+</div>
+
+  <div class="pull-left">
+    <div id="khouzani2012optimal-materials">
+      <ul class="nav nav-pills">
+        
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Abstract" data-content="In this work, we investigate the use of epidemic routing in energy constrained Delay Tolerant Networks (DTNs). In DTNs, connected paths between source and destination rarely materialize due to the mobility and sparse density of nodes. Epidemic routing is well-suited for these environments due to its simplicity and fully distributed implementation. In epidemic routing, messages are relayed by intermediate nodes at contact opportunities, i.e., when pairs of nodes come within transmission range. Each node needs to decide whether to forward its message upon contact with a new node based on its residual energy level and the age of that message.
+
+  We mathematically characterize the fundamental trade-off between energy conservation and forwarding efficacy as a heterogeneous dynamic energy-dependent optimal control problem. We prove, somewhat surprisingly given the complex nature of the problem, that in the mean field regime, the optimal dynamic forwarding decisions follow simple threshold-based structures in which the forwarding threshold for each node depends on its current remaining energy. We analytically establish this result under generalized classes of utility functions for DTNs. We then characterize the dependence of these thresholds on current energy reserves in each node."  data-placement="right" >Abstract</a></li>
+        
+
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="@inproceedings{khouzani2012optimal,
+  title = {Optimal energy-aware epidemic routing in DTNs},
+  author = {Khouzani, MHR and ESHGHI, Soheil and Sarkar, Saswati and Shroff, Ness B and Venkatesh, Santosh S},
+  booktitle = {Proceedings of the thirteenth ACM international symposium on Mobile Ad Hoc Networking and Computing},
+  pages = {175--182},
+  year = {2012},
+  organization = {ACM},
+  link = {http://dl.acm.org/citation.cfm?id=2248397}
+}
+"  data-placement="right" data-html="true">BibTeX</a></li>
+
+        
+        <li><a class="btn btn-primary" href=http://dl.acm.org/citation.cfm?id=2248397>Outside Link</a></li>
+        
+
+        
+
+
+
+        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
+      </ul>-->
+
+
+
+    </div>
+  </div>
+</div>
+<br>
+</li>
+<li><div class="publication-item">
+<div class="text-justify">
+
+  <h4> <span id="eshghi2012optimal">M. H. R. Khouzani, S. ESHGHI, S. Sarkar, and S. S. Venkatesh, “Optimal patching in clustered epidemics of malware,” in <i>Proceedings of the IEEE Information Theory and Applications Workshop (ITA)</i>, 2012.</span> </h4>
+
+</div>
+
+  <div class="pull-left">
+    <div id="eshghi2012optimal-materials">
+      <ul class="nav nav-pills">
+        
+
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="@inproceedings{eshghi2012optimal,
+  title = {Optimal patching in clustered epidemics of malware},
+  author = {Khouzani, MHR and ESHGHI, Soheil and Sarkar, Saswati and Venkatesh, Santosh S},
+  booktitle = {Proceedings of the IEEE Information Theory and Applications Workshop (ITA)},
+  year = {2012}
+}
+"  data-placement="right" data-html="true">BibTeX</a></li>
+
+        
+
+        
+
+
+
+        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
+      </ul>-->
+
+
+
+    </div>
+  </div>
+</div>
+<br>
+</li></ol>
 
 	<h2>Thesis</h2>
 	<h3>2015</h3>
-	<ol class="bibliography"><li><abbr>[eshghi2015optimal3] </abbr><span id="eshghi2015optimal3">S. ESHGHI, “Optimal control of epidemics in the presence of heterogeneity,” PhD thesis, University of Pennsylvania, 2015. </span> <a data-toggle="collapse" href="#eshghi2015optimal3-author"> </a><a class="details" href="/publications/eshghi2015optimal3.html">Details</a></li></ol>
+	<ol class="bibliography"><li><div class="publication-item">
+<div class="text-justify">
+
+  <h4> <span id="eshghi2015optimal3">S. ESHGHI, “Optimal control of epidemics in the presence of heterogeneity,” PhD thesis, University of Pennsylvania, 2015.</span> </h4>
+
+</div>
+
+  <div class="pull-left">
+    <div id="eshghi2015optimal3-materials">
+      <ul class="nav nav-pills">
+        
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Abstract" data-content="We seek to identify and address how different types of heterogeneity affect the optimal control of epidemic processes in social, biological, and computer networks. Epidemic processes encompass a variety of models of propagation that are based on contact between agents. Assumptions of homogeneity of communication rates, resources, and epidemics themselves in prior literature gloss over the heterogeneities inherent to such networks and lead to the design of sub-optimal control policies. However, the added complexity that comes with a more nuanced view of such networks complicates the generalizing of most prior work and necessitates the use of new analytical methods. We first create a taxonomy of heterogeneity in the spread of epidemics. We then model the evolution of heterogeneous epidemics in the realms of biology and sociology, as well as those arising from practice in the fields of communication networks (e.g., DTN message routing) and security (e.g., malware spread and patching). In each case, we obtain computational frameworks using Pontryagin’s Maximum Principle that will lead to the derivation of dynamic controls that optimize general, context-specific objectives.  We then prove structures for each of these vectors of optimal controls that can simplify the derivation, storage, and implementation of optimal policies. Finally, using simulations and real-world traces, we examine the benefits achieved by including heterogeneity in the control decision, as well as the sensitivity of the models and the controls to model parameters in each case."  data-placement="right" >Abstract</a></li>
+        
+
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="@phdthesis{eshghi2015optimal3,
+  title = {Optimal control of epidemics in the presence of heterogeneity},
+  author = {ESHGHI, Soheil},
+  school = {University of Pennsylvania},
+  year = {2015},
+  link = {http://search.proquest.com/docview/1759630563}
+}
+"  data-placement="right" data-html="true">BibTeX</a></li>
+
+        
+        <li><a class="btn btn-primary" href=http://search.proquest.com/docview/1759630563>Outside Link</a></li>
+        
+
+        
+
+
+
+        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
+      </ul>-->
+
+
+
+    </div>
+  </div>
+</div>
+<br>
+</li></ol>
 
 	<h2>Patents</h2>
 	<h3>2016</h3>
-	<ol class="bibliography"><li><abbr>[patil2016optimal] </abbr><span id="patil2016optimal">S. ESHGHI, R. Patil, and R. Sharma, “Optimal battery pricing and energy management for localized energy resources.” patent, Mar-2016. </span> <a data-toggle="collapse" href="#patil2016optimal-author"> </a><a class="details" href="/publications/patil2016optimal.html">Details</a></li></ol>
+	<ol class="bibliography"><li><div class="publication-item">
+<div class="text-justify">
+
+  <h4> <span id="patil2016optimal">S. ESHGHI, R. Patil, and R. Sharma, “Optimal battery pricing and energy management for localized energy resources,” <i>US Patent 20,160,093,002</i>. Mar-2016.</span> </h4>
+
+</div>
+
+  <div class="pull-left">
+    <div id="patil2016optimal-materials">
+      <ul class="nav nav-pills">
+        
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Abstract" data-content="A method and system are provided for managing local energy resources of an energy system. The method includes determining, offline by a processor, an offline optimal resource allocation of the local energy resources using a Pontryagin Maximum Principle that involves a continuous, unbounded state. The method further includes determining, in real-time by the processor, a real-time optimal resource allocation of the local energy resources using offline-determined energy storage shadow pricing. The method also includes managing, by the processor, an allocation of the local energy resources in accordance with the offline optimal resource allocation and the real-time optimal resource allocation."  data-placement="right" >Abstract</a></li>
+        
+
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="@misc{patil2016optimal,
+  title = {Optimal battery pricing and energy management for localized energy resources},
+  author = {ESHGHI, Soheil and Patil, Rakesh and Sharma, Ratnesh},
+  year = {2016},
+  month = mar,
+  journal = {US Patent 20,160,093,002},
+  link = {https://www.google.com/patents/US20160093002}
+}
+"  data-placement="right" data-html="true">BibTeX</a></li>
+
+        
+        <li><a class="btn btn-primary" href=https://www.google.com/patents/US20160093002>Outside Link</a></li>
+        
+
+        
+
+
+
+        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
+      </ul>-->
+
+
+
+    </div>
+  </div>
+</div>
+<br>
+</li></ol>
 
 <h2>Invited Talks</h2>
-<ol class="level1">
-<li>"Optimal Control of Epidemics (and Opinions) in the Presence of Heterogeneity”</li>
-	<ol class="level2">
-	<li>	 Electrical and Computer
-Engineering Department, <b>Cornell University</b>, July 2015 <i>(remotely)</i></li>
-<li>  Bansal Lab, Biology Department,
-<b>Georgetown University</b>, July 2016</li>
-<li>  Yale Institute for Network
-Science Seminar, Yale Institute for Network Science (YINS), <b>Yale University</b>, July 2016</li>
-<li> Complex Systems
-Group, Electrical and Systems Engineering Department, <b>University of Pennsylvania</b>, July 2016</li>
-<li> Rohani Lab, Biology Department,
-<b>University of Georgia</b>, July 2016</li>
-<li> Ferrari Lab, Center
-for Infectious Disease Dynamics (CIDD), Biology Department, <b>Pennsylvania State University</b>,
-July 2016 <i>(remotely)</i></li>
-<li> Center for Communicable
-Disease Dynamics (CCDD), Harvard T.H. Chan School of Public Health, <b>Harvard University</b>,
-July 2016</li>
-</ol>
-</ol>
-</div>
-</div>
 
 
-				    </div><!--body-->
+
+	<ol class="level1">
+	<li><p>Optimal Control of Epidemics (and Opinions) in the Presence of Heterogeneity</p></li>
+			<ol class="level2">
+						<li>	 <b>Cornell University</b>, Electrical and Computer
+					Engineering Department,  July 2015 <i>(remotely)</i></li>
+					<li>  <b>Georgetown University</b>, Bansal Lab, Biology Department,
+					 July 2016</li>
+					<li>  <b>Yale University</b>, Yale Institute for Network
+					Science Seminar, Yale Institute for Network Science (YINS),  July 2016</li>
+					<li> <b>University of Pennsylvania</b>, Complex Systems
+					Group, Electrical and Systems Engineering Department,  July 2016</li>
+					<li> <b>University of Georgia</b>, Rohani Lab, Biology Department,
+					 July 2016</li>
+					<li> <b>Pennsylvania State University</b>, Ferrari Lab, Center
+					for Infectious Disease Dynamics (CIDD), Biology Department,
+					July 2016 <i>(remotely)</i></li>
+					<li> <b>Harvard University</b>, Center for Communicable
+					Disease Dynamics (CCDD), Harvard T.H. Chan School of Public Health,
+					July 2016</li>
+			</ol>
+	</ol>
+
+
           </div><!-- /.container -->
-        </div>
-      </div>
+        <!--</div>
+      </div>-->
     </div>
     <!-- /.container -->
 

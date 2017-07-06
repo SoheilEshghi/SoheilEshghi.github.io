@@ -14,6 +14,9 @@
 			  <link href="/css/bootstrap.css" rel="stylesheet">
 
 			<!-- link to main stylesheet -->
+
+
+
 			<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -32,6 +35,19 @@
 			   });
 			 });
 			 </script>
+
+			 <link rel="stylesheet"  href="/css/tooltip-theme-arrows.css" />
+				<script src="/js/tether.min.js"></script>
+				<script src="/js/drop.min.js"></script>
+				<script src="/js/tooltip.min.js"></script>
+				<script>
+				$(function(){
+								$("[data-toggle=popover]").popover({
+									container: 'body'
+								});
+				});
+			 </script>
+
 
 
 			<link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
@@ -69,51 +85,145 @@
 
 		</head>
 		<body style="background-color:#f9f9f9">
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-					<div class="container">
-							<!-- Brand and toggle get grouped for better mobile display -->
-							<div class="navbar-header">
-									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-											<span class="sr-only">Toggle navigation</span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-									</button>
-									<a href="/" class="navbar-brand"><img src="/images/soheil.jpg" align="left" width="30" height="30" class="d-inline-block; padding-right:30px;" style="background-color:#00356b;">Soheil Eshghi</a>
-							</div>
-							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-									<ul class="nav navbar-nav">
-														<li><a href="/"><i class="fa fa-home"></i></a>
-														</li>
-														<li><a href="/publications/">Publications</a></li>
-														<li><a href="/research/">Research</a></li>
-														<li class="dropdown">
-																<a data-toggle="dropdown" class="dropdown-toggle" href="#">Service<span class="caret"></span></a>
-																<ul role="menu" class="dropdown-menu">
-																			<li><a href="/service/">Academic</a></li>
-																			<li><a href="/service/professional">Professional</a></li>
-																			<li><a href="/service/teaching">Teaching</a></li>
-																	</ul>
-														</li>
-														<li><a href="/blog/">Blog</a></li>
-									</ul>
-							</div>
-							<!-- /.navbar-collapse -->
-					</div>
-					<!-- /.container -->
-			</nav>
-			<div class="container">
+			<div class="visible-xs">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+						<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+										</button> <!--class="d-inline-block; padding-right:30px;"-->
+										<a href="/" class="navbar-brand mx-auto">
+											<!--<p class="navbar-text">-->
+												<img src="/images/soheil.jpg" align="left" width="30" height="auto" padding-bottom="0" padding-top="0" style="background-color:#00356b;">  &nbsp;  Soheil Eshghi
+											<!--</p>-->
 
-						<div class="col-xs-12 col-md-2 nopadding center-block"> <!--SE nopadding-->
+										</a>
+								</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+															<li class="nav-item"><a href="/"><i class="fa fa-home"></i></a>
+															</li>
+															<li class="nav-item"><a href="/publications/">Publications</a></li>
+															<li class="nav-item"><a href="/research/">Research</a></li>
+															<li class="nav-item dropdown">
+																	<a data-toggle="dropdown" class="dropdown-toggle" href="#">Service<span class="caret"></span></a>
+																	<ul role="menu" class="dropdown-menu">
+																				<li><a href="/service/">Academic</a></li>
+																				<li><a href="/service/professional">Professional</a></li>
+																				<li><a href="/service/teaching">Teaching</a></li>
+																		</ul>
+															</li>
+															<li class="nav-item"><a href="/blog/">Blog</a></li>
+															<li class="nav-item">
+																<a href="/cv">CV</a>
+															</li>
+															<li class="nav-item">
+																<a href="https://scholar.google.com/citations?user=hptqnZ8AAAAJ&hl=en" target="_blank" class="share-btn scholar">
+																		<img src="/images/gscholar.png" style="height:15px;">
+																</a>
+
+															</li>
+															<li class="nav-item">
+																<a href="https://www.linkedin.com/in/eshghi" target="_blank" class="share-btn linkedin">
+				                            <i class="fa fa-linkedin"></i>
+				                        </a>
+
+															</li>
+															<li class="nav-item">
+																	<a href="https://www.twitter.com/SoheilEshghi" target="_blank" class="share-btn twitter">
+																			<i class="fa fa-twitter"></i>
+																	</a>
+															</li>
+															<li class="nav-item"><a href="/">soheil.eshghiATyaleDOTedu</a>
+															</li>
+
+
+
+											<!--<li class="nav-item">
+												<p class="navbar-text">	soheil.eshghiATyaleDOTedu </p>
+
+											</li>-->
+										</ul>
+								</div>
+
+								<!-- /.navbar-collapse -->
+						</div>
+						<!-- /.container -->
+				</nav>
+			</div>
+			<div class="hidden-xs">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+						<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+										</button> <!--class="d-inline-block; padding-right:30px;"-->
+										<a href="/" class="navbar-brand mx-auto">
+											<!--<p class="navbar-text">-->
+												Soheil Eshghi
+											<!--</p>-->
+
+										</a>
+								</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+															<li class="nav-item"><a href="/"><i class="fa fa-home"></i></a>
+															</li>
+															<li class="nav-item"><a href="/publications/">Publications</a></li>
+															<li class="nav-item"><a href="/research/">Research</a></li>
+															<li class="nav-item dropdown">
+																	<a data-toggle="dropdown" class="dropdown-toggle" href="#">Service<span class="caret"></span></a>
+																	<ul role="menu" class="dropdown-menu">
+																				<li><a href="/service/">Academic</a></li>
+																				<li><a href="/service/professional">Professional</a></li>
+																				<li><a href="/service/teaching">Teaching</a></li>
+																		</ul>
+															</li>
+															<li class="nav-item"><a href="/blog/">Blog</a></li>
+										</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li class="nav-item">
+													<img src="/images/soheil.jpg" align="left" width="30" height="30" padding-bottom="0" padding-top="0" style="background-color:#00356b;" class="hidden-lg-up">
+
+											</li>
+										</ul>
+								</div>
+
+								<!-- /.navbar-collapse -->
+						</div>
+						<!-- /.container -->
+				</nav>
+			</div>
+
+
+
+			<div class="container-fluid">
+
+			   <div class="row no-gutters">
+			<div class="hidden-xs col-sm-4 col-md-3 col-lg-2"> <!--SE nopadding-->
         <!--<div class="row center">-->
+        <div class="text-center">
 
-				  <a href="/"><img src="/images/soheil.png" align="center" class="img-responsive" style="padding-bottom: 10px;"></a>
+				  <a href="/"><img src="/images/soheil.png" alt="Soheil Eshghi" align="left" class="img-responsive" style="padding-bottom: 10px; display: inline-block"></a><br><br><br><br><br><br><br><br>
+        </div>
 
       <!--  </div>
         <div class="row center">-->
-           <span class="text-nowrap">
-        				<a href="/"><h1>Soheil Eshghi</a> (<a href="/cv" style="text-decoration: underline;">CV</a>)</h1><p class="small">Postdoctoral Associate<br><a style="text-decoration: underline;" href="http://yins.yale.edu/">Yale Institute for<br> Network Science (YINS)</a><br>17 Hillhouse Ave,<br> New Haven, CT 06520</p><p class="email">soheil.eshghiATyaleDOTedu</p>
+           <span class="text">
+        				<h2 class="display-4"><a href="/">Soheil Eshghi</a><br>
+                  (<a href="/cv" style="text-decoration: underline;">CV</a>)</h2>
+                <h4 style="color:  #00356b;">Postdoctoral Associate<br><br><a style="text-decoration: underline;" href="http://yins.yale.edu/">Yale Institute for<br> Network Science (YINS)</a><br><br>17 Hillhouse Ave,<br> New Haven, CT 06520</h3>
+                <h3 class="email">soheil.eshghiATyaleDOTedu </h4><br>
             </span>
           <!--</div>-->
           <div class="center-block" style="padding-bottom: 10px;">
@@ -139,60 +249,54 @@
 			        <!--</div>-->
           </div>
 		</div><!-- /.container -->
+	<!--</div>--><!-- /.container -->
 
 
-    <div class="col-xs-12 col-md-10">
+    <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
 
       <!-- Page Content -->
-      <div class="container-fluid"><!--SE added fluid-->
-				<div class="body">
 
 
 
 
-          <div class="col-sm-10">
-  <h1><u>Professional</u></h1>
-</div>
-<div class="col-sm-10">
-  <table style="width:80%;" class="table-responsive">
-    <tr>
-      <td style="width: 16%">2014–2016 </td>
-      <td style="width: 34%">Founder and Advisor</td>
-  		<td style="width: 50%"><a class="inline" href="http://www.gosmartrack.com">SmartTrack</a></td>
-    </tr>
+            <table class="table table-responsive table-striped">
+      <tr>
+        <td style="width: 16%">2014–16 </td>
+        <td style="width: 34%">Founder and Advisor</td>
+    		<td style="width: 50%"><a class="inline" href="http://www.gosmartrack.com">SmartTrack</a></td>
+      </tr>
   </table>
-    <p style="font-size: 0.9em;text-align:justify;width:90%;">The School District of Philadelphia (a city I care for deeply) <a class="inline" href="http://www.theatlantic.com/education/archive/2014/07/why-poor-schools-cant-win-at-standardized-testing/374287/">was in a no-win situation</a>: No textbooks and educational materials, leading to poor student outcomes, leading to funding cuts.
+    <p style="text-align:justify;line-height: 1.7em;">The School District of Philadelphia (a city I care for deeply) was in a <a class="inline" href="http://www.theatlantic.com/education/archive/2014/07/why-poor-schools-cant-win-at-standardized-testing/374287/">no-win situation</a>: No textbooks and educational materials, leading to poor student outcomes, leading to funding cuts.
     At Penn, our team of 4 developed, designed, and rolled out
     a solution for managing inventory (e.g., textbooks, musical instruments, and computing
     equipment) for large, low-income school districts such as the School District of
     Philadelphia. We won the Penn Public Policy Challenge ’15, and placed second in the National Public
     Policy Challenge ’15. Our work has been featured in numerous publications, including Governing magazine. My team was one of 9 out of 300 teams accepted to EDSi accelerator at Penn.</p>
-    <table style="width:80%; line-height: 0.2em;" class="table-responsive">
+    <table style="line-height: 0.2em;" class="table table-responsive table-striped">
       <tr>
-        <td style="width: 16%">2015–2016 </td>
+        <td style="width: 16%">2015–16 </td>
         <td style="width: 34%">VP of Education</td>
         <td style="width: 50%"><a class="inline" href="https://cornellgraduateconsultingclub.org/">Cornell Graduate Consulting Club</a></td>
       </tr>
     </table>
-<p style="font-size: 0.9em;text-align:justify;width:90%;"><a class="inline" href="http://www.theatlantic.com/business/archive/2013/02/how-many-phds-actually-get-to-become-college-professors/273434/">Only 1 out of every 5 PhD graduates becomes a professor</a>. Management consulting is one of the best options for PhDs considering leaving academia, as (in my experience) it is fun, dynamic, and impactful. At Cornell, I created and curated an ongoing progression of 7 events to increase interest and improve consulting interview success in the membership. I also put together and MC’ed a panel of Advanced Degree consultants who shared their experiences. Finally, I led a team of 6 pro-bono consultants over 3 months to devise a marketing plan for a local mobile tourism startup.</p>
-<table style="width:80%; line-height: 0.2em;" class="table-responsive">
+<p style="text-align:justify;line-height: 1.7em;"><a class="inline" href="http://www.theatlantic.com/business/archive/2013/02/how-many-phds-actually-get-to-become-college-professors/273434/">Only 1 out of every 5 PhD graduates</a> becomes a professor. Management consulting is one of the best options for PhDs considering leaving academia, as (in my experience) it is fun, dynamic, and impactful. At Cornell, I created and curated an ongoing progression of 7 events to increase interest and improve consulting interview success in the membership. I also put together and MC’ed a panel of Advanced Degree consultants who shared their experiences. Finally, I led a team of 6 pro-bono consultants over 3 months to devise a marketing plan for a local mobile tourism startup.</p>
+<table style="line-height: 0.2em;" class="table table-responsive table-striped">
   <tr>
-    <td style="width: 16%">2014–2015 </td>
+    <td style="width: 16%">2014–15 </td>
     <td style="width: 34%">Co-chair</td>
     <td style="width: 50%"><a class="inline" href="http://www.dolphin.upenn.edu/pgcc/">Penn Graduate Case Competition</a></td>
   </tr>
 </table>
-<p style="font-size: 0.9em;text-align:justify;width:90%;"><a class="inline" href="http://www.penngradconsulting.com/">Pro-bono consulting, and in particular the annual case competition, are ingrained parts of the PhD experience at Penn.</a> Over the course of 6 months, I organized the logistics, client selection, case creation, and sponsorship with my team of 5
+<p style="text-align:justify;line-height: 1.7em;"><a class="inline" href="http://www.penngradconsulting.com/">Pro-bono consulting</a>, and in particular the annual case competition, are ingrained parts of the PhD experience at Penn. Over the course of 6 months, I organized the logistics, client selection, case creation, and sponsorship with my team of 5
 and MC’ed the  event. We out-raised our maximum cost projections by 110% and increased diversity of internal and
 external participants (with 9 sponsors and 5 schools represented). Furthermore, the winning proposal was implemented by the case client within 3 months.</p>
 
 </div><!--/.blurb-->
 
 
-				    </div><!--body-->
           </div><!-- /.container -->
-        </div>
-      </div>
+        <!--</div>
+      </div>-->
     </div>
     <!-- /.container -->
 

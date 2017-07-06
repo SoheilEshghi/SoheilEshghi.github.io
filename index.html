@@ -14,6 +14,9 @@
 			  <link href="/css/bootstrap.css" rel="stylesheet">
 
 			<!-- link to main stylesheet -->
+
+
+
 			<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -32,6 +35,19 @@
 			   });
 			 });
 			 </script>
+
+			 <link rel="stylesheet"  href="/css/tooltip-theme-arrows.css" />
+				<script src="/js/tether.min.js"></script>
+				<script src="/js/drop.min.js"></script>
+				<script src="/js/tooltip.min.js"></script>
+				<script>
+				$(function(){
+								$("[data-toggle=popover]").popover({
+									container: 'body'
+								});
+				});
+			 </script>
+
 
 
 			<link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
@@ -69,51 +85,145 @@
 
 		</head>
 		<body style="background-color:#f9f9f9">
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-					<div class="container">
-							<!-- Brand and toggle get grouped for better mobile display -->
-							<div class="navbar-header">
-									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-											<span class="sr-only">Toggle navigation</span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-									</button>
-									<a href="/" class="navbar-brand"><img src="/images/soheil.jpg" align="left" width="30" height="30" class="d-inline-block; padding-right:30px;" style="background-color:#00356b;">Soheil Eshghi</a>
-							</div>
-							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-									<ul class="nav navbar-nav">
-														<li><a href="/"><i class="fa fa-home"></i></a>
-														</li>
-														<li><a href="/publications/">Publications</a></li>
-														<li><a href="/research/">Research</a></li>
-														<li class="dropdown">
-																<a data-toggle="dropdown" class="dropdown-toggle" href="#">Service<span class="caret"></span></a>
-																<ul role="menu" class="dropdown-menu">
-																			<li><a href="/service/">Academic</a></li>
-																			<li><a href="/service/professional">Professional</a></li>
-																			<li><a href="/service/teaching">Teaching</a></li>
-																	</ul>
-														</li>
-														<li><a href="/blog/">Blog</a></li>
-									</ul>
-							</div>
-							<!-- /.navbar-collapse -->
-					</div>
-					<!-- /.container -->
-			</nav>
-			<div class="container">
+			<div class="visible-xs">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+						<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+										</button> <!--class="d-inline-block; padding-right:30px;"-->
+										<a href="/" class="navbar-brand mx-auto">
+											<!--<p class="navbar-text">-->
+												<img src="/images/soheil.jpg" align="left" width="30" height="auto" padding-bottom="0" padding-top="0" style="background-color:#00356b;">  &nbsp;  Soheil Eshghi
+											<!--</p>-->
 
-						<div class="col-xs-12 col-md-2 nopadding center-block"> <!--SE nopadding-->
+										</a>
+								</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+															<li class="nav-item"><a href="/"><i class="fa fa-home"></i></a>
+															</li>
+															<li class="nav-item"><a href="/publications/">Publications</a></li>
+															<li class="nav-item"><a href="/research/">Research</a></li>
+															<li class="nav-item dropdown">
+																	<a data-toggle="dropdown" class="dropdown-toggle" href="#">Service<span class="caret"></span></a>
+																	<ul role="menu" class="dropdown-menu">
+																				<li><a href="/service/">Academic</a></li>
+																				<li><a href="/service/professional">Professional</a></li>
+																				<li><a href="/service/teaching">Teaching</a></li>
+																		</ul>
+															</li>
+															<li class="nav-item"><a href="/blog/">Blog</a></li>
+															<li class="nav-item">
+																<a href="/cv">CV</a>
+															</li>
+															<li class="nav-item">
+																<a href="https://scholar.google.com/citations?user=hptqnZ8AAAAJ&hl=en" target="_blank" class="share-btn scholar">
+																		<img src="/images/gscholar.png" style="height:15px;">
+																</a>
+
+															</li>
+															<li class="nav-item">
+																<a href="https://www.linkedin.com/in/eshghi" target="_blank" class="share-btn linkedin">
+				                            <i class="fa fa-linkedin"></i>
+				                        </a>
+
+															</li>
+															<li class="nav-item">
+																	<a href="https://www.twitter.com/SoheilEshghi" target="_blank" class="share-btn twitter">
+																			<i class="fa fa-twitter"></i>
+																	</a>
+															</li>
+															<li class="nav-item"><a href="/">soheil.eshghiATyaleDOTedu</a>
+															</li>
+
+
+
+											<!--<li class="nav-item">
+												<p class="navbar-text">	soheil.eshghiATyaleDOTedu </p>
+
+											</li>-->
+										</ul>
+								</div>
+
+								<!-- /.navbar-collapse -->
+						</div>
+						<!-- /.container -->
+				</nav>
+			</div>
+			<div class="hidden-xs">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+						<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+										</button> <!--class="d-inline-block; padding-right:30px;"-->
+										<a href="/" class="navbar-brand mx-auto">
+											<!--<p class="navbar-text">-->
+												Soheil Eshghi
+											<!--</p>-->
+
+										</a>
+								</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+															<li class="nav-item"><a href="/"><i class="fa fa-home"></i></a>
+															</li>
+															<li class="nav-item"><a href="/publications/">Publications</a></li>
+															<li class="nav-item"><a href="/research/">Research</a></li>
+															<li class="nav-item dropdown">
+																	<a data-toggle="dropdown" class="dropdown-toggle" href="#">Service<span class="caret"></span></a>
+																	<ul role="menu" class="dropdown-menu">
+																				<li><a href="/service/">Academic</a></li>
+																				<li><a href="/service/professional">Professional</a></li>
+																				<li><a href="/service/teaching">Teaching</a></li>
+																		</ul>
+															</li>
+															<li class="nav-item"><a href="/blog/">Blog</a></li>
+										</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li class="nav-item">
+													<img src="/images/soheil.jpg" align="left" width="30" height="30" padding-bottom="0" padding-top="0" style="background-color:#00356b;" class="hidden-lg-up">
+
+											</li>
+										</ul>
+								</div>
+
+								<!-- /.navbar-collapse -->
+						</div>
+						<!-- /.container -->
+				</nav>
+			</div>
+
+
+
+			<div class="container-fluid">
+
+			   <div class="row no-gutters">
+			<div class="hidden-xs col-sm-4 col-md-3 col-lg-2"> <!--SE nopadding-->
         <!--<div class="row center">-->
+        <div class="text-center">
 
-				  <a href="/"><img src="/images/soheil.png" align="center" class="img-responsive" style="padding-bottom: 10px;"></a>
+				  <a href="/"><img src="/images/soheil.png" alt="Soheil Eshghi" align="left" class="img-responsive" style="padding-bottom: 10px; display: inline-block"></a><br><br><br><br><br><br><br><br>
+        </div>
 
       <!--  </div>
         <div class="row center">-->
-           <span class="text-nowrap">
-        				<a href="/"><h1>Soheil Eshghi</a> (<a href="/cv" style="text-decoration: underline;">CV</a>)</h1><p class="small">Postdoctoral Associate<br><a style="text-decoration: underline;" href="http://yins.yale.edu/">Yale Institute for<br> Network Science (YINS)</a><br>17 Hillhouse Ave,<br> New Haven, CT 06520</p><p class="email">soheil.eshghiATyaleDOTedu</p>
+           <span class="text">
+        				<h2 class="display-4"><a href="/">Soheil Eshghi</a><br>
+                  (<a href="/cv" style="text-decoration: underline;">CV</a>)</h2>
+                <h4 style="color:  #00356b;">Postdoctoral Associate<br><br><a style="text-decoration: underline;" href="http://yins.yale.edu/">Yale Institute for<br> Network Science (YINS)</a><br><br>17 Hillhouse Ave,<br> New Haven, CT 06520</h3>
+                <h3 class="email">soheil.eshghiATyaleDOTedu </h4><br>
             </span>
           <!--</div>-->
           <div class="center-block" style="padding-bottom: 10px;">
@@ -139,86 +249,78 @@
 			        <!--</div>-->
           </div>
 		</div><!-- /.container -->
+	<!--</div>--><!-- /.container -->
 
 
-    <div class="col-xs-12 col-md-10">
+    <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
 
       <!-- Page Content -->
-      <div class="container-fluid"><!--SE added fluid-->
-				<div class="body">
 
 
 
 
-          <div class="col-sm-12">
-  <p style="text-align:justify;" class="lead">I am a postdoctoral associate at <a href="http://yins.yale.edu">Yale Institute for Network Science (YINS)</a> and Yale's <a class="inline" href="http://seas.yale.edu/departments/electrical-engineering">Department of Electrical Engineering</a>, and I am honored to be supervised by <a class="inline" href="http://seas.yale.edu/faculty-research/faculty-directory/leandros-tassiulas">Leandros Tassiulas</a>. I use optimal control, dynamical systems, and game theory to study social, biological, and engineered networks. In particular, I am interested in understanding <a class="inline" href="/research">dynamic influence in human (and more generally, biological) networks</a>.
-  </p><!--SE added class lead-->
+            <p style="text-align:justify;font-size: 1.3em;" ><br>
+    I am a postdoc at <a href="http://yins.yale.edu">Yale Institute for Network Science (YINS)</a>, and I am honored to work with <a class="inline" href="http://seas.yale.edu/faculty-research/faculty-directory/leandros-tassiulas">Leandros Tassiulas</a>.<br> I use optimal control and game theory to study social, biological, and engineered networks. <br>In particular, I am interested in understanding <a class="inline" href="/research">dynamic influence in networks</a>.<br><br>
 
-  <p style="text-align:justify;"><!--As a postdoctoral associate at Cornell, I worked on networks of teams and their effect on the spread of opinions and influence, as well as various topics on the charging of electric vehicles.--> I obtained a PhD at Penn's Electrical and Systems Engineering Department under the tutelage of <a class="inline" href="http://www.seas.upenn.edu/~swati/"> Saswati Sarkar</a> and <a class="inline" href="http://www.seas.upenn.edu/~venkates/">Santosh S. Venkatesh</a>. My PhD thesis was on the optimal control of epidemics in the presence of heterogeneity. I looked at how a more granular view of the spread of an epidemic can help us to design better policies.</p>
-</div>
-<div class="col-sm-10">
-  <h1><u>Education:</u></h1>
-</div>
-<div class="col-sm-10">
+
+  <!--As a postdoctoral associate at Cornell, I worked on networks of teams and their effect on the spread of opinions and influence, as well as various topics on the charging of electric vehicles.--> I obtained a PhD at Penn under the tutelage of <a class="inline" href="http://www.seas.upenn.edu/~swati/"> Saswati Sarkar</a> and <a class="inline" href="http://www.seas.upenn.edu/~venkates/">Santosh S. Venkatesh</a>. My thesis was on the optimal control of epidemics in the presence of heterogeneity, showing how a more granular view of epidemic spread can be used to design better policies.
+</p>
+
+
+  <h2>Education:</h2>
+
   <table  class="table table-responsive table-striped">
     <tr>
-      <td>2011-2015</td>
+      <td>2015</td>
       <td>PhD</td>
   		<td>Electrical & Systems Engineering</td>
-  		<td class="hidden-md-down"><img src="/images/penn.gif" align="center" class="img-responsive" style="height:30px"></td>
+  		<td class="hidden-md hidden-sm hidden-xs"><img src="/images/penn.gif" align="center" class="img-responsive" style="height:30px"></td>
       <td>University of Pennsylvania </td>
     </tr>
     <tr>
-      <td>2011-2013 </td>
+      <td>2013 </td>
       <td>MSc </td>
   		<td>Electrical Engineering</td>
-  		<td class="hidden-md-down"><img src="/images/penn.gif" align="center" class="img-responsive" style="height:30px"></td>
+  		<td class="hidden-md hidden-sm hidden-xs"><img src="/images/penn.gif" align="center" class="img-responsive" style="height:30px"></td>
       <td>University of Pennsylvania </td>
     </tr>
   	<tr>
-  		<td>2006-2010 </td>
+  		<td>2010 </td>
   		<td>BSc </td>
   		<td>Electrical Engineering</td>
-  		<td class="hidden-md-down"><img src="/images/sharif.jpg" align="center" class="img-responsive" style="height:30px"></td>
+  		<td class="hidden-md hidden-sm hidden-xs"><img src="/images/sharif.jpg" align="center" class="img-responsive" style="height:30px"></td>
   		<td>Sharif University of Technology </td>
   	</tr>
   </table>
-</div>
-<div class="col-sm-10">
-  <h1><u>Employment:</u></h1>
-</div>
-<div class="col-sm-10">
+  <h2>Employment:</h2>
   <table style="width:95%" class="table table-responsive table-striped">
   	<tr>
   		<tr>
-  			<td>2016-Present</td>
-  			<td class="hidden-md-down"><img src="/images/yale.jpg" align="center" class="img-responsive" ></td>
+  			<td>2016-</td>
+  			<td class="hidden-md hidden-sm hidden-xs"><img src="/images/yale.jpg" align="center" class="img-responsive" ></td>
   			<td>Yale University</td>
   			<td>Postdoctoral Associate</td>
   		</tr>
-  		<td>2015-2016</td>
-  		<td  class="hidden-md-down"><img src="/images/cornell.png" align="center" class="img-responsive"></td>
+  		<td>2015-16</td>
+  		<td  class="hidden-md hidden-sm hidden-xs"><img src="/images/cornell.png" align="center" class="img-responsive"></td>
   		<td>Cornell University</td>
   		<td>Postdoctoral Associate</td>
   	</tr>
     <tr>
-      <td>2011-2015</td>
-  		<td class="hidden-md-down"><img src="/images/UPenn.png" align="center" class="img-responsive"></td>
+      <td>2011-15</td>
+  		<td class="hidden-md hidden-sm hidden-xs"><img src="/images/UPenn.png" align="center" class="img-responsive"></td>
   		<td>University of Pennsylvania </td>
   		<td>Graduate Research Assistant</td>
     </tr>
     <tr>
-      <td>Summer 2014</td>
-  		<td class="hidden-md-down"><img src="/images/NECLA.jpg" align="center" class="img-responsive"></td>
+      <td>2014</td>
+  		<td class="hidden-md hidden-sm hidden-xs"><img src="/images/NECLA.jpg" align="center" class="img-responsive"></td>
       <td>NEC Labs America</td>
   		<td>Summer Intern</td>
     </tr>
   </table>
-</div>
-<div class="col-sm-10">
-<h1><u>Selected Awards:</u></h1>
-</div>
-  <div class="col-sm-10">
+
+<h2>Selected Awards:</h2>
 
 
   <table style="width:95%" class="table table-responsive">
@@ -227,11 +329,6 @@
         <td><b>3rd Place</b></td>
         <td><a href="http://datahack.yale.edu">DataHack@Yale</a></td>
       </tr>
-  		<tr>
-  			<td>2016</td>
-  			<td><b>Fellowship</b></td>
-  			<td>NYC ASCENT</td>
-  		</tr>
       <tr>
     		<td>2015</td>
     		<td><b>Runner Up</b></td>
@@ -270,14 +367,10 @@
   	</tr>
   </table>
 
-  </div>
-</div><!--/.blurb-->
 
-
-				    </div><!--body-->
           </div><!-- /.container -->
-        </div>
-      </div>
+        <!--</div>
+      </div>-->
     </div>
     <!-- /.container -->
 
