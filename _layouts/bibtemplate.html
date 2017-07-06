@@ -14,14 +14,14 @@
         <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Abstract" data-content="{{entry.abstract}}"  data-placement="right" >Abstract</a></li>
         {% endif %}
 
-        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="{{entry.bibtex}}"  data-placement="right" data-html="true">BibTeX</a></li>
+        <li><a tabindex="0" class="btn btn-success" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="{{entry.bibtex}}"  data-placement="right" data-html="true">BibTeX</a></li>
 
         {% if entry.link %}
-        <li><a class="btn btn-primary" href={{entry.link}}>Outside Link</a></li>
+        <li><a class="btn btn-warning" href={{entry.link}}>Outside Link</a></li>
         {% endif %}
 
         {% if entry.access %}
-        <li><a class="btn btn-primary" href="#{{access}}">Download</a></li>
+        <li><a class="btn btn-info" href="#{{access}}">Download</a></li>
         {% endif %}
 
 

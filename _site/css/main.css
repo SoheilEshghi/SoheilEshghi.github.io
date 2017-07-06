@@ -208,6 +208,27 @@ ol.posts li {
   color: #286dc0;
 }
 
+.btn-warning:hover {
+  color: #286dc0;
+}
+.btn-warning:focus {
+  color: #286dc0;
+}
+
+.btn-success:hover {
+  color: #286dc0;
+}
+.btn-success:focus {
+  color: #286dc0;
+}
+
+.btn-info:hover {
+  color: #286dc0;
+}
+.btn-info:focus {
+  color: #286dc0;
+}
+
 .share-btn:hover {
   color: #286dc0;
 }
