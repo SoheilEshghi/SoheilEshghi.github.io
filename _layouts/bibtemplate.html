@@ -7,7 +7,7 @@
 
 </div>
 
-  <div class="pull-left">
+  <div class="pull-left hidden-xs hidden-sm">
     <div id="{{key}}-materials">
       <ul class="nav nav-pills">
         {% if entry.abstract %}
@@ -17,7 +17,31 @@
         <li><a tabindex="0" class="btn btn-success" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="{{entry.bibtex}}"  data-placement="right" data-html="true">BibTeX</a></li>
 
         {% if entry.link %}
-        <li><a class="btn btn-warning" href={{entry.link}}>Outside Link</a></li>
+        <li><a class="btn btn-warning" href={{entry.link}}> <i class="fa fa-external-link"></i></a></li>
+        {% endif %}
+
+        {% if entry.access %}
+        <li><a class="btn btn-info" href="#{{access}}">Download</a></li>
+        {% endif %}
+
+
+
+        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
+      </ul>-->
+
+
+
+    </div>
+  </div>
+  <div class="pull-left hidden-md hidden-lg">
+    <div id="{{key}}-materials">
+      <ul class="nav nav-pills">
+        {% if entry.abstract %}
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Abstract" data-content="{{entry.abstract}}"  data-placement="below" >Abstract</a></li>
+        {% endif %}
+
+        {% if entry.link %}
+        <li><a class="btn btn-warning" href={{entry.link}}> <i class="fa fa-external-link"></i></a></li>
         {% endif %}
 
         {% if entry.access %}
