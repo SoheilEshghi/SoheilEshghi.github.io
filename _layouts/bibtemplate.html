@@ -11,7 +11,7 @@
     <div id="{{key}}-materials">
       <ul class="nav nav-pills">
         {% if entry.abstract %}
-        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Abstract" data-content="{{entry.abstract}}"  data-placement="right" >Abstract</a></li>
+        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="hover" title="Abstract" data-content="{{entry.abstract}}"  data-placement="right" >Abstract</a></li>
         {% endif %}
 
         <li><a tabindex="0" class="btn btn-success" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="{{entry.bibtex}}"  data-placement="right" data-html="true">BibTeX</a></li>
