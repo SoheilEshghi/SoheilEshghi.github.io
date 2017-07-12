@@ -340,6 +340,7 @@ body{
 
   font-family: 'Roboto', 'Arial', sans-serif;
   /*'Palatino Linotype ','GFS Didot','Playfair Display', 'Arial', serif;*/
+   cursor: pointer; 
 }
 
 .row.no-gutters {
@@ -423,5 +424,3 @@ body{
     display: block;
   }
 }
-
-.navbar-nav > li > a > li >a :hover{ background-color: #000000;}
