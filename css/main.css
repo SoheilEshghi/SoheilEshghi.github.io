@@ -227,6 +227,7 @@ ol.posts li {
   color: #286dc0;
 }
 
+
 .btn-info:hover {
   color: #286dc0;
 }
@@ -270,6 +271,8 @@ ol.posts li {
     display: inline-block;
 }
 
+
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
@@ -292,6 +295,8 @@ ol.posts li {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+
 
 
 .topmenu ul li.active a, .topmenu ul li a:hover {
@@ -389,15 +394,34 @@ body{
 }
 
 
-/*@media(min-width:768px) {
+@media(min-width:768px) {
 .popover{
-  width: 400px;
-  max-width: 400px;
+  width: 500px;
+  max-width: 500px;
+  font-size: 14px;
 }
 }
-@media(max-width:768px) {*/
+@media(max-width:768px) {
 .popover{
     width: 200px;
     max-width: 200px;
+    font-size: 11px;
 }
-/*}*/
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  color: #286dc0;
+}
+.btn-primary:enabled {
+  background-color: #ffffff;
+  color: #286dc0;
+}
+
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+
+.navbar-nav > li > a > li >a :hover{ background-color: #000000;}
