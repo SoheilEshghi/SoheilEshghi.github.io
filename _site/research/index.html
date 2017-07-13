@@ -46,6 +46,11 @@
 									container: 'body'
 								});
 				});
+				/*$(function(){
+					$('.carousel').carousel({
+	  					interval: 7000
+					});
+				});*/
 			 </script>
 
 
@@ -167,7 +172,7 @@
 												<span class="icon-bar"></span>
 												<span class="icon-bar"></span>
 										</button> <!--class="d-inline-block; padding-right:30px;"-->
-										<a href="/" class="navbar-brand mx-auto">
+										<a href="/" class="navbar-brand mx-auto" style="padding-top:22px !important; padding-bottom:5px !important;">
 											<!--<p class="navbar-text">-->
 												Soheil Eshghi
 											<!--</p>-->
@@ -264,7 +269,111 @@
 
 
 
-          <div class="container">
+          <!--<div id="Carousel" class="carousel slide col-lg-8 col-offset-2">
+        <ol class="carousel-indicators">
+            <li data-target="Carousel" data-slide-to="0" class="active"></li>
+            <li data-target="Carousel" data-slide-to="1"></li>
+            <li data-target="Carousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="//placehold.it/1300x500" class="img-responsive">
+            </div>
+           <div class="item">
+             <img src="//placehold.it/1300x500/EEEEEE" class="img-responsive">
+            </div>
+           <div class="item">
+             <img src="//placehold.it/1300x500/FEFEFE" class="img-responsive">
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#Carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#Carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+  </div>
+  <div class="container">
+   <div class="row clearfix">
+        <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10 column">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators" style="color:#000000">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <div class="divSection col-sm-12 column">
+                         <div class="divImage carouselDiv" style="background-image:url(/images/influence.jpg); ">
+                           </div>
+                         <div class="divText" style="padding:10%">
+                          <div style="background-color: white; opacity: .85; padding: 5%; border:2px solid gainsboro;">
+                            <h2>Control of Dynamic Influence:</h2>
+                             <p style="text-align:justify;
+                             font-weight: bold;"><br>What shapes the outcomes of a networked society?<br><br> The influence of a person or channel is typically measured using static measures (such as centrality).<br><br> Even the majority of work on influence maximization that considers societal dynamics only investigates static allocations (e.g., seeding).<br><br> I study how dynamic influence can be measured, and how theories from the social sciences and economics can be integrated into models of dynamic influence.</p>
+
+                             </div>
+                          </div>
+                    </div>
+                    <!--<div class="carousel-caption">
+                      <h3>Control of Dynamic Influence:</h3>
+                      <p>What shapes the outcomes of a networked society?<br><br> The influence of a person or channel is typically measured using static measures (such as centrality). Even the majority of work on influence maximization that considers societal dynamics only investigates static allocations (e.g., seeding).<br><br> I study how dynamic influence can be measured, and how theories from the social sciences and micro-economics can be integrated into models of dynamic influence.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="divSection col-sm-12 column">
+                         <div class="divImage carouselDiv" style="background-image:url(/images/charging.jpg);">
+                           </div>
+                         <div class="divText" style="padding:10%">
+                          <div style="background-color: white; opacity: .85; padding: 5%; border:2px solid gainsboro;">
+                            <h2>Grid-Scale Batteries and Electric Vehicles:</h2>
+                             <p style="text-align:justify;
+                             font-weight: bold;"><br>The integration of renewables in the electrical grid at significant scale requires a simultaneous increase in the integration of batteries and electric vehicles to mitigate uncertainty in generation.<br><br> I study how batteries and electric vehicles should be charged and discharged to meet goals and minimize operation costs, making the economic case for storage.<br><br><br>
+                            </p>
+                             </div>
+                          </div>
+                    </div>
+                    <!--<div class="carousel-caption">
+                      <h3>Grid-Scale Batteries and Electric Vehicles:</h3>
+                      <p>The integration of renewables in the electrical grid at significant scale requires a simultaneous increase in the integration of batteries and electric vehicles to mitigate uncertainty in generation.<br><br> I study how batteries and electric vehicles should be charged and discharged to meet goals and minimize operation costs, making the economic case for storage.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="divSection col-sm-12 column">
+                         <div class="divImage carouselDiv" style="background-image:url(/images/vaccines.jpg);">
+                           </div>
+                         <div class="divText " style="padding:10%">
+                          <div style="background-color: white; opacity: .85; padding: 5%; border:2px solid gainsboro;">
+                            <h2>Dynamic Control of Epidemics and Epidemic Processes:</h2>
+                             <p style="text-align:justify;
+                             font-weight: bold;"><br>Epidemics are one of the greatest public health challenges of the 21st century.<br><br> We now have more data than ever before that we can leverage in designing dynamic interventions.<br><br> Furthermore, epidemic models neatly capture problems in cyber-security and data transfer.<br><br> I draw upon the literature in mathematical epidemiology to model both types of epidemics, and design optimal containment and spreading policies using optimal control theory.<br></p>
+                             </div>
+                          </div>
+                    </div>
+                    <!--<div class="carousel-caption">
+                      <h3>Dynamic Control of Epidemics and Epidemic Processes:</h3>
+                      <p>Epidemics are one of the greatest public health challenges of the 21st century.<br><br> However, we now have more data than ever before that we can leverage in designing dynamic interventions. Furthermore, epidemic models neatly capture problems in cyber-security and data transfer.<br><br> I draw upon the literature in mathematical epidemiology to model both types of epidemics, and design optimal containment and spreading policies using optimal control theory.</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#carouselExampleIndicators" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carouselExampleIndicators" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+        </div>
+  </div>
+</div>
+
+<br><br><br>
+-->
+
+<div class="container">
  <div class="row clearfix">
   <!--<div class="col-sm-12 column">-->
   <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10 column">
@@ -274,13 +383,13 @@
        <div class="row">
          <!--<div class="col-xs-4 col-sm-3">-->
          <div class="divSection col-sm-12 column">
-              <div class="divImage" style="background-image:url(../images/influence.jpg);">
+              <div class="divImage" style="background-image:url(/images/influence1.jpg);">
                 </div>
               <div class="divText">
-               <div style="background-color: white; opacity: .85; padding: 2.5%; border:2px solid gainsboro;">
+               <div style="background-color: white; opacity: .95; padding: 2.5%; border:2px solid gainsboro;">
                  <h2>Control of Dynamic Influence:</h2>
                   <p style="text-align:justify;
-                  font-weight: bold;"><br>What shapes the outcomes of a networked society?<br><br> The influence of a person or channel is typically measured using static measures (such as centrality). Even the majority of work on influence maximization that considers societal dynamics only investigates static allocations (e.g., seeding).<br><br> I study how dynamic influence can be measured, and how theories from the social sciences and micro-economics can be integrated into models of dynamic influence.</p>
+                  font-weight: bold;"><br>What shapes the outcomes of a networked society?<br><br> The influence of a person or channel is typically measured using static measures (such as centrality).<br><br> Even the majority of work on influence that considers societal dynamics only investigates static seeding.<br><br> I study how dynamic influence can be measured.</p>
 
                   </div>
                </div>
@@ -290,13 +399,14 @@
        <div class="row">
          <!--<div class="col-xs-4 col-sm-3">-->
          <div class="divSection col-sm-12 column">
-              <div class="divImage" style="background-image:url(../images/charging.jpg);">
+              <div class="divImage" style="background-image:url(/images/charging.jpg);">
                 </div>
               <div class="divText">
-               <div style="background-color: white; opacity: .85; padding: 2.5%; border:2px solid gainsboro;">
+               <div style="background-color: white; opacity: .95; padding: 2.5%; border:2px solid gainsboro;">
                  <h2>Grid-Scale Batteries and Electric Vehicles:</h2>
                   <p style="text-align:justify;
-                  font-weight: bold;"><br>The integration of renewables in the electrical grid at significant scale requires a simultaneous increase in the integration of batteries and electric vehicles to mitigate uncertainty in generation.<br><br> I study how batteries and electric vehicles should be charged and discharged to meet goals and minimize operation costs, making the economic case for storage.</p>
+                  font-weight: bold;"><br>The integration of renewables in the grid requires a simultaneous increase in storage to mitigate generation uncertainty.<br><br> I study how batteries & electric vehicles should be charged/discharged to meet goals and to minimize operation costs.<br><br>
+                  These studies will help elucidate the economic case for storage.</p>
                   </div>
                </div>
          </div>
@@ -305,13 +415,13 @@
        <div class="row">
          <!--<div class="col-xs-4 col-sm-3">-->
          <div class="divSection col-sm-12 column">
-              <div class="divImage" style="background-image:url(../images/vaccines.jpg);">
+              <div class="divImage" style="background-image:url(/images/vaccines1.jpg);">
                 </div>
               <div class="divText">
-               <div style="background-color: white; opacity: .85; padding: 2.5%; border:2px solid gainsboro;">
+               <div style="background-color: white; opacity: .9; padding: 2.5%; border:2px solid gainsboro;">
                  <h2>Dynamic Control of Epidemics and Epidemic Processes:</h2>
                   <p style="text-align:justify;
-                  font-weight: bold;"><br>Epidemics are one of the greatest public health challenges of the 21st century.<br><br> However, we now have more data than ever before that we can leverage in designing dynamic interventions. Furthermore, epidemic models neatly capture problems in cyber-security and data transfer.<br><br> I draw upon the literature in mathematical epidemiology to model both types of epidemics, and design optimal containment and spreading policies using optimal control theory.</p>
+                  font-weight: bold;"><br>Epidemics are one of the greatest public health challenges of the 21st century.<br><br> We now have more data than ever before that we can leverage in designing dynamic interventions. <br><br> Furthermore, epidemic models neatly capture problems in cyber-security and data transfer.<br><br> I use epidemiological modeling to design optimal containment and spreading policies using optimal control theory.</p>
                   </div>
                </div>
          </div>
@@ -397,13 +507,13 @@
        </div>
        <!--/tab-pane-->
    </div>
-<!--/tab-content 1 -->
+<!--/tab-content 1-->
 
 </div>
-<!--/tabbable -->
+<!--/tabbable-->
 
 </div>
-<!--/col-*-12 column -->
+<!--/col-*-12 column-->
 </div>
 <!--/row-->
 </div>

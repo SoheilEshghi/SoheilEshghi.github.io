@@ -412,6 +412,7 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
   background-position: center;
   background-repeat: no-repeat;
 
@@ -438,7 +439,7 @@ body{
 
   .divText {
   line-height: 130%;
-  padding: 5%;
+  padding: 10% 5% 10% 5%;
   display: table-cell;
   vertical-align: middle;
   text-shadow: 0px 1px 1px #fff;
@@ -446,7 +447,7 @@ body{
 
   .divText2 {
   line-height: 130%;
-  padding: 2%;
+  padding: 5%;
   display: table-cell;
   vertical-align: middle;
   text-shadow: 0px 1px 1px #fff;
@@ -462,4 +463,34 @@ body{
   .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
            background-color:#286dc0;
            color:#ffffff;
+}
+
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #286dc0;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+.carousel-indicators .active {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-color: #00356b;
+}
+
+.carousel-control{
+  width:10%;
+}
+
+.carouselDiv div {
+  width: auto;
+  height: 225px;
+  max-height: 225px;
 }
