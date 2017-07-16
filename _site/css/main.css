@@ -453,6 +453,14 @@ body{
   text-shadow: 0px 1px 1px #fff;
   }
 
+  .divText3 {
+  line-height: 150%;
+  padding: 5%;
+  display: table-cell;
+  vertical-align: middle;
+  text-shadow: 0px 1px 1px #fff;
+  }
+
   .divSection {
   display: table;
   min-height: 50%;
