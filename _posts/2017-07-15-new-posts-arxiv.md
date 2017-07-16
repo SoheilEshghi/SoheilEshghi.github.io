@@ -13,6 +13,6 @@ I am [subscribed to](https://arxiv.org/help/subscribe) three of arXiv's excellen
 
 In a recent conversation, one of my colleagues expressed the same frustration, which I have taken as a reason to act. I will try to every-so-often write a brief note about a recent arXiv submission. I would be grateful for all feedback.
 
-watch this space!
+Watch this space!
 
 P.S. [YINS](yins.yale.edu)'s diversity was, and is, one of its main attractions for me. So much cool stuff happening in such a small space. Do check out what [my colleagues and mentors are working on](http://yins.yale.edu/our-people)!
