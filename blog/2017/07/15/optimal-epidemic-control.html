@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<html>
 		<head>
-			<title>New post format - arXiv</title>
+			<title>Epidemics - to act early or to act late?</title>
 
 			  <meta charset="utf-8">
 			  <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -255,42 +255,116 @@
       <div style="background-color: white; opacity: .95; padding: 2.5%; border:2px solid gainsboro;">
               <div class="PageNavigation">
               
-                <a class="prev" href="/blog/2016/03/31/soheil-eshghi-site-launched">&laquo; My new website</a>
+                <a class="prev" href="/blog/2017/07/15/new-posts-arxiv">&laquo; New post format - arXiv</a>
               
-              
-                <a class="next" href="/blog/2017/07/15/optimal-epidemic-control">Epidemics - to act early or to act late? &raquo;</a>
               
             </div>
-            <h1>New post format - arXiv</h1>
+            <h1>Epidemics - to act early or to act late?</h1>
             <p class="meta">15 Jul 2017</p>
 
             <div class="post">
-              <p><p>After a long hiatus, I’ll try to give this blogging thing another go :)</p>
+              <p><p>As many of you may know, my PhD was on the optimal control of epidemics, so I will start close to home.</p>
 
-<p>Having seen the excellent blogs and twitter-feeds in computer science and (especially) mathematical biology and the intellectually invigorating conversations they foster, I am curious to see how blogging will work in my field (which seems to have been mostly by-passed by the collaborative science revolution).</p>
+<p>Among other things, I (along with my colleagues at Penn) broadly generalized earlier work to show that even with more fine-grained information about social network structure and resource availability, optimal epidemic immunization/treatment policies share a general structure: any action is taken as soon as possible, and no resources are kept in reserve.</p>
 
-<p>So here’s my plan:</p>
+<p>This month, I saw a paper titled “<a href="https://arxiv.org/abs/1706.04447">Time-optimal control strategies in SIR epidemic models</a>” by Luca Bolzoni, Elena Bonacini, Cinzia Soresina, and Maria Groppi, on an e-mail from arXiv. Naturally, I was intrigued. Then I read the abstract:</p>
 
-<p>I am <a href="https://arxiv.org/help/subscribe">subscribed to</a> three of arXiv’s excellent update e-mails daily (under the sub-topics math, cs, and q-bio). While this is excellent to keep up with the work of wonderful people like you, sometimes I want to discuss the papers in more detail to understand their significance. However, arXiv is mostly a one-way platform, and our department is small and very diverse, so that it is rare to have two people specializing in/interested in one sub-field.</p>
+<p>“[The] optimal [epidemic eradication] strategy is to delay the control action some amount of time and then apply the control at the maximum rate for the remainder of the outbreak. This result is in contrast with previous findings on the unconstrained problems of minimizing the total infectious burden over an outbreak, where the optimal strategy is to use the maximal [cost-less] control for the entire epidemic.”</p>
 
-<p>In a recent conversation, one of my colleagues expressed the same frustration, which I have taken as a reason to act. I will try to every-so-often write a brief note about a recent arXiv submission. I would be grateful for all feedback.</p>
+<p>They had my full attention.</p>
 
-<p>Watch this space!</p>
+<h3 id="a-little-background">A little background</h3>
 
-<p>P.S. <a href="yins.yale.edu">YINS</a>’s diversity was, and is, one of its main attractions for me. So much cool stuff happening in such a small space. Do check out what <a href="http://yins.yale.edu/our-people">my colleagues and mentors are working on</a>!</p>
+<p><a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology">Compartmental models in epidemiology</a> broadly classify individuals according to their state with respect to the epidemic. In the SIR model, individuals are either susceptible (S) to the epidemic, already infected (I), or have recovered (R), meaning they cannot become infected again. The process of recovery can happen through immunization of susceptible individuals as well as treatment and recovery of the infected.</p>
+
+<p>Given some assumptions on how individuals move around and the size of the population, the fraction of individuals in each of these states has been shown (by Thomas Kurtz, 1970 onwards and others) to converge (speaking loosely, pathwise a.s.) to the solution of a set of deterministic ordinary differential equations (ODEs). Working with the ODEs to devise optimal control policies in lieu of the underlying stochastic system has been standard. Another recent arXiv paper (“<a href="https://arxiv.org/abs/1512.00216">Optimal control of Markov jump processes: asymptotic analysis, algorithms and applications to the modelling of chemical reaction systems</a>”, Wei Zhang, Carsten Hartmann, Max von Kleist) seems to prove that this working assumption has been more-or-less correct, but I digress!</p>
+
+<h3 id="the-setting">The setting</h3>
+
+<p>In the paper, Bolzoni <em>et al.</em> derive an optimal control-based framework for policies to minimize the time to eradication of a disease. They define eradication to be the time by which the collection of infected individuals in the population falls below an <script type="math/tex">\epsilon</script> percentage of the population.</p>
+
+<p>Using interesting, but somewhat standard analysis, they derive a result that goes against most other similar models: the optimal epidemic control policies advise acting <em>late</em>, rather than early.</p>
+
+<h3 id="goals-goals-goals">Goals goals goals</h3>
+
+<p>Typically, the goal of epidemic control policies is to limit the burden of disease at minimum cost of action. In the homogenous population case, we can formulate a cumulative cost to be minimized by a policy:</p>
+
+<script type="math/tex; mode=display">\text{Burden}=\int_0^T \big(f(I(t)) + g(u(t)) \big)\,dt,</script>
+
+<p>where <script type="math/tex">u</script> is the relevant control action. For a more general setting with multiple sub-populations, see <a href="http://ieeexplore.ieee.org/abstract/document/6966800/?reload=true">our paper in the Transactions on Networking</a>. For a broader overview, see this excellent <a href="http://www.georgejpappas.org/papers/07393962.pdf">article in Control Systems Magazine</a> by some of my former colleagues at Penn.</p>
+
+<p>On the other hand, the goal of the policies in the paper under consideration is</p>
+
+<script type="math/tex; mode=display">\text{Time to eradication (ToE)}=\int_0^{T_\epsilon} 1\,dt,</script>
+
+<p>where <script type="math/tex">T_\epsilon</script> is the first time the fraction of infectives falls below <script type="math/tex">\epsilon</script>.</p>
+
+<p>This seems like a perfectly reasonable goal for an epidemic control policy, so why are the resulting recommendations so starkly in contrast with disease burden-based cases?</p>
+
+<h3 id="epidemics-fast-and-slow">Epidemics fast and slow</h3>
+
+<p>I will now peak under the hood of the dynamical system to give a glimpse of why this incongruity is not unexpected. The arguments lean towards explanation rather than rigor, but you can easily interpolate the reasoning!</p>
+
+<p>In a generic single-population SIR epidemic model, infectives create other infectives through contact, or they are healed/quarantined at rates related to their population. Thus, the generic differential equation showing infective dynamics can be written as <script type="math/tex">\dot{I} = M(S(t)) I</script> in which <script type="math/tex">M(\cdot)</script> is (implicitly) some bounded function of time. So one can use the approximation <script type="math/tex">I(t+\delta)\approx I(t) e^{-M(S(t)) (t+\delta)}</script> locally.</p>
+
+<p>Now we draw upon two other facts:</p>
+<ol>
+  <li>
+    <p><script type="math/tex">M(S)</script> is an increasing function of <script type="math/tex">S</script>, as the more susceptibles there are, the more chance the infection has of propagating.</p>
+  </li>
+  <li>
+    <p>The Recovered state is terminal in SIR models: once infectives recover, individuals do not transition back to either of the other states. Thus, as time goes by and more and more individuals recover, the pool of individuals for the other two states diminishes.</p>
+  </li>
+</ol>
+
+<p>So when the infective population is vanishingly small (e.g., around <script type="math/tex">T_\epsilon</script>), <script type="math/tex">S(t)\ll S(0)</script> (we can also argue this directly) and so the rate of change of the infectives will be much slower than at the initial time by fact 1.</p>
+
+<p>Using the above argument, we can broadly see that there are at least two regimes in such epidemic models and their generalizations: the explosive fast growth of infectives when susceptibles are abundant, and an anemic damped move towards terminal states/equilibria later on.</p>
+
+<p>Given a uniformly bounded additive control action that affects <script type="math/tex">M(\cdot)</script>, applying the control to the early explosive growth phase (with its large <script type="math/tex">M(\cdot)</script> terms) may have a tiny effect on the outcome, while applying the same action later on (given the smaller <script type="math/tex">M(\cdot)</script> terms) would be much more effective, increasing the damping speed significantly.</p>
+
+<p>Given the above, the results of the paper, which advocates for later rather than earlier action, are not as unexpected as they would have appeared.</p>
+
+<p>However, there is a twist in the tail: these optimal policies, as stated, may suggest inordinately long periods of action affecting a tiny population (e.g., in the isolation policy) for small gains in the time to eradication of the disease. On the other hand, they would ignore doing anything about the disease at its peak, potentially leading to a huge disease burden.</p>
+
+<h3 id="my-take-away">My take-away</h3>
+<p>So what should a policy-maker do, given <strong>two perfectly correct mathematical models and analyses</strong> that make <strong>opposing recommendations</strong>?</p>
+
+<p>In my opinion, a policy-maker can do much worse than simply evaluating their own policy goals against the mathematical objective of the models whose recommendations they are considering. Curbing the tail-end of an epidemic that has ravaged a population with no regard to the cost of an intervention seems to me to be much less practically useful than considering minimizing the disease burden.</p>
+
+<p>So while I admire the interesting mathematical result in the paper and the insight they provide into the dynamical system, I would <strong>urge caution in actually implementing its policy suggestions</strong>.</p>
+
+<p>One interesting extension of the approach, however, might be to combine its goal with that of more conventional approaches. I suspect that the results that would be obtained from such a fusion would be much closer to the classical view which advocates early action.</p>
+
+<h3 id="let-me-know-what-you-think---about-the-format-and-the-content">Let me know what you think - about the format and the content!</h3>
+
+<p>P.S. As I am new to academic blogging, it might take some time for me to get the tone right. My apologies in advance.</p>
+
+<hr />
+<p>Bibliography:</p>
+
+<p>“<a href="https://arxiv.org/abs/1706.04447">Time-optimal control strategies in SIR epidemic models</a>”, Luca Bolzoni, Elena Bonacini, Cinzia Soresina, and Maria Groppi</p>
+
+<p>“<a href="https://arxiv.org/abs/1512.00216">Optimal control of Markov jump processes: asymptotic analysis, algorithms and applications to the modelling of chemical reaction systems</a>”, Wei Zhang, Carsten Hartmann, Max von Kleist</p>
+
+<p>“<a href="http://ieeexplore.ieee.org/abstract/document/6966800/?reload=true">Optimal patching in clustered malware epidemics</a>”, Soheil Eshghi, M.H.R. (Arman) Khouzani, Saswati Sarkar, Santosh S. Venkatesh</p>
+
+<p>“<a href="http://www.georgejpappas.org/papers/07393962.pdf">Analysis and control of epidemics</a>”, Cameron Nowzari, Victor M. Preciado, George J. Pappas</p>
+
+<hr />
 </p>
             </div>
             <br>
             <div class="share-page">
                 Share this on &rarr;&nbsp;
-                <a href="https://twitter.com/intent/tweet?text=New post format - arXiv&url=http://www.soheileshghi.com/blog/2017/07/15/new-posts-arxiv&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" class="share-btn twitter">
+                <a href="https://twitter.com/intent/tweet?text=Epidemics - to act early or to act late?&url=http://www.soheileshghi.com/blog/2017/07/15/optimal-epidemic-control&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" class="share-btn twitter">
                     <i class="fa fa-twitter"></i>
                 </a>
                 &nbsp;
 
-                <a href="https://facebook.com/sharer.php?u=http://www.soheileshghi.com/blog/2017/07/15/new-posts-arxiv" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://facebook.com/sharer.php?u=http://www.soheileshghi.com/blog/2017/07/15/optimal-epidemic-control" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook"></i></a>
                 &nbsp;
-                <a href="https://plus.google.com/share?url=http://www.soheileshghi.com/blog/2017/07/15/new-posts-arxiv" rel="nofollow" target="_blank" title="Share on Google+" ><i class="fa fa-google-plus"></i></a>
+                <a href="https://plus.google.com/share?url=http://www.soheileshghi.com/blog/2017/07/15/optimal-epidemic-control" rel="nofollow" target="_blank" title="Share on Google+" ><i class="fa fa-google-plus"></i></a>
             </div>
 
             <!-- Post comments -->
@@ -336,7 +410,7 @@
 	    		<ul>
 	        		<li><a href="https://github.com/soheileshghi">github.com/soheileshghi</a></li>
 							<li>You can
-<a href="https://twitter.com/intent/tweet?url=http://www.soheileshghi.com/blog/2017/07/15/new-posts-arxiv&text=New post format - arXiv&via=SoheilEshghi" 
+<a href="https://twitter.com/intent/tweet?url=http://www.soheileshghi.com/blog/2017/07/15/optimal-epidemic-control&text=Epidemics - to act early or to act late?&via=SoheilEshghi" 
    target="_blank">
   share this page on Twitter</a> 
 or 
