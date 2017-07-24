@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Epidemics - to act early or to act late?"
-date: 2017-07-15
+date: 2017-07-17
 ---
 As many of you may know, my PhD was on the optimal control of epidemics, so I will start close to home.
 
