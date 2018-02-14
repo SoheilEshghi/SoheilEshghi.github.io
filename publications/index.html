@@ -10,6 +10,10 @@ title: Publications
 </div>
 <div id="bibliog">
 	<h2>Journal Articles</h2>
+  <h3>Submitted</h3>
+	{% bibliography -q @article[status=submitted] %}
+	<h3>2017</h3>
+	{% bibliography -q @article[year=2017] %}
 	<h3>2016</h3>
 	{% bibliography -q @article[year=2016] %}
 	<h3>2015</h3>
@@ -20,6 +24,10 @@ title: Publications
 	{% bibliography -q @inbook %}-->
 
 	<h2>Conferences and Workshops</h2>
+	<h3>Submitted</h3>
+	{% bibliography -q @inproceedings[status=submitted] %}
+	<h3>2018</h3>
+	{% bibliography -q @inproceedings[year=2018] %}
 	<h3>2017</h3>
 	{% bibliography -q @inproceedings[year=2017] %}
 	<h3>2015</h3>
@@ -40,6 +48,11 @@ title: Publications
 
 
 	<ol class="level1">
+	<li><p>Influence in Social Systems</p></li>
+				<ol class="level2">
+					<li>  <b>Yale University</b>, Yale Institute for Network
+					Science Seminar, Yale Institute for Network Science (YINS),  July 2016</li>
+				</ol>
 	<li><p>Optimal Control of Epidemics (and Opinions) in the Presence of Heterogeneity</p></li>
 			<ol class="level2">
 						<li>	 <b>Cornell University</b>, Electrical and Computer

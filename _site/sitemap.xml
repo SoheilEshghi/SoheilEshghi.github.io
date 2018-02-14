@@ -1,26 +1,21 @@
-<<<<<<< HEAD
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
+    
     <url>
-        <loc>http://soheileshghi.com{{ post.url | remove: 'index.html' }}</loc>
+        <loc>http://soheileshghi.com/blog/2017/08/10/academic-presentation-tips</loc>
     </url>
-    {% endfor %}
-
-    {% for page in site.pages %}
-    {% if page.layout != nil %}
-    {% if page.layout != 'feed' %}
+    
     <url>
-        <loc>http://soheileshghi.com{{ page.url | remove: 'index.html' }}</loc>
+        <loc>http://soheileshghi.com/blog/2017/07/24/YINS-summer-seminar</loc>
     </url>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <url>
+        <loc>http://soheileshghi.com/blog/2017/07/17/optimal-epidemic-control</loc>
+    </url>
+    
+    <url>
+        <loc>http://soheileshghi.com/blog/2017/07/15/new-posts-arxiv</loc>
+    </url>
     
     <url>
         <loc>http://soheileshghi.com/blog/2016/03/31/soheil-eshghi-site-launched</loc>
@@ -39,15 +34,7 @@
     
     
     <url>
-        <loc>http://soheileshghi.com/blog/atom.xml</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://soheileshghi.com/cv/</loc>
+        <loc>http://soheileshghi.com/service/professional/</loc>
     </url>
     
     
@@ -63,7 +50,15 @@
     
     
     <url>
-        <loc>http://soheileshghi.com/blog/</loc>
+        <loc>http://soheileshghi.com/research/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://soheileshghi.com/cv/</loc>
     </url>
     
     
@@ -79,14 +74,6 @@
     
     
     <url>
-        <loc>http://soheileshghi.com/service/teaching/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
         <loc>http://soheileshghi.com/service/</loc>
     </url>
     
@@ -95,7 +82,7 @@
     
     
     <url>
-        <loc>http://soheileshghi.com/research/</loc>
+        <loc>http://soheileshghi.com/blog/</loc>
     </url>
     
     
@@ -103,40 +90,132 @@
     
     
     <url>
-        <loc>http://soheileshghi.com/service/professional/</loc>
+        <loc>http://soheileshghi.com/service/teaching/</loc>
     </url>
     
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
->>>>>>> refs/remotes/origin/master
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>http://soheileshghi.com/blog/2016/03/31/soheil-eshghi-site-launched</loc>
+    </url>
+
+
+
+
+
+    <url>
+        <loc>http://soheileshghi.com/404.html</loc>
+    </url>
+
+
+
+
+
+    <url>
+        <loc>http://soheileshghi.com/blog/atom.xml</loc>
+    </url>
+
+
+
+
+
+    <url>
+        <loc>http://soheileshghi.com/cv/</loc>
+    </url>
+
+
+
+
+
+    <url>
+        <loc>http://soheileshghi.com/publications/</loc>
+    </url>
+
+
+
+
+
+    <url>
+        <loc>http://soheileshghi.com/blog/</loc>
+    </url>
+
+
+
+
+
+    <url>
+        <loc>http://soheileshghi.com/</loc>
+    </url>
+
+
+
+
+
+    <url>
+        <loc>http://soheileshghi.com/service/teaching/</loc>
+    </url>
+
+
+
+
+
+    <url>
+        <loc>http://soheileshghi.com/service/</loc>
+    </url>
+
+
+
+
+
+    <url>
+        <loc>http://soheileshghi.com/research/</loc>
+    </url>
+
+
+
+
+
+    <url>
+        <loc>http://soheileshghi.com/service/professional/</loc>
+    </url>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </urlset>
