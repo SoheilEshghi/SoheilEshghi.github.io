@@ -5,7 +5,7 @@
 
 			  <meta charset="utf-8">
 			  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-			  <meta name="viewport" content="width=device-width, initial-scale=1">
+			  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <!--SE added , maximum-scale=1, user-scalable=no-->
 			  <meta name="description" content="Academic Website">
 				<meta name="keywords" content="Optimal Control, Penn, Cornell, Yale, YINS">
 			  <meta name="author" content="Soheil Eshghi">
@@ -14,7 +14,11 @@
 			  <link href="/css/bootstrap.css" rel="stylesheet">
 
 			<!-- link to main stylesheet -->
+
+
+			<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 			<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 			<script type="text/javascript"
@@ -31,6 +35,24 @@
 			   });
 			 });
 			 </script>
+
+			 <link rel="stylesheet"  href="/css/tooltip-theme-arrows.css" />
+				<script src="/js/tether.min.js"></script>
+				<script src="/js/drop.min.js"></script>
+				<script src="/js/tooltip.min.js"></script>
+				<script>
+				$(function(){
+								$("[data-toggle=popover]").popover({
+									container: 'body'
+								});
+				});
+				/*$(function(){
+					$('.carousel').carousel({
+	  					interval: 7000
+					});
+				});*/
+			 </script>
+
 
 
 			<link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
@@ -68,55 +90,133 @@
 
 		</head>
 		<body style="background-color:#f9f9f9">
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-					<div class="container">
-							<!-- Brand and toggle get grouped for better mobile display -->
-							<div class="navbar-header">
-									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-											<span class="sr-only">Toggle navigation</span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-									</button>
-									<a href="/" class="navbar-brand"><img src="/images/soheil.jpg" align="left" width="30" height="30" class="d-inline-block align-top" style="background-color:#00356b;"></a>
-							</div>
-							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-									<ul class="nav navbar-nav">
-														<li><a href="/"><i class="fa fa-home"></i></a>
-														</li>
-														<li><a href="/publications/">Publications</i></a></li>
-														<li><a href="/research/">Research</a></li>
-														<li class="dropdown">
-																<a data-toggle="dropdown" class="dropdown-toggle" href="#">Service</i></a>
-																<ul role="menu" class="dropdown-menu">
-																			<li><a href="/service/">Academic</i></a></li>
-																			<li><a href="/service/professional">Professional</i></a></li>
-																			<li><a href="/service/teaching">Teaching</i></a></li>
-																	</ul>
-														</li>
-														<li><a href="/blog/">Blog</a></li>
-									</ul>
-							</div>
-							<!-- /.navbar-collapse -->
-					</div>
-					<!-- /.container -->
-			</nav>
-			<div class="container">
+			<div class="visible-xs">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+						<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+										</button> <!--class="d-inline-block; padding-right:30px;"-->
+										<a href="/" class="navbar-brand mx-auto">
+											<!--<p class="navbar-text">-->
+												<img src="/images/soheil.jpg" align="left" width="30" height="auto" padding-bottom="0" padding-top="0" style="background-color:#00356b;">  &nbsp;  Soheil Eshghi
+											<!--</p>-->
 
-						<div class="col-sm-2">
-        <div class="row center">
+										</a>
+								</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+															<li class="nav-item"><a href="/"><i class="fa fa-home"></i></a>
+															</li>
+															<li class="nav-item"><a href="/publications/">Publications</a></li>
+															<li class="nav-item"><a href="/research/">Research</a></li>
+															<li class="nav-item"><a href="/service/">Service</a></li>
+															<li class="nav-item"><a href="/service/professional">Professional</a></li>
+															<li class="nav-item"><a href="/service/teaching">Teaching</a></li>
+															</li>
+															<li class="nav-item"><a href="/blog/">Blog</a></li>
+															<li class="nav-item">
+																<a href="/cv">CV</a>
+															</li>
 
-				  <a href="/"><img src="/images/soheil.png" align="center" class="img-responsive" style="padding-bottom: 10px;"></a>
 
+
+
+
+											<!--<li class="nav-item">
+												<p class="navbar-text">	soheil.eshghiATyaleDOTedu </p>
+
+											</li>-->
+										</ul>
+								</div>
+
+								<!-- /.navbar-collapse -->
+						</div>
+						<!-- /.container -->
+				</nav>
+			</div>
+			<div class="hidden-xs">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+						<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+										</button> <!--class="d-inline-block; padding-right:30px;"-->
+										<a href="/" class="navbar-brand mx-auto" style="padding-top:22px !important; padding-bottom:5px !important;">
+											<!--<p class="navbar-text">-->
+												Soheil Eshghi
+											<!--</p>-->
+
+										</a>
+								</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+															<li class="nav-item"><a href="/"><i class="fa fa-home"></i></a>
+															</li>
+															<li class="nav-item"><a href="/publications/">Publications</a></li>
+															<li class="nav-item"><a href="/research/">Research</a></li>
+															<li class="nav-item dropdown">
+																	<a data-toggle="dropdown" class="dropdown-toggle" href="#">Service<span class="caret"></span></a>
+																	<ul role="menu" class="dropdown-menu">
+																				<li><a href="/service/">Academic</a></li>
+																				<li><a href="/service/professional">Professional</a></li>
+																				<li><a href="/service/teaching">Teaching</a></li>
+																		</ul>
+															</li>
+															<li class="nav-item"><a href="/blog/">Blog</a></li>
+										</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li class="nav-item">
+													<img src="/images/soheil.jpg" align="left" width="30" height="30" padding-bottom="0" padding-top="0" style="background-color:#00356b;" class="hidden-lg-up">
+
+											</li>
+										</ul>
+								</div>
+
+								<!-- /.navbar-collapse -->
+						</div>
+						<!-- /.container -->
+				</nav>
+			</div>
+
+
+
+			<div class="container-fluid">
+
+			   <div class="row no-gutters">
+			<div class="hidden-xs col-sm-4 col-md-3 col-lg-2"> <!--SE nopadding-->
+        <!--<div class="row center">-->
+        <div class="text-center">
+
+				  <a href="/"><img src="/images/soheil.png" alt="Soheil Eshghi" align="left" class="img-responsive" style="padding-bottom: 10px; display: inline-block"></a><br><br><br><br><br><br><br><br>
         </div>
-        <div class="row center">
-           <span class="text-nowrap">
-        				<a href="/"><h1>Soheil Eshghi</a> (<a href="/cv" style="text-decoration: underline;">CV</a>)</h1><p class="small">Postdoctoral Associate<br><a style="text-decoration: underline;" href="http://yins.yale.edu/">Yale Institute for<br> Network Science (YINS)</a><br>17 Hillhouse Ave,<br> New Haven, CT 06520</p><p class="email">soheil.eshghiATyaleDOTedu</p>
+
+      <!--  </div>
+        <div class="row center">-->
+           <span class="text">
+        				<h2 class="display-4"><a href="/">Soheil Eshghi</a><br>
+                  (<a href="/cv" style="text-decoration: underline;">CV</a>)</h2>
+                  <a href="#contact" class="btn btn-primary" data-toggle="collapse" data-trigger="focus" role="button">Contact</a>
+                  <div id="contact" class="collapse">
+                        <h4 style="color:  #00356b;">Postdoctoral Associate<br><br><a style="text-decoration: underline;" href="http://yins.yale.edu/">Yale Institute for<br> Network Science (YINS)</a><br><br>17 Hillhouse Ave,<br> New Haven, CT 06520</h3>
+                        <h3 class="email">soheil.eshghiATyaleDOTedu </h4>
+                  </div>
+                  <p></p>
             </span>
-          </div>
-          <div class="row center" style="padding-bottom: 10px;">
-        				<div class="center">
+          <!--</div>-->
+
+          <div class="center-block" style="padding-bottom: 10px;">
+        				<!--<div class="center">-->
                 				<!-- Twitter -->
                         <a href="https://www.twitter.com/SoheilEshghi" target="_blank" class="share-btn twitter">
                             <i class="fa fa-twitter"></i>
@@ -135,29 +235,53 @@
                         <a href="https://scholar.google.com/citations?user=hptqnZ8AAAAJ&hl=en" target="_blank" class="share-btn scholar">
                             <img src="/images/gscholar.png" style="height:15px;">
                         </a>
-			        </div>
+			        <!--</div>-->
           </div>
 		</div><!-- /.container -->
+	<!--</div>--><!-- /.container -->
 
 
-    <div class="col-sm-10">
+    <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
 
       <!-- Page Content -->
-      <div class="container">
 
 
 
-          <h1>My new website</h1>
-<p class="meta">31 Mar 2016</p>
 
-<div class="post" style="width:80%">
-  <p>I’m trying to set up a new, more responsive academic website to both introduce my research, talk about topics in control theory and optimization, and to discuss other relevant work.</p>
+          <div class="divSection col-sm-12 column">
+     <div class="divImage2" style="background-image:url(/images/snow2.jpg);">
+       </div>
+     <div class="divText3">
+      <div style="background-color: white; opacity: .95; padding: 2.5%; border:2px solid gainsboro;">
+              <div class="PageNavigation">
+              
+              
+                <a class="next" href="/blog/2017/07/15/new-posts-arxiv">New post format - arXiv &raquo;</a>
+              
+            </div>
+            <h1>My new website</h1>
+            <p class="meta">31 Mar 2016</p>
 
-</div>
+            <div class="post">
+              <p><p>I’m trying to set up a new, more responsive academic website to both introduce my research, talk about topics in control theory and optimization, and to discuss other relevant work.</p>
+</p>
+            </div>
+            <br>
+            <div class="share-page">
+                Share this on &rarr;&nbsp;
+                <a href="https://twitter.com/intent/tweet?text=My new website&url=http://www.soheileshghi.com/blog/2016/03/31/soheil-eshghi-site-launched&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" class="share-btn twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                &nbsp;
 
-<!-- Post comments -->
-<div class="notecomments" style="width:80%">
-	<div id="disqus_thread"></div>
+                <a href="https://facebook.com/sharer.php?u=http://www.soheileshghi.com/blog/2016/03/31/soheil-eshghi-site-launched" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook"></i></a>
+                &nbsp;
+                <a href="https://plus.google.com/share?url=http://www.soheileshghi.com/blog/2016/03/31/soheil-eshghi-site-launched" rel="nofollow" target="_blank" title="Share on Google+" ><i class="fa fa-google-plus"></i></a>
+            </div>
+
+            <!-- Post comments -->
+            <div class="notecomments">
+            	<div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'soheileshghi'; // required: replace example with your forum shortname
@@ -173,12 +297,14 @@
     
     
 
+            </div>
+        </div>
 </div>
 
 
           </div><!-- /.container -->
-        </div>
-      </div>
+        <!--</div>
+      </div>-->
     </div>
     <!-- /.container -->
 
@@ -191,10 +317,10 @@
 
 			<!-- Bootstrap Core JavaScript -->
 			<script src="/js/bootstrap.min.js"></script>
-			<!--<br>
+			<br>
 			<footer>
 	    		<ul>
-	        		<li><a href="https://github.com/soheileshghi">github.com/soheileshghi</a></li>
+	        		<!--<li><a href="https://github.com/soheileshghi">github.com/soheileshghi</a></li>
 							<li>You can
 <a href="https://twitter.com/intent/tweet?url=http://www.soheileshghi.com/blog/2016/03/31/soheil-eshghi-site-launched&text=My new website&via=SoheilEshghi" 
    target="_blank">
@@ -202,9 +328,10 @@
 or 
 <a href="https://twitter.com/SoheilEshghi">
   follow me </a>!
-</li>
+</li>-->
+							<li> Updated: Feb 13, 2018
 				</ul>
 			</footer>
-		-->
+
 		</body>
 	</html>

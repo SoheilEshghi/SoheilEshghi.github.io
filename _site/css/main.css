@@ -387,6 +387,25 @@ body{
 }
 }
 
+.btn-primary-abstract{
+  padding: 2px 2px 2px 2px;
+  font-size: 8px;
+  margin-bottom:2px;
+
+}
+
+.btn-primary-bib{
+  padding: 0%;
+  font-size: 8px;
+
+}
+
+.btn-primary-link{
+  padding: 0%;
+  font-size: 8px;
+
+}
+
 .btn-primary:hover {
   background-color: #ffffff;
   color: #286dc0;
@@ -417,7 +436,7 @@ body{
   background-repeat: no-repeat;
 
   z-index: -1;
-  opacity: 0.8;
+  opacity: 1;
   }
   .divImage2 {
     height: 100%;
@@ -438,15 +457,15 @@ body{
 
 
   .divText {
-  line-height: 130%;
-  padding: 10% 5% 10% 5%;
+  line-height: 90%;
+  padding: 3% 2% 3% 2%;
   display: table-cell;
   vertical-align: middle;
   text-shadow: 0px 1px 1px #fff;
   }
 
   .divText2 {
-  line-height: 130%;
+  line-height: 100%;
   padding: 5%;
   display: table-cell;
   vertical-align: middle;
