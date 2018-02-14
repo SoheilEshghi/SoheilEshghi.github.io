@@ -235,7 +235,7 @@
         </if>
         <else-if type="paper-conference speech" match="any">
           <group delimiter=", ">
-            <text macro="title"/>
+            <text macro="title" font-weight="bold"/>
             <text macro="event" prefix="in "/>
             <text macro="issued"/>
             <text macro="locators"/>
