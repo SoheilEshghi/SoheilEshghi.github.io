@@ -278,13 +278,7 @@ html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-body {
-  font-family: "Playfair Display", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.428571429;
-  color: #4a4a4a;
-  background-color: #f9f9f9;
-}
+
 input,
 button,
 select,

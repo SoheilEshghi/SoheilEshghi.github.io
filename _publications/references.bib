@@ -3,17 +3,32 @@
 Publications
 ==========
 
-@inproceedings{khouzani2012optimal,
-  title={Optimal energy-aware epidemic routing in DTNs},
-  author={Khouzani, MHR and ESHGHI, Soheil and Sarkar, Saswati and Shroff, Ness B and Venkatesh, Santosh S},
-  booktitle={Proceedings of the thirteenth ACM international symposium on Mobile Ad Hoc Networking and Computing (MobiHoc)},
-  pages={175--182},
-  year={2012},
-  organization={ACM},
-  abstract={In this work, we investigate the use of epidemic routing in energy constrained Delay Tolerant Networks (DTNs). In DTNs, connected paths between source and destination rarely materialize due to the mobility and sparse density of nodes. Epidemic routing is well-suited for these environments due to its simplicity and fully distributed implementation. In epidemic routing, messages are relayed by intermediate nodes at contact opportunities, i.e., when pairs of nodes come within transmission range. Each node needs to decide whether to forward its message upon contact with a new node based on its residual energy level and the age of that message.
+@article{papakostas2018energy,
+  title={Energy-Aware Backbone Formation in Military Multilayer Ad Hoc Networks},
+  author={Papakostas, Dimitrios and ESHGHI, Soheil and Katsaros, Dimitrios and Tassiulas, Leandros},
+  journal={Ad Hoc Networks (Minor Revisions Requested)},
+  publisher={Springer},
+  status={submitted},
+  abstract={Ad hoc networks designed for deployment in modern battlefields need to take care of traditional requirements related to their backbone's size, their energy efficiency, their scalability in terms of network size, but also of their nature which allows for combining networks of different units that act altogether towards a common operational goal. This article develops a distributed algorithm for developing an energy-efficient backbone for military ad hoc network composed of multiple layers, namely E2CLB. The algorithm is based on the concepts of connected dominating sets and also on node centrality concepts, and results as a heuristic solution to the problem of calculating a maximum energy, minimum connected dominating set for a multilayer network by including into the dominating set those nodes which are highly connected to their and other layers (i.e., they have large centrality value) and moreover they are energy-rich. The computation and communication complexities of the algorithm are analyzed, and a thorough simulation-based evaluation of it against six competitors is presented. The results show that E2CLB is either the best performing algorithm across the examined performance measures or it is able to trade a very small increase in the size of the backbone's network in order to reap improved performance in the energy realm.},
+}
 
-  We mathematically characterize the fundamental trade-off between energy conservation and forwarding efficacy as a heterogeneous dynamic energy-dependent optimal control problem. We prove, somewhat surprisingly given the complex nature of the problem, that in the mean field regime, the optimal dynamic forwarding decisions follow simple threshold-based structures in which the forwarding threshold for each node depends on its current remaining energy. We analytically establish this result under generalized classes of utility functions for DTNs. We then characterize the dependence of these thresholds on current energy reserves in each node.},
-  link={http://dl.acm.org/citation.cfm?id=2248397},
+@article{papakostas2018distributed1,
+  title={Distributed algorithms for multi-layer connected edge dominating sets
+},
+  author={Papakostas, Dimitrios and ESHGHI, Soheil and Katsaros, Dimitrios and Tassiulas, Leandros},
+  journal={IEEE Control Systems Letters (L-CSS) (Accepted)},
+  status={submitted},
+  abstract={Monitoring the state of communications in a distributed (multi-layer) network with differing node capabilities requires the maintenance of a backbone which is a connected edge dominating set. In this paper, we present distributed algorithms that provide efficient distributed solutions that can create such multi-layer resilient connected edge-dominating sets. After establishing the complexity of the problem and our proposed heuristics, we experimentally compare their performance while varying multiple characteristics of the underlying networks.},
+}
+
+
+@article{eshghi2018spread,
+  title={Spread, then Target, and Advertise in Waves: Optimal Budget Allocation Across Advertising Channels},
+  author={ESHGHI, Soheil and Preciado, Victor M and Sarkar, Saswati and Venkatesh, Santosh S and Zhao, Qing and D'Souza, Raissa and Swami, Anantharam},
+  journal={Submitted to the IEEE Transactions on Network Science and Engineering (TNSE) (Major Revisions Requested)},
+  publisher={IEEE Press},
+  status={submitted},
+  abstract={We analyze optimal strategies for the allocation of a finite budget that can be invested in different advertising channels over time with the objective of influencing social opinions in a network of individuals. In our analysis, we consider both exogenous influence mechanisms, such as advertising campaigns, as well as endogenous mechanisms of social influence, such as word-of-mouth and peerpressure, which are modeled using diffusion dynamics. We show that for a general set of objective functions, the optimal influence strategy at every time uses all channels at either their maximum rate or not at all, i.e., a bang-bang strategy. Furthermore, we prove that the number of switches between these extremes is bounded above by a term that is typically much smaller than the number of agents. This means that the optimal influence strategy is to exert maximum effort in waves for every channel, and then cease effort and let the effects propagate. We also show that, at the beginning of the campaign, the total cost-adjusted reach of an exogenous advertising channel determines its relative value. In contrast, as we approach our investment horizon (e.g., election day), the optimal strategy is to invest in channels able to target individuals instead of broad-reaching channels. We demonstrate that the optimal influence strategies are easily computable in several practical cases, and explicitly characterize the optimal controls for the case of linear objective functions in closed form. Finally, we see that, in the canonical example of designing an election campaign, identifying late-deciders is a critical component in the optimal design.},
 }
 
 @article{eshghi2016optimal,
@@ -30,88 +45,54 @@ Publications
   link={http://ieeexplore.ieee.org/abstract/document/6966800/},
 }
 
-@inproceedings{eshghi2012optimal,
-  title={Optimal patching in clustered epidemics of malware},
-  author={Khouzani, MHR and ESHGHI, Soheil and Sarkar, Saswati and Venkatesh, Santosh S},
-  booktitle={Proceedings of the IEEE Information Theory and Applications Workshop (ITA)},
-  year={2012},
-  link={http://ita.ucsd.edu/workshop/12/talks},
-}
-
-@inproceedings{eshghi2015optimal1,
+@ARTICLE{eshghi2016visibility,
+  author={S. ESHGHI and S. Sarkar and S. S. Venkatesh},
+  journal={IEEE Transactions on Automatic Control (TAC)},
   title={Visibility-aware optimal contagion of malware epidemics},
-  author={ESHGHI, Soheil and Sarkar, Saswati and Venkatesh, Santosh S},
-  booktitle={Proceedings of the IEEE Information Theory and Applications Workshop (ITA)},
+  note={arXiv preprint arXiv:1507.03528},
+  year={2017},
+  volume={62},
+  number={10},
+  pages={5205 - 5212},
+  doi={10.1109/TAC.2016.2632426},
+  ISSN={0018-9286},
+  abstract={Recent innovations in the design of computer viruses have led to new trade-offs for the attacker. Multiple variants of a malware may spread at different rates and have different levels of visibility to the network. In this work we examine the optimal strategies for the attacker so as to trade off the extent of spread of the malware against the need for stealth. We show that in the mean-field deterministic regime, this spread-stealth trade-off is optimized by computationally simple single-threshold policies. Specifically, we show that only one variant of the malware is spread by the attacker at each time, as there exists a time up to which the attacker prioritizes maximizing the spread of the malware, and after which she prioritizes stealth.},
+  link={http://ieeexplore.ieee.org/abstract/document/7755729/},
+}
+
+@article{eshghi2015optimal,
+  title={Optimal energy-aware epidemic routing in DTNs},
+  author={ESHGHI, Soheil and Khouzani, MHR and Sarkar, Saswati and Shroff, Ness B and Venkatesh, Santosh S},
+  journal={IEEE Transactions on Automatic Control (TAC)},
+  volume={60},
+  number={6},
+  pages={1554--1569},
+  note={arXiv preprint arXiv:1403.1642},
   year={2015},
-  link={http://ita.ucsd.edu/workshop/15/talks},
+  publisher={IEEE},
+  abstract={In this work, we investigate the use of epidemic routing in energy constrained delay tolerant networks (DTNs). In epidemic routing, messages are relayed by intermediate nodes at contact opportunities, i.e., when pairs of nodes come within the transmission range of each other. Each node needs to decide whether to forward its message upon contact with a new node based on its own residual energy level and the age of that message. We mathematically characterize the fundamental trade-off between energy conservation and a measure of Quality of Service as a dynamic energy-dependent optimal control problem. We prove that in the mean-field regime, the optimal dynamic forwarding decisions follow simple threshold-based structures in which the forwarding threshold for each node depends on its current remaining energy. We then characterize the nature of this dependence. Our simulations reveal that the optimal dynamic policy significantly outperforms heuristics.},
+  link={http://ieeexplore.ieee.org/abstract/document/7027154/},
 }
 
-@article{papakostas2018energy,
-  title={Energy-Aware Backbone Formation in Military Multilayer Ad Hoc Networks},
+
+
+
+
+
+
+@inproceedings{papakostas2018energy,
+  title={Energy-aware distributed edge domination of multilayer networks},
   author={Papakostas, Dimitrios and ESHGHI, Soheil and Katsaros, Dimitrios and Tassiulas, Leandros},
-  journal={Ad Hoc Networks (Minor Revisions Requested)},
-  publisher={Springer},
+  booktitle={Submitted to 37th IEEE Military Communications Conference (MILCOM)},
   status={submitted},
-  abstract={Ad hoc networks designed for deployment in modern battlefields need to take care of traditional requirements related to their backbone's size, their energy efficiency, their scalability in terms of network size, but also of their nature which allows for combining networks of different units that act altogether towards a common operational goal. This article develops a distributed algorithm for developing an energy-efficient backbone for military ad hoc network composed of multiple layers, namely E2CLB. The algorithm is based on the concepts of connected dominating sets and also on node centrality concepts, and results as a heuristic solution to the problem of calculating a maximum energy, minimum connected dominating set for a multilayer network by including into the dominating set those nodes which are highly connected to their and other layers (i.e., they have large centrality value) and moreover they are energy-rich. The computation and communication complexities of the algorithm are analyzed, and a thorough simulation-based evaluation of it against six competitors is presented. The results show that E2CLB is either the best performing algorithm across the examined performance measures or it is able to trade a very small increase in the size of the backbone's network in order to reap improved performance in the energy realm.},
-}
-
-
-
-@article{eshghi2018spread,
-  title={Spread, then Target, and Advertise in Waves: Optimal Budget Allocation Across Advertising Channels},
-  author={ESHGHI, Soheil and Preciado, Victor M and Sarkar, Saswati and Venkatesh, Santosh S and Zhao, Qing and D'Souza, Raissa and Swami, Anantharam},
-  journal={Submitted to the IEEE Transactions on Network Science and Engineering (TNSE)},
-  publisher={IEEE Press},
-  year={2018},
-  status={submitted},
-  abstract={We analyze optimal strategies for the allocation of a finite budget that can be invested in different advertising channels over time with the objective of influencing social opinions in a network of individuals. In our analysis, we consider both exogenous influence mechanisms, such as advertising campaigns, as well as endogenous mechanisms of social influence, such as word-of-mouth and peerpressure, which are modeled using diffusion dynamics. We show that for a general set of objective functions, the optimal influence strategy at every time uses all channels at either their maximum rate or not at all, i.e., a bang-bang strategy. Furthermore, we prove that the number of switches between these extremes is bounded above by a term that is typically much smaller than the number of agents. This means that the optimal influence strategy is to exert maximum effort in waves for every channel, and then cease effort and let the effects propagate. We also show that, at the beginning of the campaign, the total cost-adjusted reach of an exogenous advertising channel determines its relative value. In contrast, as we approach our investment horizon (e.g., election day), the optimal strategy is to invest in channels able to target individuals instead of broad-reaching channels. We demonstrate that the optimal influence strategies are easily computable in several practical cases, and explicitly characterize the optimal controls for the case of linear objective functions in closed form. Finally, we see that, in the canonical example of designing an election campaign, identifying late-deciders is a critical component in the optimal design.},
-}
-
-@inproceedings{eshghi2017efficient,
-  title={Efficient Dynamic Centrality Metrics for Election Advertising - A Case Study},
-  author={ESHGHI, Soheil and Tassiulas, Leandros},
-  booktitle={Yale Day of Data 2017 (Poster)},
-  year={2017},
-  abstract={In prior work, we have shown how optimal choice of advertising channels for a budget-constrained electoral campaign can be structured. In this poster, we apply the resulting proposed algorithm to the MIT Social Evolution data-set (N=84), which captured political discussions, inclinations, and voting behaviors around the 2008 US Presidential Election within a student dorm. We compare the resulting centrality metrics developed from our algorithm (which have a direct mapping to optimal channel choice decisions) against more traditional static centralities.},
-  link={https://elischolar.library.yale.edu/dayofdata/2017/posters/},
-}
-
-
-@inproceedings{eshghi2017spread,
-  title={Spread, then Target, and Advertise in Waves: Optimal Capital Allocation Across Advertising Channels},
-  author={ESHGHI, Soheil and Preciado, Victor M and Sarkar, Saswati and Venkatesh, Santosh S and Zhao, Qing and D'Souza, Raissa and Swami, Anantharam},
-  booktitle={Proceedings of the IEEE Information Theory and Applications Workshop (ITA)},
-  year={2017},
-  abstract={We obtain optimal strategies for the allocation of influence budget across multiple channels and across time for an external influencer, e.g., a political campaign, seeking to maximize its effect on an election given a network of agents with linear consensus-seeking opinion dynamics. We show that for a general set of objective functions, the optimal influence strategy at every time uses all channels at either their maximum rate or not at all. Furthermore, we prove that the number of switches between these extremes is bounded above both by a term that is typically much smaller than the number of agents. This means that the optimal influence strategy is to exert maximum effort in waves for every channel, and then cease effort and let the effects propagate. We also show that at the beginning, the total cost-adjusted reach of a channel determines its relative value, while targeting matters more closer to election time. We demonstrate that the optimal influence structures are easily computable in several practical cases. We explicitly characterize the optimal controls for the case of linear objective functions via a closed form. Finally, we see that in the canonical election example, identifying late-deciders approximately determines the optimal campaign resource allocation strategy.},
-  link={http://ita.ucsd.edu/workshop/17/files/paper/paper_220.pdf},
-}
-
-
-
-@inproceedings{stein2017influence,
-  title={Influence Maximisation in Partially Observable Social Networks},
-  author={Stein, Sebastian and ESHGHI, Soheil and Maghsudi, Setareh and Tassiulas, Leandros and Bellamy, Rachel E and Jennings, Nicholas R},
-  booktitle={Workshop on Distributed Analytics InfraStructure and Algorithms for Multi-Organization Federations (DAIS)},
-  year={2017},
-  abstract={We consider the problem of choosing influential members within a social network, in order to disseminate a message as widely as possible. While this so-called problem of {influence maximisation} has been widely studied, little work considers partially-observable networks, where only part of a network is visible to the decision maker. Yet, this is critical in many applications, where an organisation needs to distribute its message far beyond its boundaries and beyond its usual sphere of influence. In this paper, we show that existing algorithms are not sufficient to handle such scenarios. To address this, we propose a set of novel adaptive algorithms that perform well in partially observable settings, achieving an up to 18\% improvement on the non-adaptive state of the art.},
-  link={https://dais-ita.org/dais2017},
-}
-
-
-@inproceedings{eshghi2018innovation,
-  title={Innovation, Cheating, and Whistleblowing - a Game Theoretic Perspective},
-  author={ESHGHI, Soheil and Tassiulas, Leandros},
-  booktitle={52nd Annual Conference on Information Sciences and Systems (CISS)},
-  year={2018},
-  abstract={We model the coupled decision-making of workers and the policy-making of an organization in response to an effort-saving, yet risky innovation. We examine the cases where individuals can only alert the organization of wide-spread wrong-doing (anonymous whistleblowing) and where they can report specific illicit behavior (semi-anonymous reporting). We show that depending on policy parameters and individual characteristics, one of 4 equilibria may arise, with the interesting outcomes that whistleblowing only flourishes in a light-punishment regime, and that semi-anonymous reporting leads to the relative prevalence of illicit behavior.},
-  link={http://ee-ciss.princeton.edu/},
+  abstract={Monitoring and maintaining communications in a multilayer ad hoc wireless network requires a stable communication overlay. Such monitoring should be resilient, avoiding reliance on a single (or a few) layers, and energy-aware, not being vulnerable to the exhaustion of available energy in a single network element. Thus, there is possibly a trade-off between overlay size, interlayer connectivity and the energy distribution within the overlay. In this paper, we present three distributed energy-aware multilayer connected edge dominating set algorithms, show how they manage such trade-offs in practical scenarios, and show that CCEDS, a pruned centrality-based distributed algorithm, has the best performance.},
 }
 
 @inproceedings{papakostas2018distributed,
   title={Distributed algorithms for multi-layer connected edge-dominating sets
 },
   author={Papakostas, Dimitrios and ESHGHI, Soheil and Katsaros, Dimitrios and Tassiulas, Leandros},
-  booktitle={Submitted to 57th IEEE Conference on Decision and Control (CDC) and IEEE Control Systems Letters (L-CSS)},
+  booktitle={Submitted to 57th IEEE Conference on Decision and Control (CDC)},
   status={submitted},
   abstract={Monitoring the state of communications in a distributed (multi-layer) network with differing node capabilities requires the maintenance of a backbone which is a connected edge dominating set. In this paper, we present distributed algorithms that provide efficient distributed solutions that can create such multi-layer resilient connected edge-dominating sets. After establishing the complexity of the problem and our proposed heuristics, we experimentally compare their performance while varying multiple characteristics of the underlying networks.},
 }
@@ -126,8 +107,49 @@ Publications
   link={https://cdc2018.ieeecss.org},
 }
 
+@inproceedings{eshghi2018innovation,
+  title={Innovation, Cheating, and Whistleblowing - a Game Theoretic Perspective},
+  author={ESHGHI, Soheil and Tassiulas, Leandros},
+  booktitle={52nd Annual Conference on Information Sciences and Systems (CISS)},
+  year={2018},
+  abstract={We model the coupled decision-making of workers and the policy-making of an organization in response to an effort-saving, yet risky innovation. We examine the cases where individuals can only alert the organization of wide-spread wrong-doing (anonymous whistleblowing) and where they can report specific illicit behavior (semi-anonymous reporting). We show that depending on policy parameters and individual characteristics, one of 4 equilibria may arise, with the interesting outcomes that whistleblowing only flourishes in a light-punishment regime, and that semi-anonymous reporting leads to the relative prevalence of illicit behavior.},
+  link={http://ee-ciss.princeton.edu/},
+}
 
+@inproceedings{bellamy2018computational,
+  title={A computational framework for modelling inter-group behaviour using psychological theory},
+  author={Bellamy, Rachel and Colombo, Gualtiero B and ESHGHI, Soheil and De Mel, Geeth, and Giammanco, Cheryl and Morris, Rhodri and Rand, David G and  and Turner, Liam and Whitaker, Roger M and Williams, Grace-Rose},
+  booktitle={SPIE Defense + Commercial Sensing 2018},
+  year={2018},
+  abstract={Psychological theories of inter-group behaviour oer justied representations for interaction, influence, and motivation for coalescence. Agent-based modelling of this behaviour, using evolutionary approaches, further provides a powerful tool to examine the implications of these theories in a dynamic context. In particular, this can enhance our understanding of the escalation of hostility and warfare, and its mitigation, contributing to policy and interventions. In this paper we propose a framework through which social psychology can be embedded in computation for the examination of inter-group behaviour. We examine how various social-psychological theories can be embedded in evolutionary models, and identify ways in which visualisation can support the objective assessment of emergent behaviour. We also discuss how real-world data can be used to parameterise scenarios on which modelling is conducted.},
+}
 
+@inproceedings{eshghi2017efficient,
+  title={Efficient Dynamic Centrality Metrics for Election Advertising - A Case Study},
+  author={ESHGHI, Soheil and Tassiulas, Leandros},
+  booktitle={Yale Day of Data 2017 (Poster)},
+  year={2017},
+  abstract={In prior work, we have shown how optimal choice of advertising channels for a budget-constrained electoral campaign can be structured. In this poster, we apply the resulting proposed algorithm to the MIT Social Evolution data-set (N=84), which captured political discussions, inclinations, and voting behaviors around the 2008 US Presidential Election within a student dorm. We compare the resulting centrality metrics developed from our algorithm (which have a direct mapping to optimal channel choice decisions) against more traditional static centralities.},
+  link={https://elischolar.library.yale.edu/dayofdata/2017/posters/},
+}
+
+@inproceedings{eshghi2017spread,
+  title={Spread, then Target, and Advertise in Waves: Optimal Capital Allocation Across Advertising Channels},
+  author={ESHGHI, Soheil and Preciado, Victor M and Sarkar, Saswati and Venkatesh, Santosh S and Zhao, Qing and D'Souza, Raissa and Swami, Anantharam},
+  booktitle={Proceedings of the IEEE Information Theory and Applications Workshop (ITA)},
+  year={2017},
+  abstract={We obtain optimal strategies for the allocation of influence budget across multiple channels and across time for an external influencer, e.g., a political campaign, seeking to maximize its effect on an election given a network of agents with linear consensus-seeking opinion dynamics. We show that for a general set of objective functions, the optimal influence strategy at every time uses all channels at either their maximum rate or not at all. Furthermore, we prove that the number of switches between these extremes is bounded above both by a term that is typically much smaller than the number of agents. This means that the optimal influence strategy is to exert maximum effort in waves for every channel, and then cease effort and let the effects propagate. We also show that at the beginning, the total cost-adjusted reach of a channel determines its relative value, while targeting matters more closer to election time. We demonstrate that the optimal influence structures are easily computable in several practical cases. We explicitly characterize the optimal controls for the case of linear objective functions via a closed form. Finally, we see that in the canonical election example, identifying late-deciders approximately determines the optimal campaign resource allocation strategy.},
+  link={http://ita.ucsd.edu/workshop/17/files/paper/paper_220.pdf},
+}
+
+@inproceedings{stein2017influence,
+  title={Influence Maximisation in Partially Observable Social Networks},
+  author={Stein, Sebastian and ESHGHI, Soheil and Maghsudi, Setareh and Tassiulas, Leandros and Bellamy, Rachel E and Jennings, Nicholas R},
+  booktitle={Workshop on Distributed Analytics InfraStructure and Algorithms for Multi-Organization Federations (DAIS)},
+  year={2017},
+  abstract={We consider the problem of choosing influential members within a social network, in order to disseminate a message as widely as possible. While this so-called problem of {influence maximisation} has been widely studied, little work considers partially-observable networks, where only part of a network is visible to the decision maker. Yet, this is critical in many applications, where an organisation needs to distribute its message far beyond its boundaries and beyond its usual sphere of influence. In this paper, we show that existing algorithms are not sufficient to handle such scenarios. To address this, we propose a set of novel adaptive algorithms that perform well in partially observable settings, achieving an up to 18\% improvement on the non-adaptive state of the art.},
+  link={https://dais-ita.org/dais2017},
+}
 
 @inproceedings{stein2017heuristic,
   title={Heuristic Algorithms for Influence Maximization in Partially Observable Social Networks},
@@ -157,15 +179,6 @@ Publications
 In particular, we focus on group fracture, where individuals leave groups of which they are members. For example, this can be due to perceived differences with other group members due to norm related conflict (such as extreme actions by some members). Our aim is to consider simple mathematical models incorporating a selection of social and psychological theory which  describes these phenomena as a way to understand their interplay, and describe the trade-offs and challenges.}
 }
 
-@inproceedings{bellamy2018computational,
-  title={A computational framework for modelling inter-group behaviour using psychological theory},
-  author={Bellamy, Rachel and Colombo, Gualtiero B and ESHGHI, Soheil and De Mel, Geeth, and Giammanco, Cheryl and Morris, Rhodri and Rand, David G and  and Turner, Liam and Whitaker, Roger M and Williams, Grace-Rose},
-  booktitle={Submitted to SPIE Defense + Commercial Sensing 2018},
-  status={submitted},
-  abstract={Psychological theories of inter-group behaviour oer justied representations for interaction, influence, and motivation for coalescence. Agent-based modelling of this behaviour, using evolutionary approaches, further provides a powerful tool to examine the implications of these theories in a dynamic context. In particular, this can enhance our understanding of the escalation of hostility and warfare, and its mitigation, contributing to policy and interventions. In this paper we propose a framework through which social psychology can be embedded in computation for the examination of inter-group behaviour. We examine how various social-psychological theories can be embedded in evolutionary models, and identify ways in which visualisation can support the objective assessment of emergent behaviour. We also discuss how real-world data can be used to parameterise scenarios on which modelling is conducted.},
-}
-
-
 @inproceedings{eshghi2017mathematical,
   title={Mathematical Models for Social Group Behavior},
   author={ESHGHI, Soheil and Williams, Grace-Rose and Colombo, Gualtiero B and Turner, Liam and Rand, David G and Whitaker, Roger M and Tassiulas, Leandros},
@@ -185,38 +198,56 @@ In particular, we focus on group fracture, where individuals leave groups of whi
   link={http://www.aiai.ed.ac.uk/project/coalition/ksco-2017.html},
 }
 
-@article{eshghi2015optimal,
-  title={Optimal energy-aware epidemic routing in DTNs},
-  author={ESHGHI, Soheil and Khouzani, MHR and Sarkar, Saswati and Shroff, Ness B and Venkatesh, Santosh S},
-  journal={IEEE Transactions on Automatic Control (TAC)},
-  volume={60},
-  number={6},
-  pages={1554--1569},
-  note={arXiv preprint arXiv:1403.1642},
-  year={2015},
-  publisher={IEEE},
-  abstract={In this work, we investigate the use of epidemic routing in energy constrained delay tolerant networks (DTNs). In epidemic routing, messages are relayed by intermediate nodes at contact opportunities, i.e., when pairs of nodes come within the transmission range of each other. Each node needs to decide whether to forward its message upon contact with a new node based on its own residual energy level and the age of that message. We mathematically characterize the fundamental trade-off between energy conservation and a measure of Quality of Service as a dynamic energy-dependent optimal control problem. We prove that in the mean-field regime, the optimal dynamic forwarding decisions follow simple threshold-based structures in which the forwarding threshold for each node depends on its current remaining energy. We then characterize the nature of this dependence. Our simulations reveal that the optimal dynamic policy significantly outperforms heuristics.},
-  link={http://ieeexplore.ieee.org/abstract/document/7027154/},
-}
-
-
-
-
-
-@ARTICLE{eshghi2016visibility,
-  author={S. ESHGHI and S. Sarkar and S. S. Venkatesh},
-  journal={IEEE Transactions on Automatic Control (TAC)},
+@inproceedings{eshghi2015optimal1,
   title={Visibility-aware optimal contagion of malware epidemics},
-  note={arXiv preprint arXiv:1507.03528},
-  year={2017},
-  volume={62},
-  number={10},
-  pages={5205 - 5212},
-  doi={10.1109/TAC.2016.2632426},
-  ISSN={0018-9286},
-  abstract={Recent innovations in the design of computer viruses have led to new trade-offs for the attacker. Multiple variants of a malware may spread at different rates and have different levels of visibility to the network. In this work we examine the optimal strategies for the attacker so as to trade off the extent of spread of the malware against the need for stealth. We show that in the mean-field deterministic regime, this spread-stealth trade-off is optimized by computationally simple single-threshold policies. Specifically, we show that only one variant of the malware is spread by the attacker at each time, as there exists a time up to which the attacker prioritizes maximizing the spread of the malware, and after which she prioritizes stealth.},
-  link={http://ieeexplore.ieee.org/abstract/document/7755729/},
+  author={ESHGHI, Soheil and Sarkar, Saswati and Venkatesh, Santosh S},
+  booktitle={Proceedings of the IEEE Information Theory and Applications Workshop (ITA)},
+  year={2015},
+  link={http://ita.ucsd.edu/workshop/15/talks},
 }
+
+@inproceedings{eshghi2015optimal2,
+  title={Optimal battery pricing and energy management for microgrids},
+  author={ESHGHI, Soheil and Patil, Rakesh M},
+  booktitle={2015 American Control Conference (ACC)},
+  pages={4994--5001},
+  year={2015},
+  organization={IEEE},
+  abstract={This paper develops an optimal dispatch strategy for a microgrid's resources through battery pricing. A microgrid fulfills local demand using local generation (conventional and renewable) and storage, along with the electric grid (macrogrid). Demand and renewables such as Photovoltaic (PV) generation are uncertain throughout the day. Optimal management of the resources in a microgrid is necessary to integrate the uncertain renewable energy, serve the uncertain demand and provide the highest returns in terms of cost or emissions. The approach developed in this paper requires minimal modeling effort with regards to uncertainties and emphasizes battery pricing using realized profiles of demand and PV generation. We show that the optimal decision at each time instant is an economic dispatch that takes a rigorously-defined shadow-price for the battery power as input. Furthermore, we show that the calculation of this shadow-price can be simplified to avoid state-constraints in the computation of the optimal control solution. Finally, the results highlight the practical utility of this approach and the developed quasi-optimal solution is comparable to the deterministic optimum cost.},
+  link={http://ieeexplore.ieee.org/abstract/document/7172117/},
+}
+
+
+@inproceedings{eshghi2012optimal,
+  title={Optimal patching in clustered epidemics of malware},
+  author={Khouzani, MHR and ESHGHI, Soheil and Sarkar, Saswati and Venkatesh, Santosh S},
+  booktitle={Proceedings of the IEEE Information Theory and Applications Workshop (ITA)},
+  year={2012},
+  link={http://ita.ucsd.edu/workshop/12/talks},
+}
+
+@inproceedings{khouzani2012optimal,
+  title={Optimal energy-aware epidemic routing in DTNs},
+  author={Khouzani, MHR and ESHGHI, Soheil and Sarkar, Saswati and Shroff, Ness B and Venkatesh, Santosh S},
+  booktitle={Proceedings of the thirteenth ACM international symposium on Mobile Ad Hoc Networking and Computing (MobiHoc)},
+  pages={175--182},
+  year={2012},
+  organization={ACM},
+  abstract={In this work, we investigate the use of epidemic routing in energy constrained Delay Tolerant Networks (DTNs). In DTNs, connected paths between source and destination rarely materialize due to the mobility and sparse density of nodes. Epidemic routing is well-suited for these environments due to its simplicity and fully distributed implementation. In epidemic routing, messages are relayed by intermediate nodes at contact opportunities, i.e., when pairs of nodes come within transmission range. Each node needs to decide whether to forward its message upon contact with a new node based on its residual energy level and the age of that message.
+
+  We mathematically characterize the fundamental trade-off between energy conservation and forwarding efficacy as a heterogeneous dynamic energy-dependent optimal control problem. We prove, somewhat surprisingly given the complex nature of the problem, that in the mean field regime, the optimal dynamic forwarding decisions follow simple threshold-based structures in which the forwarding threshold for each node depends on its current remaining energy. We analytically establish this result under generalized classes of utility functions for DTNs. We then characterize the dependence of these thresholds on current energy reserves in each node.},
+  link={http://dl.acm.org/citation.cfm?id=2248397},
+}
+
+
+
+
+
+
+
+
+
+
 
 @misc{patil2016optimal,
   title={Optimal battery pricing and energy management for localized energy resources},
@@ -229,17 +260,6 @@ In particular, we focus on group fracture, where individuals leave groups of whi
 }
 
 
-
-@inproceedings{eshghi2015optimal2,
-  title={Optimal battery pricing and energy management for microgrids},
-  author={ESHGHI, Soheil and Patil, Rakesh M},
-  booktitle={2015 American Control Conference (ACC)},
-  pages={4994--5001},
-  year={2015},
-  organization={IEEE},
-  abstract={This paper develops an optimal dispatch strategy for a microgrid's resources through battery pricing. A microgrid fulfills local demand using local generation (conventional and renewable) and storage, along with the electric grid (macrogrid). Demand and renewables such as Photovoltaic (PV) generation are uncertain throughout the day. Optimal management of the resources in a microgrid is necessary to integrate the uncertain renewable energy, serve the uncertain demand and provide the highest returns in terms of cost or emissions. The approach developed in this paper requires minimal modeling effort with regards to uncertainties and emphasizes battery pricing using realized profiles of demand and PV generation. We show that the optimal decision at each time instant is an economic dispatch that takes a rigorously-defined shadow-price for the battery power as input. Furthermore, we show that the calculation of this shadow-price can be simplified to avoid state-constraints in the computation of the optimal control solution. Finally, the results highlight the practical utility of this approach and the developed quasi-optimal solution is comparable to the deterministic optimum cost.},
-  link={http://ieeexplore.ieee.org/abstract/document/7172117/},
-}
 
 
 @phdthesis{eshghi2015optimal3,

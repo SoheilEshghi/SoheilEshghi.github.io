@@ -5,7 +5,7 @@ date: 2017-08-10
 ---
 One of the perks of being in academia is having the opportunity to listen to smarter people than myself talk about the cool things they have done. I find it a little frustrating that good research is often let down by bad presentation. As a regular attendee of many talks across departments, it is still shockingly easy how a presenter can rise above 95% of the talks I've seen - I will just jot down a few, with the caveat that I do not always practice what I preach.
 
-*Caveat Emptor*: As with everything academia-related, [Matt Might](http://matt.might.net/articles/academic-presentation-tips/) already has great tips for how to make a presentation better. I also found [this document](http://people.uncw.edu/weberd/dwhandout4.pdf) pretty useful. And of course, many of these tips are due to mentors and colleagues.
+*caveat emptor*: As with everything academia-related, [Matt Might](http://matt.might.net/articles/academic-presentation-tips/) already has great tips for how to make a presentation better. I also found [this document](http://people.uncw.edu/weberd/dwhandout4.pdf) pretty useful. And of course, many of these tips are due to mentors and colleagues.
 
 ### Big picture
 ------
