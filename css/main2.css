@@ -148,6 +148,12 @@ p {
     font-family: 'Merriweather', serif;
 }
 
+p.light{
+  font-weight: 200;
+
+}
+
+
 a {
     text-decoration: none;
     color: #00356b;
@@ -183,7 +189,7 @@ a:hover {
     outline: none;
     text-align: center;
 }
-.btn-primary:hover {
+/*.btn-primary:hover {
   color: #286dc0;
 }
 .btn-primary:focus {
@@ -210,7 +216,7 @@ a:hover {
 }
 .btn-info:focus {
   color: #286dc0;
-}
+}*/
 
 .share-btn:hover {
   color: #286dc0;
@@ -309,6 +315,8 @@ a:hover {
 
 
 
+
+
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /* list */
 ol {
@@ -334,6 +342,18 @@ ol.posts {
 ol.posts li {
     list-style: none;
 }
+
+ol.conference {
+    counter-reset: item;
+    list-style-type: decimal;
+}
+
+ol.conference li:before {
+    content: 'C' counter(item, decimal) '. ';
+    counter-increment: item;
+}
+
+
 
 td{
   font-size: 16px;

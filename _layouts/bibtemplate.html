@@ -3,55 +3,138 @@
 <div class="publication-item">
 <div class="text-justify">
 
-  <p> {{reference}} </p>
+  <p>
+    <b>{{entry.title}}</b>
+  </p>
+  <p style="font-weight: 100; color: #000000; display: inline-block;">By </p>
+    {% for author in entry.author_array %}
+        {% if author.last == "ESHGHI"%}
+            <p style="display: inline-block; color: #286dc0;">{{author.first}} {{author.last}}, </p>
+        {% else %}
+             <p  style="font-weight: 100; color: #000000; display: inline-block;">{{author.first}} {{author.last}}, </p>
+        {% endif %}
+    {% endfor %}
 
+
+
+  {% if entry.type == "article"%}
+    <p>
+      In <i style="font-variant: small-caps">{{entry.journal}}</i>
+    </p>
+    {% if entry.status != "submitted"%}
+      <p>
+        vol. {{entry.volume}}, no. {{entry.number}}, pp. {{entry.pages}}, {{entry.publisher}}, {{entry.year}}
+      </p>
+    {% endif %}
+    {% if entry.status == "submitted"%}
+      <p>
+          {{entry.year}}
+      </p>
+    {% endif %}
+  {% endif %}
+  {% if entry.type == "inproceedings"%}
+    <p>
+        In <i style="font-variant: small-caps">{{entry.booktitle}}</i>
+    </p>
+    {% if entry.status != "submitted"%}
+      <p>
+          {{entry.year}}
+      </p>
+    {% endif %}
+    {% if entry.status == "submitted"%}
+      <p>
+          {{entry.year}}
+      </p>
+    {% endif %}
+  {% endif %}
+  {% if entry.type == "phdthesis"%}
+    <p>
+        <i style="font-variant: small-caps">{{entry.school}}</i>
+    </p>
+    <p>
+          {{entry.year}}
+    </p>
+  {% endif %}
+  {% if entry.type == "misc"%}
+    <p>
+        <i style="font-variant: small-caps">{{entry.journal}}</i>
+    </p>
+    <p>
+          {{entry.year}}
+    </p>
+  {% endif %}
 </div>
 
-  <div class="pull-left hidden-xs hidden-sm">
+
+  <div class="hidden-xs hidden-sm">
     <div id="{{key}}-materials">
       <ul class="nav nav-pills">
         {% if entry.abstract %}
-        <li><a tabindex="0" class="btn btn-primary btn-primary-abstract" role="button" data-toggle="popover" data-trigger="hover" title="Abstract" data-content="{{entry.abstract}}"  data-placement="right" >Abstract</a></li>
+        <li>
+          <a href="#abstract-{{entry.key}}" class="btn btn-primary  " data-toggle="collapse" data-trigger="focus" role="button" tabindex="0" style="background-color:#63aaff;color:#f9f9f9;">Abstract</a>
+        </li>
         {% endif %}
 
-        <li><a tabindex="0" class="btn btn-success btn-primary-bib" role="button" data-toggle="popover"  title="BibTeX Citation" data-content="{{entry.bibtex}}"  data-placement="right"  data-html="true">BibTeX</a></li>
+
+
+        <li>
+          <a href="#bibtex-{{entry.key}}" class="btn btn-primary " data-toggle="collapse" data-trigger="focus" role="button" tabindex="0" style="background-color:#00356b;color:#f9f9f9;">BibTeX</a>
+        </li>
+
+
+
+
+
+
+
 
         {% if entry.link %}
-        <li><a class="btn btn-warning btn-primary-link" href={{entry.link}}> <i class="fa fa-external-link"></i></a></li>
+        <li><a class="btn btn-primary" href={{entry.link}} style="background-color:#bd5319;color:#f9f9f9;"> <i class="fa fa-external-link"></i></a></li>
         {% endif %}
 
         {% if entry.access %}
-        <li><a class="btn btn-info" href="#{{access}}">Download</a></li>
+        <li><a class="btn btn-primary" href="#{{access}}" style="background-color:#5f712d;color:#f9f9f9;">Download</a></li>
         {% endif %}
 
 
 
-        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
-      </ul>-->
 
+      </ul>
 
+      {% if entry.abstract %}
+      <div id="abstract-{{entry.key}}" class="collapse">
+            <p>{{entry.abstract}}</p>
+      </div>
+      {% endif %}
+      <div id="bibtex-{{entry.key}}" class="collapse">
+            <h4>{{entry.bibtex}}</h4>
+      </div>
 
     </div>
   </div>
-  <div class="pull-left hidden-md hidden-lg">
+  <div class="hidden-md hidden-lg">
     <div id="{{key}}-materials">
       <ul class="nav nav-pills">
         {% if entry.abstract %}
-        <li><a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Abstract" data-content="{{entry.abstract}}"  data-placement="below" >Abstract</a></li>
+        <li>
+          <a href="#abstract-x{{entry.key}}" class="btn btn-primary  " data-toggle="collapse" data-trigger="focus" role="button" tabindex="0" style="background-color:#63aaff;color:#f9f9f9;">Abstract</a>
+        </li>
         {% endif %}
 
         {% if entry.link %}
-        <li><a class="btn btn-warning" href={{entry.link}}> <i class="fa fa-external-link"></i></a></li>
+        <li><a class="btn btn-primary" href={{entry.link}} style="background-color:#bd5319;color:#f9f9f9;"> <i class="fa fa-external-link"></i></a></li>
         {% endif %}
 
         {% if entry.access %}
-        <li><a class="btn btn-info" href="#{{access}}">Download</a></li>
+        <li><a class="btn btn-primary" href="#{{access}}" style="background-color:#5f712d;color:#f9f9f9;">Download</a></li>
         {% endif %}
+      </ul>
+      {% if entry.abstract %}
+      <div id="abstract-x{{entry.key}}" class="collapse">
+            <p>{{entry.abstract}}</p>
+      </div>
+      {% endif %}
 
-
-
-        <!--<li><a class="btn btn-primary" href="http://www-scf.usc.edu/~shangxiw/TechReport.pdf">PDF</a></li>
-      </ul>-->
 
 
 

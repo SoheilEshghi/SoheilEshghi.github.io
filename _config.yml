@@ -13,7 +13,7 @@ paginate_path: "/blog/page:num/"
 
 
 scholar:
-  style: _publications/ieee_se_1.csl
+  style: _publications/ieee2.csl
   locale: en
 
   sort_by: year
