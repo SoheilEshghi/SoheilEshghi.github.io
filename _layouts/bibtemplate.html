@@ -18,35 +18,56 @@
 
 
   {% if entry.type == "article"%}
-    <p>
-      In <i style="font-variant: small-caps">{{entry.journal}}</i>
-    </p>
-    {% if entry.status != "submitted"%}
-      <p>
-        vol. {{entry.volume}}, no. {{entry.number}}, pp. {{entry.pages}}, {{entry.publisher}}, {{entry.year}}
-      </p>
-    {% endif %}
-    {% if entry.status == "submitted"%}
-      <p>
-          {{entry.year}}
-      </p>
-    {% endif %}
+        {% if entry.status == "submitted"%}
+            <p>
+                Submitted to <i style="font-variant: small-caps">{{entry.journal}}</i>
+            </p>
+            <p>
+                {{entry.year}}
+            </p>
+        {% elsif  entry.status == "accepted"%}
+            <p>
+                To appear in <i style="font-variant: small-caps">{{entry.journal}}</i>
+            </p>
+            <p>
+                {{entry.year}}
+            </p>
+        {% else %}
+            <p>
+                Submitted to <i style="font-variant: small-caps">{{entry.journal}}</i>
+            </p>
+            <p>
+                vol. {{entry.volume}}, no. {{entry.number}}, pp. {{entry.pages}}, {{entry.publisher}}, {{entry.year}}
+            </p>
+        {% endif %}
   {% endif %}
   {% if entry.type == "inproceedings"%}
-    <p>
-        In <i style="font-variant: small-caps">{{entry.booktitle}}</i>
-    </p>
-    {% if entry.status != "submitted"%}
-      <p>
-          {{entry.year}}
-      </p>
-    {% endif %}
-    {% if entry.status == "submitted"%}
-      <p>
-          {{entry.year}}
-      </p>
-    {% endif %}
+      {% if entry.status == "submitted"%}
+              <p>
+                  Submitted to <i style="font-variant: small-caps">{{entry.booktitle}}</i>
+              </p>
+              <p>
+                  {{entry.year}}
+              </p>
+          {% elsif  entry.status == "accepted"%}
+              <p>
+                To be presented at <i style="font-variant: small-caps">{{entry.booktitle}}</i>
+              </p>
+
+              <p>
+                  {{entry.year}}
+              </p>
+          {% else %}
+          <p>
+                In <i style="font-variant: small-caps">{{entry.booktitle}}</i>
+              </p>
+
+              <p>
+                  {{entry.year}}
+              </p>
+      {% endif %}
   {% endif %}
+
   {% if entry.type == "phdthesis"%}
     <p>
         <i style="font-variant: small-caps">{{entry.school}}</i>

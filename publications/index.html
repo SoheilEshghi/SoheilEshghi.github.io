@@ -12,8 +12,10 @@ title: Publications
 	<h3>Journal Articles</h3>
   <h4>Submitted</h4>
 	{% bibliography -q  @article[status=submitted] %}
+	<h4>To appear</h4>
+	{% bibliography -q  @article[status=accepted] %}
 	<h4>Published</h4>
-	{% bibliography -q @article[year<=2017] %}
+	{% bibliography -q @article[year<=2018] %}
 
 
 	<!--## Book Chapters
@@ -23,6 +25,8 @@ title: Publications
 	<h3>Conferences and Workshops</h3>
 	<h4>Submitted</h4>
 	{% bibliography -q @inproceedings[status=submitted] %}
+	<h4>To appear</h4>
+	{% bibliography -q  @inproceedings[status=accepted] %}
 	<h4>Published</h4>
 	{% bibliography -q @inproceedings[year<=2018] %}
 
