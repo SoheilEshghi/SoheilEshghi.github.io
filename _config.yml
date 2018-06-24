@@ -11,6 +11,20 @@ shorturl:         soheileshghi.com
 paginate: 5
 paginate_path: "/blog/page:num/"
 
+navigation:
+  - title: publications
+    url: /publications/
+  - title: research
+    url: /research/
+  - title: teaching
+    url: /teaching/
+  - title: professional
+    url: /professional/
+  - title: blog
+    url: /blog/
+
+
+
 
 scholar:
   style: _publications/ieee2.csl
