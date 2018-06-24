@@ -403,9 +403,13 @@ ul.posts li {
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /* navigation bar */
-nav a.current {
-  color:#bd5319;
+
+.navbar-default .navbar-nav > li > a:current {
+  color: #dddddd;
+  background-color: #bd5319;
 }
+
+
 
 nav ul{
     /*font-family:'Playfair Display', 'Arial', serif;*/
@@ -422,9 +426,9 @@ nav ul li {
     margin-right: 1px;
 }
 
-.navbar-brand{
+/*.navbar-brand{
   font-family:'Playfair Display', 'Arial', serif;
-}
+}*/
 
 .navbar-fixed-top .nav {
     padding: 15px 15px 15px;
