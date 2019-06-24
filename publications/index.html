@@ -28,7 +28,7 @@ title: Publications
 	<h4>To appear</h4>
 	{% bibliography -q  @inproceedings[status=accepted] %}
 	<h4>Published</h4>
-	{% bibliography -q @inproceedings[year<=2018] %}
+	{% bibliography -q @inproceedings[status!= accepted] %}
 
 
 	<h3>Thesis</h3>
