@@ -145,9 +145,12 @@ h3 {
 
 p {
     color: #000000;/*#4a4a4a;*/
-    font-size:16px;
+    /*font-size:16px;*/
+    font-size: calc(10px + (26 - 10) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.4em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+
     /*font-weight: 300;*/
-    line-height: 1.5;
+    /*line-height: 1.5;*/
     font-family: 'Merriweather', serif;
 }
 
@@ -367,7 +370,9 @@ td{
   padding-right: .5em;
 }
 
-.email{font-size: 1em;}
+.email{
+  font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
 
 ul.posts {
     margin: 20px auto 40px;
