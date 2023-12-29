@@ -4,7 +4,7 @@ permalink: /blog/:year/:month/:day/:title
 
 # Setup
 title:            Soheil Eshghi
-tagline:          Soheil Eshghi - Life Sciences Strategy and Operations
+tagline:          Soheil Eshghi
 url:              http://www.soheileshghi.com
 shorturl:         soheileshghi.com
 
@@ -54,3 +54,13 @@ scholar:
 
 # Gems
 gems: [jekyll-paginate,rake,reduce]
+
+#exclude:
+#  - Gemfile
+#  - Gemfile.lock
+#  - node_modules
+#  - vendor/bundle/
+#  - vendor/cache/
+#  - vendor/gems/
+#  - vendor/ruby/
+#  - cache/
