@@ -27,29 +27,51 @@ navigation:
 
 
 scholar:
-  style: _publications/ieee2.csl
+  style: apa-6th-edition
   locale: en
 
-  sort_by: year
-  order: descending
+  #bibtex_filters:
+  #- superscript
+  #- latex
 
-  group_by: none
-  group_order: ascending
+  sort_by: year,month,author
+  order: descending,descending,ascending
 
   source: ./_publications
   bibliography: references.bib
-  bibliography_template: bibtemplate #<abbr>[{{key}}] </abbr>{{reference}} <a data-toggle="collapse" href="#{{key}}-author"> </a> ""{% if entry.author %} {% endif %}{% if entry.note %}<div class="dropdown"><button onclick="myFunction()" class="dropbtn">pre-print</button><div id="myDropdown" class="dropdown-content"><p>{{entry.note}}</p></div>    </div>{% end if %}
+  bibliography_template: bibtemplate
+
+  repository: ./repository
 
   replace_strings: true
   join_strings:    true
 
-  use_raw_bibtex_entry: false
+  query: "@*"
+
+#scholar:
+#  style: _publications/ieee2.csl
+#  locale: en
+
+#  sort_by: year
+#  order: descending
+
+#  group_by: none
+#  group_order: ascending
+
+#  source: ./_publications
+#  bibliography: references.bib
+#  bibliography_template: {{reference}} #bibtemplate.html
+
+#  replace_strings: true
+#  join_strings:    true
+
+  #use_raw_bibtex_entry: false
 
   #details_dir:    publications
   #details_layout: details.html
   #details_link:   Details
 
-  query: "@*"
+#  query: "@*"
 
 
 # Gems

@@ -2,236 +2,150 @@
 layout: sidebar
 title: Research
 ---
-
-<img style="max-width:50%; display: block; margin-left: auto; margin-right: auto;" src="/images/research.jpg" />
 <div class="divSection col-sm-10 column">
+  <h2> &nbsp <u>Research</u></h2>
 
-
-<h2>Active research areas</h2>
-</div>
-
-<div class="divSection col-sm-10 column">
       <div style="background-color: white; opacity: .85; padding: 2.5%; border:2px solid gainsboro; ">
-        <h3> Epidemic modeling and control </h3>
-        <p>
-          Epidemics are one of the greatest public health challenges of the 21st century. We now have more data than ever before that we can leverage in designing dynamic interventions. This has required led to much interest in designing efficient scalable control algorithms that both solve mathematical problems and provide broad parameter-independent policy insights.
+        <h4>Research Overview:</h4>
+        {% include youtubePlayer.html id="yOPG_SWxvlM" %}
+      </div>
+      <h2> &nbsp <u>Research Areas</u></h2>
 
+      <div style="background-color: white; opacity: .85; padding: 2.5%; border:2px solid gainsboro; ">
+
+
+        <h3> 1: <b>Dynamic, efficient, and practical control policies for epidemics </b> </h3>
+        <p>
+          My work has focused on proving parameter-independent structures for the containment
+          of dynamic spreading processes using optimal control theory, and applying them to real-world problems in public health
+          and analogous problems in wireless networks
+          and network security.
           <br><br>
 
-          On the other hand, the engineering community has had much to learn from epidemiology and mathematical biology in recent years, e.g., epidemic models have been developed that neatly capture problems in cyber-security and data transfer.<br><br>
-
-          My main contributions during my PhD were to provide a synthesis of ways information about heterogeneities within the affected population and the epidemic process could be used in new ways to design better
-          dynamic control policies that exploited. I used optimal control theory to design optimal containment and spreading policies for heterogeneous biological, malware, and data epidemics, and showed how derived structures can simplify difficult non-convex optimizations and provide easily implementible distributed policies.<!--<br><br>
-
-          This line of work is one I am (probably) most passionate about, as it propelled my interest in mathematical biology and more complex spreading processes in biological systems.--></p>
-
-
-
-      </div>
+          These structures are important because the availability of fine-grained data,
+          as well as the ability to change actions over time, can lead to state-space explosion
+          for policy design as well as unrealistically complex proposed policies.
+         I show how these structures can simplify difficult non-convex
+         optimizations and provide easily implementible distributed policies.
+         <br><br>
+         I have applied this approach to
+         evaluate a real-world intervention vs a dynamic counterfactual optimal policy, which is a methodological contribution.
 
 
-</div>
-
-<div class="divSection col-sm-10 column">
-      <div style="background-color: white; opacity: .85; padding: 2.5%; border:2px solid gainsboro; ">
-        <h3> Social influence maximization </h3>
+        <h3> 2: <b>Optimizing constrained and dynamic networked interventions</b> </h3>
         <p>
-          Social influence can lead to changes in behavior, choices, and beliefs. Understanding the mechanisms of influence spread is important in effectively targetting interventions, such as public health messages, and designing incentives to aid the spread of desirable actions, such as ethical behavior in a company.<br><br>
+          My work has focused on showing how limited information availability and
+          dynamic policies can change approaches to seeding networked interventions
+          (i.e., social influence and incentives that lead to changes in  behavior, choices, and beliefs).<br><br>
 
-          My main contribution has been in delineating the effects of information availability and timing on optimal influence policies.
-           I have examined optimal seeding strategies under partial network visibility, optimal budget allocation across time for an electoral campaign (including the development of a new centrality measure), the effect of incentives and whistleblowing policies on ethical behavior within a company, and the effect of social comparison and group norms on social group stability.<br><br>
+          I have
+          addressed key applications in public health, marketing, and sociology in multiple
+          inter-disciplinary collaborations using techniques from optimal control and game theory:
+          <br>
+          </p>
+          <ol  class="level1">
+            <li> <p>optimal seeding strategies under partial network visibility</p></li>
+            <li><p>optimal budget allocation across time for an electoral campaign (including the
+            development of a new centrality measure)</p></li>
+            <li><p>the effect of incentives and whistleblowing policies on ethical behavior within an organization</p></li>
+           <li><p>the effect of social comparison and group norms on social group stability</p></li>
+           </ol>
 
-          <!--This highly inter-disciplinary area has led to some of my most fruitful collaborations, and I am excited to see what further insights control theory and optimization can bring to social systems in general.-->
 
 
+        <h3> Prior areas:</h3>
+        <p> <b>Energy-aware information dissemination and monitoring in ad hoc networks:</b>  My main contribution has been to create efficient, distributed, and energy-aware algorithms to
+          create and maintain connectivity in wireless ad hoc networks<br><br>
 
+          <b>Grid-scale integration of distributed storage:</b>  My main contribution has been to create a novel method for the efficient operation of
+          microgrids with distributed renewable generation and storage using rigorously derived dynamic prices for microgrid batteries, and creating a synthesis of
+          offline electric vehicle charging methods and identifying major remaining challenges
         </p>
 
-
-      </div>
-
+<br>
 
 </div>
+ <h2> &nbsp <u>Invited talks</u></h2>
+
+
+<div style="background-color: white; opacity: .85; padding: 2.5%; border:2px solid gainsboro; ">
 
 
 
+	<ol class="level1">
+		<li>Modeling COVID-19 in-hospital patient flow for capacity-planning
+							<ol class="level2">
+								<li>  <b>Yale University</b>, Yale Postdoctoral Association Virtual Seminars,  June  2020</li>
+							</ol>
 
 
-<div class="divSection col-sm-10 column">
-      <div style="background-color: white; opacity: .85; padding: 2.5%; border:2px solid gainsboro; ">
-        <h3> Optimal control and dynamic programming</h3>
-        <p>
-          I also have a methodological interest in deriving optimal control structures that simplify computations in difficult non-convex optimal control problems.<br><br>
 
-          My main contributions here have been in showing that vectors of bang-bang policies with a limited number of switches are optimal for a wide variety of quadratic ODE differential equations (the mean-field regime), proving further timing structures to simplify direct methods, and integrating rigorous descent methods into practical solvers to speed up the computation of switching times.
-
-        </p>
+<li>Dynamic surveillance and contact-tracing policies for outbreaks
+					<ol class="level2">
+						<li>  <b>Yale University</b>, Yale Institute for Network
+						Science Summer Seminar, Yale Institute for Network Science (YINS),  June  2019</li>
+					</ol>
 
 
-      </div>
+				</li>
+
+				<li>Dynamic control of spreading processes on networks
+					<ol class="level2">
+						<li>  <b>Yale University</b>, Yale Institute for Network
+						Science Colloquium, Yale Institute for Network Science (YINS),  January 2019</li>
+					</ol>
 
 
+				</li>
+
+
+
+				<li>Decision-making tools for influence propagation in social systems
+					<ol class="level2">
+						<li>  <b>University of Michigan</b>, Communication and Signal Processing Seminar, Electrical Engineering and Computer Science Department, July 2018</li>
+					</ol>
+
+				</li>
+
+				<li>You scratch my back, and (maybe) I'll scratch yours: whistleblowing games on networks
+						<ol class="level2">
+							<li>  <b>Yale University</b>, Yale Institute for Network
+							Science Seminar, Yale Institute for Network Science (YINS),  June 2018</li>
+						</ol>
+
+			  <li>Social influence maximization: a synthesis
+							<ol class="level2">
+								<li>  <b>Yale University</b>, Human Nature Lab (HNL), Yale Institute for Network Science (YINS), March 2018</li>
+							</ol>
+				</li>
+
+				<li>Influence in social systems
+								<ol class="level2">
+									<li>  <b>Yale University</b>, Yale Institute for Network
+									Science Seminar, Yale Institute for Network Science (YINS),  July 2017</li>
+								</ol>
+				</li>
+
+
+			<li>Optimal control of epidemics (and opinions) in the presence of heterogeneity</li>
+
+					<ol class="level2">
+								<li>	 <b>Cornell University</b>, Electrical and Computer
+							Engineering Department,  July 2015 <i>(remotely)</i></li>
+							<li>  <b>Georgetown University</b>, Bansal Lab, Biology Department,
+							 July 2016</li>
+							<li>  <b>Yale University</b>, Yale Institute for Network
+							Science Seminar, Yale Institute for Network Science (YINS),  July 2016</li>
+							<li> <b>University of Pennsylvania</b>, Complex Systems
+							Group, Electrical and Systems Engineering Department,  July 2016</li>
+							<li> <b>University of Georgia</b>, Rohani Lab, Biology Department,
+							 July 2016</li>
+							<li> <b>Pennsylvania State University</b>, Ferrari Lab, Center
+							for Infectious Disease Dynamics (CIDD), Biology Department,
+							July 2016 <i>(remotely)</i></li>
+							<li> <b>Harvard University</b>, Center for Communicable
+							Disease Dynamics (CCDD), Harvard T.H. Chan School of Public Health,
+							July 2016</li>
+							<li> <b>Yale University</b>, Crawford Lab, Yale School of Public Health, July 2018</li>
+					</ol>
 </div>
-
-
-
-<div class="divSection col-sm-10 column">
-<h2>Prior work</h2>
-</div>
-
-<div class="divSection col-sm-10 column">
-      <div style="background-color: white; opacity: .85; padding: 2.5%; border:2px solid gainsboro; ">
-        <h3> Information dissemination and monitoring in ad hoc networks </h3>
-        <p>
-            Efficient monitoring and routing of data in modern networks with no fixed infrastructure is complicated by their distributed nature and energy constraints. However, epidemic-like spreading processes can be used to facilitate communication in uncertain environments, while novel distributed algorithms have been developed to monitor such communications and to aggregate relevant information. <br><br>
-
-            My main contribution in these fields has been to integrate the differing energy availability in these settings across network elements in the design of optimal routing and monitoring policies.
-
-
-
-
-        </p>
-
-
-      </div>
-
-
-</div>
-
-<div class="divSection col-sm-10 column">
-      <div style="background-color: white; opacity: .85; padding: 2.5%; border:2px solid gainsboro; ">
-        <h3> Battery control and charging of electric vehicles </h3>
-        <p>
-          The integration of renewables in the electrical grid at significant scale requires a simultaneous increase in the integration of batteries and electric vehicles to mitigate uncertainty in generation.<br><br>
-
-          I studied how batteries and electric vehicles should be charged and discharged to meet goals and minimize operation costs, making the economic case for storage. My contributions included deriving patent-pending rigorous battery pricing methods for microgrids and developing a synthesis of offline electric vehicle charging methods and identifying major remaining challenges.</p>
-
-
-
-      </div>
-
-
-</div>
-
-
-
-
-<!--<div id="Carousel" class="carousel slide col-lg-8 col-offset-2">
-        <ol class="carousel-indicators">
-            <li data-target="Carousel" data-slide-to="0" class="active"></li>
-            <li data-target="Carousel" data-slide-to="1"></li>
-            <li data-target="Carousel" data-slide-to="2"></li>
-        </ol>
-
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="//placehold.it/1300x500" class="img-responsive">
-            </div>
-           <div class="item">
-             <img src="//placehold.it/1300x500/EEEEEE" class="img-responsive">
-            </div>
-           <div class="item">
-             <img src="//placehold.it/1300x500/FEFEFE" class="img-responsive">
-            </div>
-        </div>
-
-        <a class="left carousel-control" href="#Carousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#Carousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-  </div>
-  <div class="container">
-   <div class="row clearfix">
-        <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10 column">
-              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators" style="color:#000000">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                    <div class="divSection col-sm-12 column">
-                         <div class="divImage carouselDiv" style="background-image:url(/images/influence.jpg); ">
-                           </div>
-                         <div class="divText" style="padding:10%">
-                          <div style="background-color: white; opacity: .85; padding: 5%; border:2px solid gainsboro;">
-                            <h2>Control of Dynamic Influence:</h2>
-                             <p style="text-align:justify;
-                             font-weight: bold;"><br>What shapes the outcomes of a networked society?<br><br> The influence of a person or channel is typically measured using static measures (such as centrality).<br><br> Even the majority of work on influence maximization that considers societal dynamics only investigates static allocations (e.g., seeding).<br><br> I study how dynamic influence can be measured, and how theories from the social sciences and economics can be integrated into models of dynamic influence.</p>
-
-                             </div>
-                          </div>
-                    </div>
-                  <div class="carousel-caption">
-                      <h3>Control of Dynamic Influence:</h3>
-                      <p>What shapes the outcomes of a networked society?<br><br> The influence of a person or channel is typically measured using static measures (such as centrality). Even the majority of work on influence maximization that considers societal dynamics only investigates static allocations (e.g., seeding).<br><br> I study how dynamic influence can be measured, and how theories from the social sciences and micro-economics can be integrated into models of dynamic influence.</p>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="divSection col-sm-12 column">
-                         <div class="divImage carouselDiv" style="background-image:url(/images/charging.jpg);">
-                           </div>
-                         <div class="divText" style="padding:10%">
-                          <div style="background-color: white; opacity: .85; padding: 5%; border:2px solid gainsboro;">
-                            <h2>Grid-Scale Batteries and Electric Vehicles:</h2>
-                             <p style="text-align:justify;
-                             font-weight: bold;"><br>The integration of renewables in the electrical grid at significant scale requires a simultaneous increase in the integration of batteries and electric vehicles to mitigate uncertainty in generation.<br><br> I study how batteries and electric vehicles should be charged and discharged to meet goals and minimize operation costs, making the economic case for storage.<br><br><br>
-                            </p>
-                             </div>
-                          </div>
-                    </div>
-                    <div class="carousel-caption">
-                      <h3>Grid-Scale Batteries and Electric Vehicles:</h3>
-                      <p>The integration of renewables in the electrical grid at significant scale requires a simultaneous increase in the integration of batteries and electric vehicles to mitigate uncertainty in generation.<br><br> I study how batteries and electric vehicles should be charged and discharged to meet goals and minimize operation costs, making the economic case for storage.</p>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="divSection col-sm-12 column">
-                         <div class="divImage carouselDiv" style="background-image:url(/images/vaccines.jpg);">
-                           </div>
-                         <div class="divText " style="padding:10%">
-                          <div style="background-color: white; opacity: .85; padding: 5%; border:2px solid gainsboro;">
-                            <h2>Dynamic Control of Epidemics and Epidemic Processes:</h2>
-                             <p style="text-align:justify;
-                             font-weight: bold;"><br>Epidemics are one of the greatest public health challenges of the 21st century.<br><br> We now have more data than ever before that we can leverage in designing dynamic interventions.<br><br> Furthermore, epidemic models neatly capture problems in cyber-security and data transfer.<br><br> I draw upon the literature in mathematical epidemiology to model both types of epidemics, and design optimal containment and spreading policies using optimal control theory.<br></p>
-                             </div>
-                          </div>
-                    </div>
-                    <div class="carousel-caption">
-                      <h3>Dynamic Control of Epidemics and Epidemic Processes:</h3>
-                      <p>Epidemics are one of the greatest public health challenges of the 21st century.<br><br> However, we now have more data than ever before that we can leverage in designing dynamic interventions. Furthermore, epidemic models neatly capture problems in cyber-security and data transfer.<br><br> I draw upon the literature in mathematical epidemiology to model both types of epidemics, and design optimal containment and spreading policies using optimal control theory.</p>
-                    </div>
-                  </div>
-                </div>
-                <a class="left carousel-control" href="#carouselExampleIndicators" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#carouselExampleIndicators" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-              </div>
-        </div>
-  </div>
-</div>
-
-<br><br><br>
--->
-
-        <!--/row-->
-       </div>
-       <!--/tab-pane-->
-   </div>
-<!--/tab-content 1-->
-
-</div>
-<!--/tabbable-->
-
-</div>
-<!--/col-*-12 column-->
-</div>
-<!--/row-->
-</div>
-<!--/container-->
