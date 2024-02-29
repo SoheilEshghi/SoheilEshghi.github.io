@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 gem 'jekyll-scholar', '>= 7.1.3', group: :jekyll_plugins
-gem 'rack', '~> 2.0'
+gem 'rack', '~> 2.2'
 gem 'rackup'
 gem 'racc'
 gem 'json'
